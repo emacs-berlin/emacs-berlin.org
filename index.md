@@ -1,3 +1,7 @@
+---
+title: (emacs-berlin)
+---
+
 # (emacs-berlin)
 
 We are Emacs enthusiasts in Berlin. This group is still brand new, the paint is still wet.
