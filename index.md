@@ -1,5 +1,6 @@
 ---
 title: (emacs-berlin)
+layout: default
 ---
 
 # (emacs-berlin)
