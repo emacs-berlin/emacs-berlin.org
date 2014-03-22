@@ -1,0 +1,61 @@
+body {
+  background: #fff;
+  color: #404041;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  position: relative;
+}
+
+a {
+  color: #7b8323;
+}
+
+#above-fold {
+  background: #aaba5c;
+  padding: 3% 0 3% 0;
+}
+
+#below-fold {
+  background: #dee28f;
+  color: #575b34;
+  padding: 3% 0 3% 0;
+}
+
+#end-fold {
+  background: #fff;
+  padding: 3% 0 3% 0;
+  margin: 0 auto;
+}
+
+#emacs-berlin-lockup {
+  margin-bottom: 20px;
+}
+
+.intro-info {
+  font-size: 23px;
+  text-align: center;
+  color: #fff;
+}
+
+.intro-info p {
+  margin-bottom: 0;
+}
+
+.dates-times {
+  font-weight: 900;
+  color: #a3b239;
+}
+
+h3 {
+  color: #aaba5c;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+footer {
+  padding-bottom: 3%;
+}
