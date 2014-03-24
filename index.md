@@ -19,7 +19,7 @@ For the first meetup (and possibly consequent one) we are going to try a novel f
 
 * Everybody is expected to show something to the rest
 * You get up to 10 minutes
-* Prepare some notes beforehand (markdown), put them in a gist, and share the link on the mailing list
+* Prepare some notes beforehand (preferably using org-mode), put them in a gist, and     share the link on the mailing list
 
 This last part is so people can easily follow along on their own machine, and so they have a reference to try the stuff you showed at home. Things to include
 
