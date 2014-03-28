@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
+<head>
+<title>20140327-notes</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="20140327-notes"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-03-28T12:02+0100"/>
+<meta name="author" content="Arne"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">20140327-notes</h1>
+
+<p>#Time-stamp: <span class="timestamp-wrapper"> <span class="timestamp">2014-03-27 20:53:27 arne</span></span>
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 multiple-cursors</a>
+<ul>
+<li><a href="#sec-1-1">1.1 mc/mark-next-like-this, for example bound to C-&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 org-mode</a>
+<ul>
+<li><a href="#sec-2-1">2.1 C-c C-e h / C-c C-e b =&gt; export to HTML</a></li>
+<li><a href="#sec-2-2">2.2 frustration with version 8, HTML export makes multi-file export</a></li>
+<li><a href="#sec-2-3">2.3 Time-stamp</a>
+<ul>
+<li><a href="#sec-2-3-1">2.3.1 (add-hook 'before-save-hook 'time-stamp) + #Time-stamp: &lt;&gt;</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-4">2.4 org-capture : quick note taking with org-mode by Florian</a>
+<ul>
+<li><a href="#sec-2-4-1">2.4.1 for quickly capturing ideas</a></li>
+<li><a href="#sec-2-4-2">2.4.2 org-capture-templates variable contains the templates</a></li>
+<li><a href="#sec-2-4-3">2.4.3 (org-capture) does the capturing</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 grizzl</a>
+<ul>
+<li><a href="#sec-3-1">3.1 completion system, can work with projectile</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 projectile</a>
+<ul>
+<li><a href="#sec-4-1">4.1 projectile-ag: search files in project</a></li>
+<li><a href="#sec-4-2">4.2 projectile-commander</a></li>
+<li><a href="#sec-4-3">4.3 alternatives: eproject, textmate-mode</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 tags</a>
+<ul>
+<li><a href="#sec-5-1">5.1 M-* pop back to previous tags</a></li>
+<li><a href="#sec-5-2">5.2 alternatives: breadcrumb</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Question: gow to better manage windows</a>
+<ul>
+<li><a href="#sec-6-1">6.1 popwin-mode</a>
+<ul>
+<li><a href="#sec-6-1-1">6.1.1 Make windows like grep, help, smaller and auto-closing</a></li>
+</ul>
+</li>
+<li><a href="#sec-6-2">6.2 perspective</a>
+<ul>
+<li><a href="#sec-6-2-1">6.2.1 Concept of workspaces</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 not-much</a>
+<ul>
+<li><a href="#sec-7-1">7.1 Huebsch! they have an icon</a></li>
+<li><a href="#sec-7-2">7.2 works with Maildir, keep all your emails locally</a></li>
+<li><a href="#sec-7-3">7.3 fast local search</a></li>
+<li><a href="#sec-7-4">7.4 Store link to org file (part of org-not-much-contrib)</a></li>
+<li><a href="#sec-7-5">7.5 alternatives: wanderlust, mu4e</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8 abl-mode</a>
+<ul>
+<li><a href="#sec-8-1">8.1 TDD mode for Python</a></li>
+<li><a href="#sec-8-2">8.2 creates isolated env per project+branch</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9 Emacs configs of the group</a>
+<ul>
+<li><a href="#sec-9-1">9.1 http://bitbucket.org/deets/emacs-git</a></li>
+<li><a href="#sec-9-2">9.2 http://github.com/pxlpnk/emacs.d</a></li>
+<li><a href="#sec-9-3">9.3 https://github.com/febeling/emacsd</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> multiple-cursors</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> mc/mark-next-like-this, for example bound to C-&gt;</h3>
+<div class="outline-text-3" id="text-1-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> org-mode</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> C-c C-e h / C-c C-e b =&gt; export to HTML</h3>
+<div class="outline-text-3" id="text-2-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> frustration with version 8, HTML export makes multi-file export</h3>
+<div class="outline-text-3" id="text-2-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Time-stamp</h3>
+<div class="outline-text-3" id="text-2-3">
+
+
+</div>
+
+<div id="outline-container-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> (add-hook 'before-save-hook 'time-stamp) + #Time-stamp: &lt;&gt;</h4>
+<div class="outline-text-4" id="text-2-3-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> org-capture : quick note taking with org-mode by Florian</h3>
+<div class="outline-text-3" id="text-2-4">
+
+
+</div>
+
+<div id="outline-container-2-4-1" class="outline-4">
+<h4 id="sec-2-4-1"><span class="section-number-4">2.4.1</span> for quickly capturing ideas</h4>
+<div class="outline-text-4" id="text-2-4-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2-4-2" class="outline-4">
+<h4 id="sec-2-4-2"><span class="section-number-4">2.4.2</span> org-capture-templates variable contains the templates</h4>
+<div class="outline-text-4" id="text-2-4-2">
+
+
+
+
+
+<pre class="example">(setq org-capture-templates
+ '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+        "* TODO %?\n  %i\n  %a")
+
+   ("j" "Journal" entry (file+datetree "~/org/journal.org")
+             "* %?\nEntered on %U\n  %i\n  %a")
+
+   ("n" "Note" plain
+     (file (concat "~/Schreiben/notes.org"))
+       "\n%?\n\n%T\n"
+        :kill-buffer t :prepend t :empty-lines 1)))
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2-4-3" class="outline-4">
+<h4 id="sec-2-4-3"><span class="section-number-4">2.4.3</span> (org-capture) does the capturing</h4>
+<div class="outline-text-4" id="text-2-4-3">
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> grizzl</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> completion system, can work with projectile</h3>
+<div class="outline-text-3" id="text-3-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> projectile</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> projectile-ag: search files in project</h3>
+<div class="outline-text-3" id="text-4-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> projectile-commander</h3>
+<div class="outline-text-3" id="text-4-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> alternatives: eproject, textmate-mode</h3>
+<div class="outline-text-3" id="text-4-3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> tags</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> M-* pop back to previous tags</h3>
+<div class="outline-text-3" id="text-5-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> alternatives: breadcrumb</h3>
+<div class="outline-text-3" id="text-5-2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Question: gow to better manage windows</h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> popwin-mode</h3>
+<div class="outline-text-3" id="text-6-1">
+
+
+</div>
+
+<div id="outline-container-6-1-1" class="outline-4">
+<h4 id="sec-6-1-1"><span class="section-number-4">6.1.1</span> Make windows like grep, help, smaller and auto-closing</h4>
+<div class="outline-text-4" id="text-6-1-1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> perspective</h3>
+<div class="outline-text-3" id="text-6-2">
+
+
+</div>
+
+<div id="outline-container-6-2-1" class="outline-4">
+<h4 id="sec-6-2-1"><span class="section-number-4">6.2.1</span> Concept of workspaces</h4>
+<div class="outline-text-4" id="text-6-2-1">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> not-much</h2>
+<div class="outline-text-2" id="text-7">
+
+
+</div>
+
+<div id="outline-container-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Huebsch! they have an icon</h3>
+<div class="outline-text-3" id="text-7-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> works with Maildir, keep all your emails locally</h3>
+<div class="outline-text-3" id="text-7-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-7-3" class="outline-3">
+<h3 id="sec-7-3"><span class="section-number-3">7.3</span> fast local search</h3>
+<div class="outline-text-3" id="text-7-3">
+
+</div>
+
+</div>
+
+<div id="outline-container-7-4" class="outline-3">
+<h3 id="sec-7-4"><span class="section-number-3">7.4</span> Store link to org file (part of org-not-much-contrib)</h3>
+<div class="outline-text-3" id="text-7-4">
+
+</div>
+
+</div>
+
+<div id="outline-container-7-5" class="outline-3">
+<h3 id="sec-7-5"><span class="section-number-3">7.5</span> alternatives: wanderlust, mu4e</h3>
+<div class="outline-text-3" id="text-7-5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> abl-mode</h2>
+<div class="outline-text-2" id="text-8">
+
+
+</div>
+
+<div id="outline-container-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> TDD mode for Python</h3>
+<div class="outline-text-3" id="text-8-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> creates isolated env per project+branch</h3>
+<div class="outline-text-3" id="text-8-2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Emacs configs of the group</h2>
+<div class="outline-text-2" id="text-9">
+
+
+</div>
+
+<div id="outline-container-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> <a href="http://bitbucket.org/deets/emacs-git">http://bitbucket.org/deets/emacs-git</a></h3>
+<div class="outline-text-3" id="text-9-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> <a href="http://github.com/pxlpnk/emacs.d">http://github.com/pxlpnk/emacs.d</a></h3>
+<div class="outline-text-3" id="text-9-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-9-3" class="outline-3">
+<h3 id="sec-9-3"><span class="section-number-3">9.3</span> <a href="https://github.com/febeling/emacsd">https://github.com/febeling/emacsd</a></h3>
+<div class="outline-text-3" id="text-9-3">
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-03-28T12:02+0100</p>
+<p class="author">Author: Arne</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#Time-stamp: <2014-03-27 20:53:27 arne>
+
+* multiple-cursors
+** mc/mark-next-like-this, for example bound to C->
+* org-mode
+** C-c C-e h / C-c C-e b => export to HTML
+** frustration with version 8, HTML export makes multi-file export
+** Time-stamp
+*** (add-hook 'before-save-hook 'time-stamp) + #Time-stamp: <>
+** org-capture : quick note taking with org-mode by Florian
+*** for quickly capturing ideas
+*** org-capture-templates variable contains the templates
+
+#+BEGIN_SRC elisp
+(setq org-capture-templates
+ '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+        "* TODO %?\n  %i\n  %a")
+
+   ("j" "Journal" entry (file+datetree "~/org/journal.org")
+             "* %?\nEntered on %U\n  %i\n  %a")
+
+   ("n" "Note" plain
+     (file (concat "~/Schreiben/notes.org"))
+       "\n%?\n\n%T\n"
+        :kill-buffer t :prepend t :empty-lines 1)))
+#+END_SRC
+
+*** (org-capture) does the capturing
+
+* grizzl
+** completion system, can work with projectile
+* projectile
+** projectile-ag: search files in project
+** projectile-commander
+** alternatives: eproject, textmate-mode
+* tags
+** M-* pop back to previous tags
+** alternatives: breadcrumb
+* Question: gow to better manage windows
+** popwin-mode
+*** Make windows like grep, help, smaller and auto-closing
+** perspective
+*** Concept of workspaces
+* not-much
+** Huebsch! they have an icon
+** works with Maildir, keep all your emails locally
+** fast local search
+** Store link to org file (part of org-not-much-contrib)
+** alternatives: wanderlust, mu4e
+* abl-mode
+** TDD mode for Python
+** creates isolated env per project+branch
+* Emacs configs of the group
+** http://bitbucket.org/deets/emacs-git
+** http://github.com/pxlpnk/emacs.d
+** https://github.com/febeling/emacsd
