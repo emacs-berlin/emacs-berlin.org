@@ -19,16 +19,18 @@ We have a mailing list! To join the mailing list, simply send an email to [emacs
 
 Mailing list archives can be found at [Librelist](http://librelist.com/browser/emacsberlin/).
 
-You can also find us on Freenode: [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
+You can also chat with us on Freenode irc:
+[#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
+
 </div><div class="medium-4 columns">
 
-Upcomming:
+### Upcoming
+
+To be determined
+
+### Previous meetings
 
 * [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
-
-
-Meeting notes:
-
 * [Thursday 27 March 2014](20140327.html)
 
 </div></div></section>
@@ -38,7 +40,7 @@ Meeting notes:
 
 ## Format
 
-For the first meetup (and possibly consequent one) we are going to try a novel format:
+For the first meetup we tried a novel format:
 
 * We highly encourage everybody to show something to the rest
 * Everybody is expected to show something to the rest
@@ -58,5 +60,10 @@ No need to overdo it. Showing this one-command-I-discovered-last-week is also fi
 If you feel like you’re really too much a beginner, you could still use your ten minutes to get input from the rest of the group. Maybe there's something you’d like to be able to do, but you're not sure how. Or you can skip this part entirely and simply let yourself be inspired.
 
 Afterwards we should have plenty of time left to chat, ask questions and swap ideas.
+
+On the second meeting we didn't use any specific structure, but just
+formed ad-hoc groups that hacked together on various topics of
+interest which we collected before the meeting.
+
 
 </div></div></section>
