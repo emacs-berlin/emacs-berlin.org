@@ -38,7 +38,7 @@ To be determined
 
 ## Format
 
-For the first meetup (and possibly consequent one) we are going to try a novel format:
+For the first meetup we tried a novel format:
 
 * We highly encourage everybody to show something to the rest
 * Everybody is expected to show something to the rest
@@ -58,5 +58,10 @@ No need to overdo it. Showing this one-command-I-discovered-last-week is also fi
 If you feel like you’re really too much a beginner, you could still use your ten minutes to get input from the rest of the group. Maybe there's something you’d like to be able to do, but you're not sure how. Or you can skip this part entirely and simply let yourself be inspired.
 
 Afterwards we should have plenty of time left to chat, ask questions and swap ideas.
+
+On the second meeting we didn't use any specific structure, but just
+formed ad-hoc groups that hacked together on various topics of
+interest which we collected before the meeting.
+
 
 </div></div></section>
