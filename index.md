@@ -19,7 +19,9 @@ We have a mailing list! To join the mailing list, simply send an email to [emacs
 
 Mailing list archives can be found at [Librelist](http://librelist.com/browser/emacsberlin/).
 
-You can also find us on Freenode: [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
+You can also chat with us on Freenode irc:
+[#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
+
 </div><div class="medium-4 columns">
 
 ### Upcoming
