@@ -22,13 +22,13 @@ Mailing list archives can be found at [Librelist](http://librelist.com/browser/e
 You can also find us on Freenode: [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
 </div><div class="medium-4 columns">
 
-Upcomming:
+### Upcoming
+
+To be determined
+
+### Previous meetings
 
 * [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
-
-
-Meeting notes:
-
 * [Thursday 27 March 2014](20140327.html)
 
 </div></div></section>
