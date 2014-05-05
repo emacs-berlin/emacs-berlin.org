@@ -15,11 +15,15 @@ layout: default
 
 We are Emacs enthusiasts in Berlin. This group is still brand new, the paint is still wet.
 
-We have a mailing list! To join the mailing list, simply send an email to [emacsberlin@librelist.com](mailto:emacsberlin@librelist.com). You will be automatically subscribed. Then, feel free to send a second email introducing yourself!
+We have a mailing list. View the
+[mailing list archive](https://mailb.org/pipermail/emacs-berlin/),
+[subscribe here](https://mailb.org/mailman/listinfo/emacs-berlin) and
+then join the discussion by sending email to
+[emacs-berlin@emacs-berlin.org](mailto:emacs-berlin@emacs-berlin.org).
 
-Mailing list archives can be found at [Librelist](http://librelist.com/browser/emacsberlin/).
+Feel free to send an email introducing yourself after subscribing!
 
-You can also chat with us on Freenode irc:
+You can also chat with us on irc:
 [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
 
 </div><div class="medium-4 columns">
