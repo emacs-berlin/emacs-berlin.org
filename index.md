@@ -30,7 +30,7 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-To be determined
+* [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
 
 ### Previous meetings
 
