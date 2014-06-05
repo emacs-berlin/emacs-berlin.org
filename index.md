@@ -30,10 +30,11 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
+* to be decided
 
 ### Previous meetings
 
+* [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
 * [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
 * [Thursday 27 March 2014](20140327.html)
 
