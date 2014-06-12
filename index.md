@@ -13,7 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-We are Emacs enthusiasts in Berlin. This group is still brand new, the paint is still wet.
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
+the month. The group is relatively new, the paint is slowly getting
+dry.
 
 We have a mailing list. View the
 [mailing list archive](https://mailb.org/pipermail/emacs-berlin/),
@@ -30,7 +32,10 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* to be decided
+* [Wednesday 25 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000040.html)
+* Wednesday 30 July 2014
+* Wednesday 27 August 2014
+* Wednesday 24 Sep 2014
 
 ### Previous meetings
 
