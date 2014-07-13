@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (<pre>&lt;%%(diary-float t 3 -1)&gt;</pre> in org-mode). The group is relatively new, the paint is slowly getting dry.
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (`&lt;%%(diary-float t 3 -1)&gt;` in org-mode). The group is relatively new, the paint is slowly getting dry.
 
 The best way to stay posted is through our mailing list.
 [Sign up](https://mailb.org/mailman/listinfo/emacs-berlin) and meet your fellow Emacsers, or have a look at the [mailing list archives](https://mailb.org/pipermail/emacs-berlin/).
