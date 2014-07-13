@@ -13,7 +13,8 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month. The group is relatively new, the paint is slowly getting dry.
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (
+<pre>&lt;%%(diary-float t 3 -1)&gt;<pre> in org-mode). The group is relatively new, the paint is slowly getting dry.
 
 The best way to stay posted is through our mailing list.
 [Sign up](https://mailb.org/mailman/listinfo/emacs-berlin) and meet your fellow Emacsers, or have a look at the [mailing list archives](https://mailb.org/pipermail/emacs-berlin/).
@@ -27,13 +28,13 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* [Wednesday 25 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000040.html) @ Asquera, Ohlauer Straße 43, 10999 Berlin
-* Wednesday 30 July 2014
+* Wednesday 30 July 2014, Location TBA
 * Wednesday 27 August 2014
 * Wednesday 24 September 2014
 
 ### Previous meetings
 
+* Wednesday 25 June 2014
 * [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
 * [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
 * [Thursday 27 March 2014](20140327.html)
