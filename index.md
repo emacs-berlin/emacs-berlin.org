@@ -27,7 +27,7 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 30 July 2014, Location TBA
+*[Wednesday 30 July 2014] (https://mailb.org/pipermail/emacs-berlin/2014/000060.html)
 * Wednesday 27 August 2014
 * Wednesday 24 September 2014
 
