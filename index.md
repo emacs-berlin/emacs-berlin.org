@@ -27,12 +27,12 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* [Wednesday 30 July 2014](https://mailb.org/pipermail/emacs-berlin/2014/000060.html)
 * Wednesday 27 August 2014
 * Wednesday 24 September 2014
 
 ### Previous meetings
 
+* [Wednesday 30 July 2014](20140730-notes.html)
 * Wednesday 25 June 2014
 * [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
 * [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
@@ -49,3 +49,11 @@ We try to keep the structure pretty loose, we are not the typical "three half ho
 The [Github repo](https://github.com/emacs-berlin/emacs-berlin.org/issues) and the [mailing list](https://mailb.org/mailman/listinfo/emacs-berlin) can be used to propose topics.
 
 </div></div></section>
+
+## Members
+
+People that show up to our meetings regularly or on occasion. Links go to their emacs config.
+
+* [plexus](https://github.com/plexus/.emacs.d)
+* [pxlpnk](https://github.com/pxlpnk/emacs.d)
+* [febeling](https://github.com/febeling/emacsd)

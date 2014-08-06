@@ -1,0 +1,127 @@
+#+TITLE: Emacs Berlin July 2014
+#+AUTHOR: Arne Brasseur
+#+BABEL: :session *ruby* :cache yes :results output graphics :exports both :tangle yes
+
+[[https://mailb.org/pipermail/emacs-berlin/2014/000060.html][Mailing List Announcement]] and [[https://github.com/emacs-berlin/emacs-berlin.org/issues/7][Github Issue]]
+
+* People
+
+  There are six of us \o/. Thank you Contentful and Ticketsolve for drinks and pizza, respectively.
+
+* E-mail
+
+  We start off with an impromptu discussion about doing email in Emacs. Til and Andy talked again a bit about not-much.
+
+  Apparently our Mailman based mailing list was added to gmane, so it can be accessed as a mailing list.
+
+* Agenda
+
+  #+NAME: topics_list
+  - usenet/newsgroups in emacs
+  - LATeX
+  - org-babel / literate programming
+  - reset script
+
+* org-babel / literate programming
+
+  Demonstration of how to pass data from a list or table, into an org-mode code block, and
+  then pass the resulting data to a next code block, possibly in a different language.
+
+  #+NAME: topics2
+  #+BEGIN_SRC ruby :var topics=topics_list :results table :exports both
+    topics.sort.map {|x| [x, x.length]}
+  #+END_SRC
+
+  #+RESULTS: topics2
+  | LATeX                                       |  5 |
+  | org-mode / org-babel / literate programming | 43 |
+  | reset script                                | 12 |
+  | usenet/newsgroups in emacs                  | 26 |
+
+  #+BEGIN_SRC sh :var topics=topics2 :results output
+    echo $topics
+  #+END_SRC
+
+  #+RESULTS:
+  : LATeX 5 org-mode / org-babel / literate programming 43 reset script 12 usenet/newsgroups in emacs 26
+
+  Somebody asked if it would be possible to include and run tests this way, let's try it:
+
+  #+BEGIN_SRC ruby :results output :exports both
+    def foo(x)
+      x*x
+    end
+
+    require 'rspec/autorun'
+
+    describe 'foo' do
+      it 'should square' do
+        expect(foo(3)).to be 9
+      end
+    end
+  #+END_SRC
+
+  #+RESULTS:
+  : .
+  :
+  : Finished in 0.00061 seconds
+  : 1 example, 0 failures
+
+  The interesting org-mode options here are :var, to pass values into variables, :results,
+  to determine how the output from the program should be treated, and :exports, to
+  determine if the code, results, or both are exported.
+
+  :results can take these values
+
+  - silent
+  - output
+  - value
+  - table
+  - drawer
+  - replace
+  - append
+  - pp
+  - verbatim
+  - raw
+  - org
+
+  :exports can be set to
+
+  - code (usually default)
+  - results
+  - both
+  - none
+
+  We didn't get into the "tangling" of code, which is needed for actual literate
+  programming. Maybe something for next time.
+
+* gnus
+
+  Everybody watched closely as we got a demo reading newsgroups,
+  mailing lists, rss feeds, all in gnus.
+
+  This led us on some tangents, we learned about Conkeror, the browser
+  that behaves like emacs, key bindings, org-capture integration, the
+  works. We founded out about [[http://doc.norang.ca/org-mode.html][the org-mode tutorial by Brent Hanson]],
+  which looks mighty promising.
+
+  Org-mode also has a companion app for mobile. It turned out some
+  people had used this before, but were happy to find out things
+  improve all the time and it's worth a second look.
+
+* LATeX
+
+  It's always interesting to see how people use emacs for different
+  applications. We got a demonstration of LATeX integration, looking
+  up references in BibTeX, previewing documents, and some little
+  editing tricks that make life easier.
+
+  Also interesting was to see someone who actively uses the menu bar,
+  which in this case seemed to make plenty of sense.
+
+* other
+
+  Recurring themes that popped up into conversations: all things org mode, with notable
+  interest for org-mobile. Doing email with notmuch. Starting a "reset script" to gather
+  some sensible defaults, and which could be turned into an elpa package and used as
+  starting point for emacs configs/starter kits.
