@@ -30,6 +30,14 @@ You can also chat with us on irc:
 * Wednesday 27 August 2014
 * Wednesday 24 September 2014
 
+### Location
+
+Until further notice we meet at the [Contenful](http://contentful.com) office
+
+Ritterstr. 12-14
+10969 Berlin
+Germany
+
 ### Previous meetings
 
 * [Wednesday 30 July 2014](20140730-notes.html)
