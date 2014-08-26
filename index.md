@@ -56,8 +56,6 @@ We try to keep the structure pretty loose, we are not the typical "three half ho
 
 The [Github repo](https://github.com/emacs-berlin/emacs-berlin.org/issues) and the [mailing list](https://mailb.org/mailman/listinfo/emacs-berlin) can be used to propose topics.
 
-</div></div></section>
-
 ## Members
 
 People that show up to our meetings regularly or on occasion. Links go to their emacs config.
@@ -65,3 +63,5 @@ People that show up to our meetings regularly or on occasion. Links go to their 
 * [plexus](https://github.com/plexus/.emacs.d)
 * [pxlpnk](https://github.com/pxlpnk/emacs.d)
 * [febeling](https://github.com/febeling/emacsd)
+
+</div></div></section>
