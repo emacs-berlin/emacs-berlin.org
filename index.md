@@ -27,8 +27,8 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 27 August 2014
-* Wednesday 24 September 2014
+* Wednesday 27 August 2014, 19:00
+* Wednesday 24 September 2014, 19:00
 
 ### Location
 
