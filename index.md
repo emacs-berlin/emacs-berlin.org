@@ -38,6 +38,9 @@ Ritterstr. 12-14
 10969 Berlin
 Germany
 
+
+The meetup usually starts at 19:00.
+
 ### Previous meetings
 
 * [Wednesday 30 July 2014](20140730-notes.html)
