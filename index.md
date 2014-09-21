@@ -27,8 +27,9 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 27 August 2014, 19:00
 * Wednesday 24 September 2014, 19:00
+* Wednesday 29 October 2014, 19:00
+* Wednesday 26 November 2014, 19:00
 
 ### Location
 
@@ -38,11 +39,9 @@ Ritterstr. 12-14
 10969 Berlin
 Germany
 
-
-The meetup usually starts at 19:00.
-
 ### Previous meetings
 
+* Wednesday 27 August 2014
 * [Wednesday 30 July 2014](20140730-notes.html)
 * Wednesday 25 June 2014
 * [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
