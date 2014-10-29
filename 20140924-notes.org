@@ -1,0 +1,28 @@
+* completion
+
+  We found out thanks to Jano about better-defaults, which sets a
+  binding for hippie-expand, which led to a discussion about
+  completion/expanding packages and built-ins.
+
+  Somebody
+
+** dabbrev
+** hippie-expand
+** autocomplete-mode (ac-...)
+** predictive mode
+** company mode
+** ctags/etags
+
+* s-x-emacs-werkstatt
+
+  We had Andreas visiting, the maintainer of python-mode. He showed us
+  [[https://launchpad.net/s-x-emacs-werkstatt][s-x-emacs-workstatt]], an elaborate package for manipulating all kinds
+  of text objects. Seems interesting but could use some more PR or
+  beginner documentation.
+
+  We ended up having a discussion about the limitations of org-babel's
+  unified model of dealing with different languages.
+
+* edebug
+
+  Put your cursor

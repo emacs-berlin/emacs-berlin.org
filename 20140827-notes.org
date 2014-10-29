@@ -1,0 +1,19 @@
+* Introduction
+- anonymous emacs users berlin.
+- interactive programming
+- overtone study group
+
+* org-crypt:
+http://orgmode.org/manual/org_002dcrypt.html
+
+* ielm mode emacs lisp repl
+
+* paredit
+new version is paredit
+expand region talk ->
+
+* expand-region
+* highlight-flash
+* supercollider and pure data
+* ldoc
+* Ideas:

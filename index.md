@@ -27,7 +27,6 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 24 September 2014, 19:00
 * Wednesday 29 October 2014, 19:00
 * Wednesday 26 November 2014, 19:00
 
@@ -41,7 +40,8 @@ Germany
 
 ### Previous meetings
 
-* Wednesday 27 August 2014
+* [Wednesday 24 September 2014](20140924-notes.html)
+* [Wednesday 27 August 2014](20140827-notes.html)
 * [Wednesday 30 July 2014](20140730-notes.html)
 * Wednesday 25 June 2014
 * [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
@@ -65,5 +65,6 @@ People that show up to our meetings regularly or on occasion. Links go to their 
 * [plexus](https://github.com/plexus/.emacs.d)
 * [pxlpnk](https://github.com/pxlpnk/emacs.d)
 * [febeling](https://github.com/febeling/emacsd)
+* [Jano](https://github.com/janogonzalez/.emacs.d)
 
 </div></div></section>
