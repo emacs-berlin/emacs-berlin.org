@@ -27,7 +27,9 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 26 November 2014, 19:00
+* (December meetup would be on 31st, so we decided to skip it)
+
+* Wednesday 28 January 2015 19:00
 
 ### Location
 
@@ -38,6 +40,7 @@ Ritterstr. 12-14
 Germany
 
 ### Previous meetings
+* Wednesday 26 November 2014
 * Wednesday 29 October 2014
 * [Wednesday 24 September 2014](20140924-notes.html)
 * [Wednesday 27 August 2014](20140827-notes.html)
