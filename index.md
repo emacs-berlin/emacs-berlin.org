@@ -27,7 +27,6 @@ You can also chat with us on irc:
 
 ### Upcoming
 
-* Wednesday 29 October 2014, 19:00
 * Wednesday 26 November 2014, 19:00
 
 ### Location
@@ -39,7 +38,7 @@ Ritterstr. 12-14
 Germany
 
 ### Previous meetings
-
+* Wednesday 29 October 2014
 * [Wednesday 24 September 2014](20140924-notes.html)
 * [Wednesday 27 August 2014](20140827-notes.html)
 * [Wednesday 30 July 2014](20140730-notes.html)
