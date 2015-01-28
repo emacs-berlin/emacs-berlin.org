@@ -1,0 +1,19 @@
+#+TITLE:Emacs Berlin 28 January 2015
+#+AUTHOR: Arne Brasseur
+#+email: arne@arnebrasseur.net
+#+INFOJS_OPT:
+#+BABEL: :session *ruby* :cache yes :results output graphics :exports both :tangle yes
+
+We expected a small group, but in the end had 9 people. Not bad for
+Emacs Berlin :)
+
+There was a suggestion to develop a function that could generically
+find and close the last open delimiter, and several guys set off working on that.
+
+We had someone who wants to use Emacs to write a book. He used word
+before, now uses LaTeX, is looking at ConTeXt, and is generally sold
+on Emacs, although a few small annoyances remain.
+
+We also had a long time vimmer visiting and asking many questions.
+
+https://twitter.com/plexus/status/560519157360640000/photo/1

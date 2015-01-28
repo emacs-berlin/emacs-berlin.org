@@ -1,0 +1,6 @@
+** [[http://www.youtube.com/watch?v%3DmUSoo4UaKBo][An introduction to Org-mode by Florian Adamsky]]
+** [[http://sachachua.com/blog/2014/06/read-lisp-tweak-emacs-beginner-14-try-emacs-lisp/][Read Lisp, Tweak Emacs {Beginner 1/4}: How to try Emacs Lisp]]
+** [[http://sachachua.com/blog/2014/05/emacs-chat-christopher-wellons/][Emacs Chat: Christopher Wellons]]
+** [[https://github.com/eschulte/epresent][epresent - Presenter mode for Emacs using Org-mode]]
+** [[http://www.jwz.org/doc/emacs-timeline.html][Emacs Timeline, the family tree (1976-2007)]]
+** [[http://orgmode.org/manual/Initial-visibility.html][Initial visibility in Org-mode]]
