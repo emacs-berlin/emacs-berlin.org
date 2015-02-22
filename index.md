@@ -39,20 +39,6 @@ Ritterstr. 12-14
 10969 Berlin
 Germany
 
-### Previous meetings
-
-* [Wednesday 28 January 2015](20150128-notes.html)
-* Wednesday 31 December 2014 - skipped
-* Wednesday 26 November 2014
-* Wednesday 29 October 2014
-* [Wednesday 24 September 2014](20140924-notes.html)
-* [Wednesday 27 August 2014](20140827-notes.html)
-* [Wednesday 30 July 2014](20140730-notes.html)
-* Wednesday 25 June 2014
-* [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
-* [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
-* [Thursday 27 March 2014](20140327.html)
-
 </div></div></section>
 
 <section id="end-fold"><div class="row"><div class="large-8 columns">
@@ -71,5 +57,21 @@ People that show up to our meetings regularly or on occasion. Links go to their 
 * [pxlpnk](https://github.com/pxlpnk/emacs.d)
 * [febeling](https://github.com/febeling/emacsd)
 * [Jano](https://github.com/janogonzalez/.emacs.d)
+
+## Previous meetings
+
+* [Wednesday 28 January 2015](20150128-notes.html)
+* Wednesday 31 December 2014 - skipped
+* Wednesday 26 November 2014
+* Wednesday 29 October 2014
+* [Wednesday 24 September 2014](20140924-notes.html)
+* [Wednesday 27 August 2014](20140827-notes.html)
+* [Wednesday 30 July 2014](20140730-notes.html)
+* Wednesday 25 June 2014
+* [Wednesday 04 June 2014](https://mailb.org/pipermail/emacs-berlin/2014/000008.html)
+* [Wednesday 30 April 2014](https://gist.github.com/pxlpnk/11392935)
+* [Thursday 27 March 2014](20140327.html)
+
+
 
 </div></div></section>
