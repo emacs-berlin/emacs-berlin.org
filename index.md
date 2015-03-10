@@ -23,11 +23,34 @@ Feel free to send an email introducing yourself after subscribing!
 You can also chat with us on irc:
 [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
 
-</div><div class="medium-4 columns">
+# One year anniversary - 25 March 2015 -
 
+On 27 March 2014 a handful of people got together at the former Travis
+Office at Moritzplatz for the very first Emacs Berlin meetup.
+
+This means that our next meetup on **25 March 2015** will be our one year
+anniversary.
+
+Because of this we'd like to make a little more effort to make this a great
+day, and to invite some people that maybe haven't found the way to our
+little corner of the geekyverse yet.
+
+- We are planning to do lightning talks in the 5 min + 5 min Q&A format. Please send an email to the mailing list if you have a topic.
+
+- An "introduction to Emacs" talk, suitable for people coming from Notepad, so to speak.
+
+- Ask a friend to join you, bring your co-workers, friends and family, everyone is welcome.
+
+- Have some pizzas (meat, vegetarian & vegan) and drinks (alcoholic and non alcoholic).
+
+We are all looking forward to the next meetup and to you.
+
+Save the date!
+
+</div>
+<div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 25 February 2015, 19:00
 * Wednesday 25 March 2015, 19:00
 * Wednesday 29 April 2015, 19:00
 
@@ -60,6 +83,7 @@ People that show up to our meetings regularly or on occasion. Links go to their 
 
 ## Previous meetings
 
+* Wednesday 25 February 2015, 19:00
 * [Wednesday 28 January 2015](20150128-notes.html)
 * Wednesday 31 December 2014 - skipped
 * Wednesday 26 November 2014
