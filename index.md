@@ -80,6 +80,9 @@ People that show up to our meetings regularly or on occasion. Links go to their 
 * [pxlpnk](https://github.com/pxlpnk/emacs.d)
 * [febeling](https://github.com/febeling/emacsd)
 * [Jano](https://github.com/janogonzalez/.emacs.d)
+* [Stefan](http://www.skamphausen.de/cgi-bin/ska/My_Configuration_of_Emacsen)
+* [Diez](https://bitbucket.org/deets/emacs-git)
+* [Jack](https://github.com/jackrusher/dotemacs)
 
 ## Previous meetings
 
