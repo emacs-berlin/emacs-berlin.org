@@ -8,5 +8,5 @@ Running this page:
 ```ruby
 bundle install
 
-bundle exec jekyll service --watch
+bundle exec jekyll serve --watch
 ```
