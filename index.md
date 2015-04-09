@@ -56,6 +56,13 @@ We try to keep the structure pretty loose, we are not the typical "three half ho
 
 The [Github repo](https://github.com/emacs-berlin/emacs-berlin.org/issues) and the [mailing list](https://mailb.org/mailman/listinfo/emacs-berlin) can be used to propose topics.
 
+## Beginner's Guarantee
+
+If you would like a basic introduction to Emacs, or you're starting
+out and have some questions, then we are more than happy to help
+you. Just show up to a meeting, and we guarantee there will be
+somebody to help you up to speed.
+
 ## Members
 
 People that show up to our meetings regularly or on occasion. Links go to their emacs config.
