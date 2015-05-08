@@ -88,6 +88,7 @@ to their emacs config.
 * [Stefan](http://www.skamphausen.de/cgi-bin/ska/My_Configuration_of_Emacsen)
 * [Diez](https://bitbucket.org/deets/emacs-git)
 * [Jack](https://github.com/jackrusher/dotemacs)
+* [til](https://tils.net/init.el.txt)
 
 
 </div></div></section>
