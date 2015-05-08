@@ -16,7 +16,7 @@ layout: default
 
 ## Previous meetings
 
-* Wednesday 25 February 2015, 19:00
+* Wednesday 29 April 2015, 19:00
 
 # One year anniversary - 25 March 2015 -
 
@@ -41,7 +41,7 @@ little corner of the geekyverse yet.
 We are all looking forward to the next meetup and to you.
 
 
-
+* Wednesday 25 February 2015, 19:00
 * [Wednesday 28 January 2015](20150128-notes.html)
 * Wednesday 31 December 2014 - skipped
 * Wednesday 26 November 2014

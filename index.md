@@ -35,13 +35,17 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 25 March 2015, 19:00
-* Wednesday 29 April 2015, 19:00
+* Wednesday 27 May 2015, 19:00
+* Wednesday 24 June 2015, 19:00
+
+<small>(if you see past dates here, we were too lame to update this
+page, pls check the mailing list)</small>
 
 ### Location
 
-Until further notice we meet at the
-[Contentful](http://contentful.com) office
+Check the mailing list - we used to be at the
+[Contentful](http://contentful.com) office previously, but might
+switch to another place.
 
 Ritterstr. 12-14
 10969 Berlin
