@@ -18,9 +18,8 @@ the month (`<%%(diary-float t 3 -1)>` in org-mode). The group is
 relatively new, the paint is slowly getting dry.
 
 The best way to stay posted is through our mailing list.
-[Sign up](https://mailb.org/mailman/listinfo/emacs-berlin) and meet
-your fellow Emacsers, or have a look at the
-[mailing list archives](https://mailb.org/pipermail/emacs-berlin/).
+[Sign up][ml] and meet your fellow Emacsers, or have a look at the
+[mailing list archives][mla].
 
 Feel free to send an email introducing yourself after subscribing!
 
@@ -39,11 +38,11 @@ Or on Twitter:
 * Wednesday 24 June 2015, 19:00
 
 <small>(if you see past dates here, we were too lame to update this
-page, pls check the mailing list)</small>
+page, pls check the [mailing list][mla])</small>
 
 ### Location
 
-Check the mailing list - we used to be at the
+Check the [mailing list][mla] - we used to be at the
 [Contentful](http://contentful.com) office previously, but might
 switch to another place.
 
@@ -67,11 +66,8 @@ together on whatever they find interesting, help each other to make
 their Emacs setups even more awesome, or share some setup and code
 with the group.
 
-The
-[Github repo](https://github.com/emacs-berlin/emacs-berlin.org/issues)
-and the
-[mailing list](https://mailb.org/mailman/listinfo/emacs-berlin) can be
-used to propose topics.
+[GitHub Issues][ghi] and the [mailing list][ml] can be used to propose
+topics.
 
 ## Beginner's Guarantee
 
@@ -96,3 +92,7 @@ to their emacs config.
 
 
 </div></div></section>
+
+[ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
+[mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
+[ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
