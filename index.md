@@ -42,17 +42,21 @@ page, pls check the [mailing list][mla])</small>
 
 ### Location
 
-Check the [mailing list][mla] - we used to be at the
-[Contentful](http://contentful.com) office previously, but might
-switch to another place.
+For Wednesday 27 May 2015, "Ganz Oben Office" (the former Travis
+office). See [directions](https://gist.github.com/svenfuchs/5364262)
 
+The exact location will always be announced on the [mailing list][mla], see keep an eye on there.
+
+We usually meet at
+[Contentful](http://contentful.com), but occasionally have to find another spot.
+
+Contentful office, close to U8 Moritzplatz / U1 Prinzenstraße
 Ritterstr. 12-14
 10969 Berlin
 Germany
 
 
 ### [Archive](/archive.html)
-
 
 </div></div></section>
 
