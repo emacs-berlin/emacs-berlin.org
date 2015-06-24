@@ -1,0 +1,70 @@
+* [[http://blog.refu.co/?p%3D1242][Lefteris's old post on Emacs+Android]]
+
+  Current version of the SDK is 24.2
+
+  His post mentions downloading a tarball, then uses unzip :)
+
+  mkdir -p ~/opt
+  cd ~/opt
+  wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+  tar xvzf android-sdk_r24.2-linux.tgz
+
+  This creates ~/opt/android-sdk-linux, which we'll just leave as is.
+
+  Get android-mode
+
+  (package-refresh-contents)
+  (package-install 'android-mode)
+
+  (custom-set-variables '(android-mode-sdk-dir "~/opt/android-sdk-linux"))
+
+  export PATH=$PATH:~/opt/android-sdk-linux/tools
+
+* Starting a new project
+
+#+BEGIN_SRC ruby :exports results
+Error: The parameters --activity, --package, --target, --path must be defined for action 'create project'
+
+       Usage:
+       android [global options] create project [action options]
+       Global options:
+  -s --silent     : Silent mode, shows errors only.
+  -v --verbose    : Verbose mode, shows errors, warnings and all messages.
+     --clear-cache: Clear the SDK Manager repository manifest cache.
+  -h --help       : Help on a specific command.
+
+                         Action "create project":
+  Creates a new Android project.
+Options:
+  -n --name          : Project name.
+  -a --activity      : Name of the default Activity that is created.
+                       [required]
+  -k --package       : Android package name for the application. [required]
+  -v --gradle-version: Gradle Android plugin version.
+  -t --target        : Target ID of the new project. [required]
+  -g --gradle        : Use gradle template.
+  -p --path          : The new project's directory. [required]
+#+END_SRC
+
+
+  TARGET_PATH="my_first_app"
+  PROJECT_NAME="My First App"
+  COMPANY_DOMAIN="com.mycompany"
+  PACKAGE_NAME="com.mycompany.my_first_app"
+
+  android create project
+  --path "$TARGET_PATH"
+  --name "$PROJECT_NAME"
+  --package "$PACKAGE_NAME"
+  --target 1
+
+    Which API to target, use "android list targets" to see the options
+
+  --activity "Test Activity"
+
+  android create project \
+  --path ~/tmp/my_project_2 \
+  --name "SinoLogic1" \
+  --package "com.sinologic.sinologic1" \
+  --target android-22 \
+  --activity "Sinoactive"
