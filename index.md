@@ -14,8 +14,7 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
-the month (`<%%(diary-float t 3 -1)>` in org-mode). The group is
-relatively new, the paint is slowly getting dry.
+the month (`<%%(diary-float t 3 -1)>` in org-mode).
 
 The best way to stay posted is through our mailing list.
 [Sign up][ml] and meet your fellow Emacsers, or have a look at the
@@ -36,6 +35,7 @@ Or on Twitter:
 
 * Wednesday 24 June 2015, 19:00
 * Wednesday 29 July 2015, 19:00
+* Wednesday 26 August 2015, 19:00
 
 <small>(if you see past dates here, we were too lame to update this
 page, pls check the [mailing list][mla])</small>
@@ -63,23 +63,24 @@ able to return there one day, but it is temporarily not available.
 
 <section id="end-fold"><div class="row"><div class="large-8 columns">
 
-## Format
-
-We try to keep the structure pretty loose, we are not the typical
-"three half hour talks" type of user group. People can just hack
-together on whatever they find interesting, help each other to make
-their Emacs setups even more awesome, or share some setup and code
-with the group.
-
-[GitHub Issues][ghi] and the [mailing list][ml] can be used to propose
-topics.
-
 ## Beginner's Guarantee
 
 If you would like a basic introduction to Emacs, or you're starting
 out and have some questions, then we are more than happy to help
 you. Just show up to a meeting, and we guarantee there will be
 somebody to help you up to speed.
+
+## Format
+
+We try to keep the structure pretty loose, we are not the typical
+"three half hour talks" type of user group. There are often small
+impromptu presentations or demos. For the rest people just hack
+together on whatever they find interesting, help each other to make
+their Emacs setups even more awesome, or chat about whatever they've
+been up to, Emacs related, or not.
+
+[GitHub Issues][ghi] and the [mailing list][ml] can be used to propose
+topics.
 
 ## Members
 
