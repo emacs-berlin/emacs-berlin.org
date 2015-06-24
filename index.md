@@ -34,26 +34,27 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 27 May 2015, 19:00
 * Wednesday 24 June 2015, 19:00
+* Wednesday 29 July 2015, 19:00
 
 <small>(if you see past dates here, we were too lame to update this
 page, pls check the [mailing list][mla])</small>
 
 ### Location
 
-For Wednesday 27 May 2015, "Ganz Oben Office" (the former Travis
-office). See [directions](https://gist.github.com/svenfuchs/5364262)
+For Wednesday 24 June 2015, we meet again at "Ganz Oben Office" (the
+former Travis office). See
+[directions](https://gist.github.com/svenfuchs/5364262)
 
-The exact location will always be announced on the [mailing list][mla], so keep an eye on there.
+    Prinzessinnenstrasse 20
+    Close to U8 Moritzplatz / U1 Prinzenstraße
+    Staircase B, 5th floor
 
-We usually meet at
-[Contentful](http://contentful.com), but occasionally have to find another spot.
+The exact location will always be announced on the
+[mailing list][mla], so keep an eye on there.
 
-Contentful office, close to U8 Moritzplatz / U1 Prinzenstraße
-Ritterstr. 12-14
-10969 Berlin
-Germany
+We used to meet at [Contentful](http://contentful.com), and hope to be
+able to return there one day, but it is temporarily not available.
 
 
 ### [Archive](/archive.html)
