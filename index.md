@@ -33,29 +33,24 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 24 June 2015, 19:00
 * Wednesday 29 July 2015, 19:00
 * Wednesday 26 August 2015, 19:00
+* Wednesday 30 September 2015, 19:00
 
 <small>(if you see past dates here, we were too lame to update this
 page, pls check the [mailing list][mla])</small>
 
 ### Location
 
-For Wednesday 24 June 2015, we meet again at "Ganz Oben Office" (the
-former Travis office). See
-[directions](https://gist.github.com/svenfuchs/5364262)
+For Wednesday 29 July 2015, we go into full summer mode, and meet
+outside in the Biergarten of
+[Kuchenkaiser](http://kuchenkaiser.blogspot.de/).
 
-    Prinzessinnenstrasse 20
-    Close to U8 Moritzplatz / U1 Prinzenstraße
-    Staircase B, 5th floor
+Oranienplatz 11-13
+Kreuzberg
 
-The exact location will always be announced on the
-[mailing list][mla], so keep an eye on there.
-
-We used to meet at [Contentful](http://contentful.com), and hope to be
-able to return there one day, but it is temporarily not available.
-
+The location is also always announced on the [mailing list][mla], so
+keep an eye on there.
 
 ### [Archive](/archive.html)
 
