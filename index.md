@@ -26,7 +26,8 @@ You can also chat with us on irc:
 [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
 
 Or on Twitter:
-[@emacsberlin](https://twitter.com/emacsberlin)
+[@emacsberlin](https://twitter.com/emacsberlin) <span class='text-cursor'>&nbsp;</span>
+
 
 
 </div>

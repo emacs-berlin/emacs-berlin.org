@@ -100,3 +100,10 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.text-cursor {
+  background: black;
+  width: 1em;
+  height: 1em;
+  display: none;
+}
