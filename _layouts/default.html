@@ -13,13 +13,18 @@
 
     {{ content }}
 
-    <footer>
+    <footer class='buffer-footer'>
       <div class="row">
         <div class="large-12 columns">
           <a href="https://github.com/emacs-berlin/emacs-berlin.org" target="_blank">Site source code is available on GitHub</a>
         </div>
       </div>
     </footer>
+
+    <footer class='mode-line'>
+      U:--- {{page.path}}&lt;emacs-berlin.org&gt;&nbsp;&nbsp;&nbsp;Git:gh-pages&nbsp;&nbsp;(Markdown Jekyll)
+    </footer>
+    <footer class='minibuffer'></footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

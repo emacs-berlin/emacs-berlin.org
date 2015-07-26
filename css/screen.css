@@ -3,11 +3,18 @@ body {
   color: #404041;
   padding: 0;
   margin: 0;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: Courier New,monospace;
   line-height: 1.5;
   position: relative;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: '- ';
+  padding-left: 1em;
 }
 
 a {
@@ -56,6 +63,40 @@ h3 {
   font-weight: 900;
 }
 
-footer {
-  padding-bottom: 3%;
+.buffer-footer {
+  padding-bottom: 4em;
+}
+
+.mode-line {
+  position: fixed;
+  bottom: 1.4em;
+  width: 100%;
+  font-family: Courier New,monospace;
+
+  border-bottom: 1px solid gray;
+
+  background: #aaba5c;
+
+  height: 1.4em;
+  line-height: 1em;
+  padding: 0.2em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.minibuffer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: Courier New,monospace;
+
+  background: #dee28f;
+
+  height: 1.4em;
+  line-height: 1em;
+  padding: 0.2em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }

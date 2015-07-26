@@ -34,11 +34,8 @@ Or on Twitter:
 ### Upcoming
 
 * Wednesday 29 July 2015, 19:00
-* Wednesday 26 August 2015, 19:00
-* Wednesday 30 September 2015, 19:00
 
-<small>(if you see past dates here, we were too lame to update this
-page, pls check the [mailing list][mla])</small>
+(if you see a past date here, pls check the [mailing list][mla])
 
 ### Location
 
@@ -49,14 +46,13 @@ outside in the Biergarten of
 Oranienplatz 11-13
 Kreuzberg
 
-The location is also always announced on the [mailing list][mla], so
-keep an eye on there.
+### Archive
 
-### [Archive](/archive.html)
+[Archive of previous meetings](/archive.html)
 
 </div></div></section>
 
-<section id="end-fold"><div class="row"><div class="large-8 columns">
+<section id="end-fold"><div class="row"><div class="large-12 columns">
 
 ## Beginner's Guarantee
 
