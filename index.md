@@ -34,18 +34,14 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 29 July 2015, 19:00
+* Wednesday 26 August 2015, 19:00
 
 (if you see a past date here, pls check the [mailing list][mla])
 
 ### Location
 
-For Wednesday 29 July 2015, we go into full summer mode, and meet
-outside in the Biergarten of
-[Kuchenkaiser](http://kuchenkaiser.blogspot.de/).
-
-Oranienplatz 11-13
-Kreuzberg
+For Wednesday 26 August 2015, we meet at Arne's place in beautiful
+Friedenau. Send an email to one of us for the exact address.
 
 ### Archive
 
