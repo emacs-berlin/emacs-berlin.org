@@ -34,14 +34,14 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 26 August 2015, 19:00
+* Wednesday 30 September 2015, 19:00
 
 (if you see a past date here, pls check the [mailing list][mla])
 
 ### Location
 
-For Wednesday 26 August 2015, we meet at Arne's place in beautiful
-Friedenau. Send an email to one of us for the exact address.
+For Wednesday 30 September 2015 the location is not determined yet.
+Maybe a glorious return to the contentful offices will be possible?
 
 ### Archive
 
