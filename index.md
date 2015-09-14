@@ -36,12 +36,11 @@ Or on Twitter:
 
 * Wednesday 30 September 2015, 19:00
 
+Location: [Contentful](http://contentful.com)
+Close to U8 Moritzplatz / U1 Prinzenstraße
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+
 (if you see a past date here, pls check the [mailing list][mla])
-
-### Location
-
-For Wednesday 30 September 2015 the location is not determined yet.
-Maybe a glorious return to the contentful offices will be possible?
 
 ### Archive
 
