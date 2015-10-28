@@ -34,7 +34,7 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 27 October 2015, 19:00
+* Wednesday 28 October 2015, 19:00
 
 Location: [Contentful](http://contentful.com)
 Close to U8 Moritzplatz / U1 Prinzenstraße
