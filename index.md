@@ -34,13 +34,17 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 28 October 2015, 19:00
+* Wednesday 25 November 2015, 19:00
 
-Location: [Contentful](http://contentful.com)
-Close to U8 Moritzplatz / U1 Prinzenstraße
-[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
 
-There's a glass elevator in the front court yard, take it up to the fifth floor.
+Here [instructions on how to get to the Ganz Oben Office](https://gist.github.com/svenfuchs/5364262)
+
+<!-- Location: [Contentful](http://contentful.com) -->
+<!-- Close to U8 Moritzplatz / U1 Prinzenstraße -->
+<!-- [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N) -->
+
+<!-- There's a glass elevator in the front court yard, take it up to the fifth floor. -->
 
 (if you see a past date here, pls check the [mailing list][mla])
 
