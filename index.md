@@ -88,7 +88,8 @@ to their emacs config.
 * [Diez](https://bitbucket.org/deets/emacs-git)
 * [Jack](https://github.com/jackrusher/dotemacs)
 * [til](https://tils.net/init.el.txt)
-
+* [Peter](https://github.com/ptrv/emacs.d)
+* [Andreas](https://github.com/andreas-roehler/werkstatt)
 
 </div></div></section>
 
