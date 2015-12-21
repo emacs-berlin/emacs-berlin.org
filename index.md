@@ -34,7 +34,7 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday 25 November 2015, 19:00
+* Wednesday, December 30th 2015, 19:00
 
 The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
 
