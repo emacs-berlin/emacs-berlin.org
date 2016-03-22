@@ -1,5 +1,5 @@
 name: (emacs-berlin)
-pygments: true
+highlighter: pygments
 markdown: kramdown
 kramdown:
   input: GFM
