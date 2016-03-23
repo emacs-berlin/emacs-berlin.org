@@ -1,5 +1,5 @@
 name: (emacs-berlin)
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
