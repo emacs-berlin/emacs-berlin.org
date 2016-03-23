@@ -13,6 +13,51 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
+<style>
+.cake {
+  font-size: 6px;
+  float: right;
+  margin-right: 5em;
+  line-height: 1.2;
+}
+</style>
+
+<pre class="cake">
+                                             )
+                       )                    (*)
+                      (*)                    |
+                       |                    |~|
+                      |~|                   | |
+                      | |                   | |
+                     ,| |a@@@@@@@@@@@@@@@@@@| |@@@@aa  .
+                .,a@@@| |@@@@@@@@@@@@@@@@@@@| |@@@@@@@@@@@@a,.
+              ,a@@@@@@| |@@@@@@@@@@@@.@@@@@@@@@@@@@@@@@@@@@@@@a,
+             a@@@@@@@@@@@@@@@@@@@@@' . `@@@@@@@@@@@@@@@@@@@@@@@@a
+             ;`@@@@@@@@@@@@@@@@@@'   .   `@@@@@@@@@@@@@@@@@@@@@';
+             ;@@@`@@@@@@@@@@@@@'     .     `@@@@@@@@@@@@@@@@'@@@;
+             ;@@@;,.aaaaaaaaaa       .       aaaaa,,aaaaaaa,;@@@;
+             ;;@;;;;@@@@@@@@;@      @.@      ;@@@;;;@@@@@@;;;;@@;
+             ;;;;;;;@@@@;@@;;@    @@ . @@    ;;@;;;;@@;@@@;;;;;;;
+             ;;;;;;;;@@;;;;;;;  @@   .   @@  ;;;;;;;;;;;@@;;;;@;;
+             ;;;;;;;;;;;;;;;;;@@     .     @@;;;;;;;;;;;;;;;;@@@;
+         ,%%%;;;;;;;;@;;;;;;;;       .       ;;;;;;;;;;;;;;;;@@;;%%%,
+      .%%%%%%;;;;;;;@@;;;;;;;;     ,%%%,     ;;;;;;;;;;;;;;;;;;;;%%%%%%,
+     .%%%%%%%;;;;;;;@@;;;;;;;;   ,%%%%%%%,   ;;;;;;;;;;;;;;;;;;;;%%%%%%%,
+     %%%%%%%%`;;;;;;;;;;;;;;;;  %%%%%%%%%%%  ;;;;;;;;;;;;;;;;;;;'%%%%%%%%
+     %%%%%%%%%%%%`;;;;;;;;;;;;,%%%%%%%%%%%%%,;;;;;;;;;;;;;;;'%%%%%%%%%%%%
+     `%%%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%%%%%%'
+       `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+           `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+                  """"""""""""""`,,,,,,,,,'"""""""""""""""""
+                                 `%%%%%%%'
+                                  `%%%%%'
+                                    %%%
+                                   %%%%%
+                                .,%%%%%%%,.
+                           ,%%%%%%%%%%%%%%%%%%%,
+</pre>
+
+
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
 the month (`<%%(diary-float t 3 -1)>` in org-mode).
 
@@ -34,19 +79,22 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 24th 2016, 19:00
+* 2nd anniversary! Wednesday, March 30th 2016, 19:00
 
+Come celebrate the 2nd year of Emacs Berlin with us. There will be
+cake!
+
+<!--
 The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
 Here [instructions on how to get to the Ganz Oben Office](https://gist.github.com/svenfuchs/5364262)
 
 Close to U8 Moritzplatz / U1 Prinzenstraße
+-->
 
-<!--
 Location: [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
 There's a glass elevator in the front court yard, take it up to the fifth floor.
--->
 
 (if you see a past date here, pls check the [mailing list][mla])
 
