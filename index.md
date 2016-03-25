@@ -125,6 +125,13 @@ been up to, Emacs related, or not.
 [GitHub Issues][ghi] and the [mailing list][ml] can be used to propose
 topics.
 
+## Code of Conduct
+
+Emacs Berlin has adopted the
+[Berlin Code of Conduct](http://berlincodeofconduct.org/), all who attend our
+events or participate on our mailing list are expected to have read this
+document, and to behave accordingly.
+
 ## Members
 
 People that show up to our meetings regularly or on occasion. Links go
