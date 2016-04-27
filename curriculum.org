@@ -138,7 +138,19 @@ Here are some key combinations
 - ~M->~ :: go to the end of the buffer
 - ~M-x emacs-version~ :: check the version of your Emacs
 
-** Basic editing, kill/yank
+(You don't need to memorize these commands now.)
+
+** Survival Emacs
+
+To exit Emacs, type ~C-x C-c~.
+
+You can quit a partially entered command, type ~C-g~.
+
+
+
+** Introduction to editing
+
+
 
 
 
@@ -148,6 +160,26 @@ Here are some key combinations
 ** evaluating forms
 ** values, variables, functions, setq
 * create first .emacs/init.el
+** A blueprint to get started
+
+#+BEGIN_SRC emacs-lisp
+(package-initialize)
+
+(setq package-archives
+      '(("gnu" . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")))
+
+(package-install 'use-package)
+
+(use-package multiple-cursors
+  :ensure t
+  :bind (("C-S-c C-S-c" . mc/edit-lines)
+         ("C->"         . mc/mark-next-like-this)
+         ("C-<"         . mc/mark-previous-like-this)
+         ("C-c C-<"     . mc/mark-all-like-this)))
+#+END_SRC
+
 ** major/minor modes
 ** set up elpa
 ** set up use-package

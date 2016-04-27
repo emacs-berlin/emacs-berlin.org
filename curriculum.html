@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-04-27 Mi 20:15 -->
+<!-- 2016-04-27 Mi 21:14 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs Berlin Beginners Curriculum</title>
@@ -164,33 +164,35 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline3">1.3. Linux</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline10">2. First steps</a>
+<li><a href="#orgheadline11">2. First steps</a>
 <ul>
 <li><a href="#orgheadline5">2.1. Hello, Emacs</a></li>
 <li><a href="#orgheadline6">2.2. A word about key combinations</a></li>
-<li><a href="#orgheadline7">2.3. Basic editing, kill/yank</a></li>
-<li><a href="#orgheadline8">2.4. Visiting files</a></li>
-<li><a href="#orgheadline9">2.5. Switching buffers</a></li>
+<li><a href="#orgheadline7">2.3. Survival Emacs</a></li>
+<li><a href="#orgheadline8">2.4. Introduction to editing</a></li>
+<li><a href="#orgheadline9">2.5. Visiting files</a></li>
+<li><a href="#orgheadline10">2.6. Switching buffers</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline13">3. First steps in Elisp</a>
+<li><a href="#orgheadline14">3. First steps in Elisp</a>
 <ul>
-<li><a href="#orgheadline11">3.1. evaluating forms</a></li>
-<li><a href="#orgheadline12">3.2. values, variables, functions, setq</a></li>
+<li><a href="#orgheadline12">3.1. evaluating forms</a></li>
+<li><a href="#orgheadline13">3.2. values, variables, functions, setq</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline18">4. create first .emacs/init.el</a>
+<li><a href="#orgheadline20">4. create first .emacs/init.el</a>
 <ul>
-<li><a href="#orgheadline14">4.1. major/minor modes</a></li>
-<li><a href="#orgheadline15">4.2. set up elpa</a></li>
-<li><a href="#orgheadline16">4.3. set up use-package</a></li>
-<li><a href="#orgheadline17">4.4. get to a "good enough" initial set up</a></li>
+<li><a href="#orgheadline15">4.1. A blueprint to get started</a></li>
+<li><a href="#orgheadline16">4.2. major/minor modes</a></li>
+<li><a href="#orgheadline17">4.3. set up elpa</a></li>
+<li><a href="#orgheadline18">4.4. set up use-package</a></li>
+<li><a href="#orgheadline19">4.5. get to a "good enough" initial set up</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline21">5. Where next</a>
+<li><a href="#orgheadline23">5. Where next</a>
 <ul>
-<li><a href="#orgheadline19">5.1. how to use the help system</a></li>
-<li><a href="#orgheadline20">5.2. a tour of emacs features and packages</a></li>
+<li><a href="#orgheadline21">5.1. how to use the help system</a></li>
+<li><a href="#orgheadline22">5.2. a tour of emacs features and packages</a></li>
 </ul>
 </li>
 </ul>
@@ -271,8 +273,8 @@ from the command line with <code>apt-get</code> or <code>yum</code>.
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10"><span class="section-number-2">2</span> First steps</h2>
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11"><span class="section-number-2">2</span> First steps</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-orgheadline5" class="outline-3">
 <h3 id="orgheadline5"><span class="section-number-3">2.1</span> Hello, Emacs</h3>
@@ -357,62 +359,108 @@ Here are some key combinations
 <dt><code>M-&gt;</code></dt><dd>go to the end of the buffer</dd>
 <dt><code>M-x emacs-version</code></dt><dd>check the version of your Emacs</dd>
 </dl>
+
+<p>
+(You don't need to memorize these commands now.)
+</p>
 </div>
 </div>
 
 <div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="section-number-3">2.3</span> Basic editing, kill/yank</h3>
+<h3 id="orgheadline7"><span class="section-number-3">2.3</span> Survival Emacs</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+To exit Emacs, type <code>C-x C-c</code>.
+</p>
+
+<p>
+You can quit a partially entered command, type <code>C-g</code>.
+</p>
+</div>
 </div>
 
 
 
 <div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="section-number-3">2.4</span> Visiting files</h3>
+<h3 id="orgheadline8"><span class="section-number-3">2.4</span> Introduction to editing</h3>
 </div>
+
+
+
+
+
 <div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="section-number-3">2.5</span> Switching buffers</h3>
+<h3 id="orgheadline9"><span class="section-number-3">2.5</span> Visiting files</h3>
+</div>
+<div id="outline-container-orgheadline10" class="outline-3">
+<h3 id="orgheadline10"><span class="section-number-3">2.6</span> Switching buffers</h3>
 </div>
 </div>
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="section-number-2">3</span> First steps in Elisp</h2>
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14"><span class="section-number-2">3</span> First steps in Elisp</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="section-number-3">3.1</span> evaluating forms</h3>
+</div><div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"><span class="section-number-3">3.1</span> evaluating forms</h3>
 </div>
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12"><span class="section-number-3">3.2</span> values, variables, functions, setq</h3>
+<div id="outline-container-orgheadline13" class="outline-3">
+<h3 id="orgheadline13"><span class="section-number-3">3.2</span> values, variables, functions, setq</h3>
 </div>
 </div>
-<div id="outline-container-orgheadline18" class="outline-2">
-<h2 id="orgheadline18"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
+<div id="outline-container-orgheadline20" class="outline-2">
+<h2 id="orgheadline20"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-orgheadline14" class="outline-3">
-<h3 id="orgheadline14"><span class="section-number-3">4.1</span> major/minor modes</h3>
+</div><div id="outline-container-orgheadline15" class="outline-3">
+<h3 id="orgheadline15"><span class="section-number-3">4.1</span> A blueprint to get started</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp"><span style="color: #4d4d4c;">(</span>package-initialize<span style="color: #4d4d4c;">)</span>
+
+<span style="color: #4d4d4c;">(</span><span style="color: #718c00;">setq</span> package-archives
+      '<span style="color: #3e999f;">(</span><span style="color: #eab700;">(</span><span style="color: #3e999f;">"gnu"</span> . <span style="color: #3e999f;">"https://elpa.gnu.org/packages/"</span><span style="color: #eab700;">)</span>
+        <span style="color: #eab700;">(</span><span style="color: #3e999f;">"melpa"</span> . <span style="color: #3e999f;">"https://melpa.org/packages/"</span><span style="color: #eab700;">)</span>
+        <span style="color: #eab700;">(</span><span style="color: #3e999f;">"melpa-stable"</span> . <span style="color: #3e999f;">"https://stable.melpa.org/packages/"</span><span style="color: #eab700;">)</span><span style="color: #3e999f;">)</span><span style="color: #4d4d4c;">)</span>
+
+<span style="color: #4d4d4c;">(</span>package-install 'use-package<span style="color: #4d4d4c;">)</span>
+
+<span style="color: #4d4d4c;">(</span><span style="color: #718c00;">use-package</span> <span style="color: #4271ae;">multiple-cursors</span>
+  <span style="color: #8959a8;">:ensure</span> t
+  <span style="color: #8959a8;">:bind</span> <span style="color: #3e999f;">(</span><span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-S-c C-S-c"</span> . mc/edit-lines<span style="color: #eab700;">)</span>
+         <span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-&gt;"</span>         . mc/mark-next-like-this<span style="color: #eab700;">)</span>
+         <span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-&lt;"</span>         . mc/mark-previous-like-this<span style="color: #eab700;">)</span>
+         <span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-c C-&lt;"</span>     . mc/mark-all-like-this<span style="color: #eab700;">)</span><span style="color: #3e999f;">)</span><span style="color: #4d4d4c;">)</span>
+</pre>
 </div>
-<div id="outline-container-orgheadline15" class="outline-3">
-<h3 id="orgheadline15"><span class="section-number-3">4.2</span> set up elpa</h3>
 </div>
+</div>
+
 <div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16"><span class="section-number-3">4.3</span> set up use-package</h3>
+<h3 id="orgheadline16"><span class="section-number-3">4.2</span> major/minor modes</h3>
 </div>
 <div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">4.4</span> get to a "good enough" initial set up</h3>
+<h3 id="orgheadline17"><span class="section-number-3">4.3</span> set up elpa</h3>
+</div>
+<div id="outline-container-orgheadline18" class="outline-3">
+<h3 id="orgheadline18"><span class="section-number-3">4.4</span> set up use-package</h3>
+</div>
+<div id="outline-container-orgheadline19" class="outline-3">
+<h3 id="orgheadline19"><span class="section-number-3">4.5</span> get to a "good enough" initial set up</h3>
 </div>
 </div>
-<div id="outline-container-orgheadline21" class="outline-2">
-<h2 id="orgheadline21"><span class="section-number-2">5</span> Where next</h2>
+<div id="outline-container-orgheadline23" class="outline-2">
+<h2 id="orgheadline23"><span class="section-number-2">5</span> Where next</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19"><span class="section-number-3">5.1</span> how to use the help system</h3>
+</div><div id="outline-container-orgheadline21" class="outline-3">
+<h3 id="orgheadline21"><span class="section-number-3">5.1</span> how to use the help system</h3>
 </div>
-<div id="outline-container-orgheadline20" class="outline-3">
-<h3 id="orgheadline20"><span class="section-number-3">5.2</span> a tour of emacs features and packages</h3>
+<div id="outline-container-orgheadline22" class="outline-3">
+<h3 id="orgheadline22"><span class="section-number-3">5.2</span> a tour of emacs features and packages</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Emacs Berlin</p>
-<p class="date">Created: 2016-04-27 Mi 20:15</p>
+<p class="date">Created: 2016-04-27 Mi 21:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
