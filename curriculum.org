@@ -42,6 +42,10 @@ Some guidelines
 - this is not a manual, people can learn about the finer points of Emacs and
   Elisp elsewhere
 
+Make sure you have ~htmlize~ installed, so exported source code has syntax
+highlighting. The export will depend on the color scheme you have in use, so
+make sure it's nice :P.
+
 * Installation
 
 How to install Emacs depends on your operating system. Make sure you install
@@ -67,7 +71,7 @@ want to avoid using this version.
 
 If you have Homebrew available then that is the most straightforward option.
 
-#+BEGIN_SRC
+#+BEGIN_SRC sh
 $ brew update
 $ brew install emacs --with-cocoa
 $ brew linkapps emacs
@@ -103,13 +107,36 @@ in the ~*scratch*~ buffer.
 
 Try typing this line of code
 
-#+BEGIN_SRC
+#+BEGIN_SRC emacs-lisp
 (dotimes (x 10) (insert "\nHello Emacs!"))
 #+END_SRC
 
-Now place the cursor at the end of the line, so behind the last closing parenthesis. Press and hold the ~Ctrl~ key, and with ~Ctrl~ pressed type ~x~ ~e~.
+Now place the cursor at the end of the line, so behind the last closing
+parenthesis. Press and hold the ~Ctrl~ key, and with ~Ctrl~ pressed type ~x~
+~e~.
 
 Congratulations! You just wrote and executed your first piece of Emacs Lisp code.
+
+** A word about key combinations
+
+Emacs makes heavy use of key combinations like "ctrl + g" or "alt + x". In the
+manual and other documentation key combinations are written using a shorthand
+notation. For example,
+
+- ~C-x~ :: hold ~Ctrl~ and type ~x~
+- ~C-x C-e~ :: keep ~Ctrl~ pressed while typing ~x~ ~e~
+- ~C-x e~ :: press ~Ctrl~ and ~x~ together, let go of ~Ctrl~, and press ~e~
+
+Besides the ~Ctrl~ key, Emacs makes heavy use of the ~Meta~ key. This is kind of
+sad, because modern keyboards no longer have a ~Meta~ key. Instead the "Alt" key
+is typically used as "Meta". If you're on Mac it might also be the "Cmd/⌘" key.
+The ~Meta~ key (Alt or Cmd/⌘) is abbreviated with ~M-~.
+
+Here are some key combinations
+
+- ~M-%~ :: search and replace
+- ~M->~ :: go to the end of the buffer
+- ~M-x emacs-version~ :: check the version of your Emacs
 
 ** Basic editing, kill/yank
 
