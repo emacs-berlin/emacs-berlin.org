@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-04-27 Mi 21:14 -->
+<!-- 2016-04-27 Mi 21:54 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs Berlin Beginners Curriculum</title>
@@ -376,9 +376,33 @@ To exit Emacs, type <code>C-x C-c</code>.
 <p>
 You can quit a partially entered command, type <code>C-g</code>.
 </p>
-</div>
-</div>
 
+<p>
+Let me repeat that
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><code>C-x C-c</code></td>
+<td class="org-left">Exit Emacs</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-g</code></td>
+<td class="org-left">Quit partially typed command</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 <div id="outline-container-orgheadline8" class="outline-3">
@@ -412,19 +436,51 @@ You can quit a partially entered command, type <code>C-g</code>.
 </div><div id="outline-container-orgheadline15" class="outline-3">
 <h3 id="orgheadline15"><span class="section-number-3">4.1</span> A blueprint to get started</h3>
 <div class="outline-text-3" id="text-4-1">
+<p>
+There are many ways to organize the configuration of your Emacs. We'll give you
+a blueprint so you have a structure that you can fill in yourself as time goes
+on.
+</p>
+
+<p>
+Most of the extra functionality will be installed through packages. These can be
+installed from multiple places, we'll set things up to download packages from
+the two main "package repositories", GNU ELPA and MELPA.
+</p>
+
+<p>
+A package may require some extra setup or configuration, such as customizing
+variables or creating key bindings. To keep that all in one place we'll use a
+command called `use-package', which is itself installed as&#x2026; a package.
+Package-ception!
+</p>
+
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span style="color: #4d4d4c;">(</span>package-initialize<span style="color: #4d4d4c;">)</span>
-
+<pre class="src src-emacs-lisp"><span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">Install packages from these sources</span>
+<span style="color: #8e908c; font-style: italic;">;;   </span><span style="color: #8e908c; font-style: italic;">- GNU ELPA: The official GNU package repository, relatively small</span>
+<span style="color: #8e908c; font-style: italic;">;;   </span><span style="color: #8e908c; font-style: italic;">- MELPA: The main community-run package archive</span>
 <span style="color: #4d4d4c;">(</span><span style="color: #718c00;">setq</span> package-archives
       '<span style="color: #3e999f;">(</span><span style="color: #eab700;">(</span><span style="color: #3e999f;">"gnu"</span> . <span style="color: #3e999f;">"https://elpa.gnu.org/packages/"</span><span style="color: #eab700;">)</span>
-        <span style="color: #eab700;">(</span><span style="color: #3e999f;">"melpa"</span> . <span style="color: #3e999f;">"https://melpa.org/packages/"</span><span style="color: #eab700;">)</span>
-        <span style="color: #eab700;">(</span><span style="color: #3e999f;">"melpa-stable"</span> . <span style="color: #3e999f;">"https://stable.melpa.org/packages/"</span><span style="color: #eab700;">)</span><span style="color: #3e999f;">)</span><span style="color: #4d4d4c;">)</span>
+        <span style="color: #eab700;">(</span><span style="color: #3e999f;">"melpa"</span> . <span style="color: #3e999f;">"https://melpa.org/packages/"</span><span style="color: #eab700;">)</span><span style="color: #3e999f;">)</span><span style="color: #4d4d4c;">)</span>
 
+<span style="color: #4d4d4c;">(</span>package-initialize<span style="color: #4d4d4c;">)</span>
+
+<span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">Download a list of available packages if we don't have it already</span>
+<span style="color: #4d4d4c;">(</span><span style="color: #718c00;">unless</span> <span style="color: #3e999f;">(</span>file-exists-p <span style="color: #3e999f;">"~/.emacs.d/elpa/archives/melpa"</span><span style="color: #3e999f;">)</span>
+  <span style="color: #3e999f;">(</span>package-refresh-contents<span style="color: #3e999f;">)</span><span style="color: #4d4d4c;">)</span>
+
+<span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">The `</span><span style="color: #4271ae; font-style: italic;">use-package</span><span style="color: #8e908c; font-style: italic;">' package makes it easy to install and configure packages</span>
 <span style="color: #4d4d4c;">(</span>package-install 'use-package<span style="color: #4d4d4c;">)</span>
 
+
+<span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">For example,</span>
 <span style="color: #4d4d4c;">(</span><span style="color: #718c00;">use-package</span> <span style="color: #4271ae;">multiple-cursors</span>
+
+  <span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">install the package if it isn't already</span>
   <span style="color: #8959a8;">:ensure</span> t
+
+  <span style="color: #8e908c; font-style: italic;">;; </span><span style="color: #8e908c; font-style: italic;">configure key bindings</span>
   <span style="color: #8959a8;">:bind</span> <span style="color: #3e999f;">(</span><span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-S-c C-S-c"</span> . mc/edit-lines<span style="color: #eab700;">)</span>
          <span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-&gt;"</span>         . mc/mark-next-like-this<span style="color: #eab700;">)</span>
          <span style="color: #eab700;">(</span><span style="color: #3e999f;">"C-&lt;"</span>         . mc/mark-previous-like-this<span style="color: #eab700;">)</span>
@@ -460,7 +516,7 @@ You can quit a partially entered command, type <code>C-g</code>.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Emacs Berlin</p>
-<p class="date">Created: 2016-04-27 Mi 21:14</p>
+<p class="date">Created: 2016-04-27 Mi 21:54</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

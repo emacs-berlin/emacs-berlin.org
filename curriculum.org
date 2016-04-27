@@ -146,7 +146,10 @@ To exit Emacs, type ~C-x C-c~.
 
 You can quit a partially entered command, type ~C-g~.
 
+Let me repeat that
 
+| ~C-x C-c~ | Exit Emacs                   |
+| ~C-g~     | Quit partially typed command |
 
 ** Introduction to editing
 
@@ -162,22 +165,48 @@ You can quit a partially entered command, type ~C-g~.
 * create first .emacs/init.el
 ** A blueprint to get started
 
+There are many ways to organize the configuration of your Emacs. We'll give you
+a blueprint so you have a structure that you can fill in yourself as time goes
+on.
+
+Most of the extra functionality will be installed through packages. These can be
+installed from multiple places, we'll set things up to download packages from
+the two main "package repositories", GNU ELPA and MELPA.
+
+A package may require some extra setup or configuration, such as customizing
+variables or creating key bindings. To keep that all in one place we'll use a
+command called `use-package', which is itself installed as... a package.
+Package-ception!
+
 #+BEGIN_SRC emacs-lisp
-(package-initialize)
+  ;; Install packages from these sources
+  ;;   - GNU ELPA: The official GNU package repository, relatively small
+  ;;   - MELPA: The main community-run package archive
+  (setq package-archives
+        '(("gnu" . "https://elpa.gnu.org/packages/")
+          ("melpa" . "https://melpa.org/packages/")))
 
-(setq package-archives
-      '(("gnu" . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")
-        ("melpa-stable" . "https://stable.melpa.org/packages/")))
+  (package-initialize)
 
-(package-install 'use-package)
+  ;; Download a list of available packages if we don't have it already
+  (unless (file-exists-p "~/.emacs.d/elpa/archives/melpa")
+    (package-refresh-contents))
 
-(use-package multiple-cursors
-  :ensure t
-  :bind (("C-S-c C-S-c" . mc/edit-lines)
-         ("C->"         . mc/mark-next-like-this)
-         ("C-<"         . mc/mark-previous-like-this)
-         ("C-c C-<"     . mc/mark-all-like-this)))
+  ;; The `use-package' package makes it easy to install and configure packages
+  (package-install 'use-package)
+
+
+  ;; For example,
+  (use-package multiple-cursors
+
+    ;; install the package if it isn't already
+    :ensure t
+
+    ;; configure key bindings
+    :bind (("C-S-c C-S-c" . mc/edit-lines)
+           ("C->"         . mc/mark-next-like-this)
+           ("C-<"         . mc/mark-previous-like-this)
+           ("C-c C-<"     . mc/mark-all-like-this)))
 #+END_SRC
 
 ** major/minor modes
