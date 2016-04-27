@@ -1,0 +1,52 @@
+#+AUTHOR:
+#+OPTIONS: H:1 toc:nil
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto html-preamble:t
+#+OPTIONS: html-scripts:t html-style:t html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:
+#+TITLE: Notes for emacs-berlin meetup on 27.04.2016
+#+INFOJS_OPT:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.4)
+#+LATEX_HEADER:
+* How to submit a patch to emacs mailing list?
+- ping john wiegley
+- send a screenshot
+* Who runs emacs tests? CI?
+- Andreas already got some CI emails?
+* general-close
+- it's being used!
+- try it on melpa
+- Andreas demonstrates general-close implementation
+  - suggestion to use pcase
+- needs autoloads
+  - add ;;;###autoload before all command defuns
+* Parenthesis fu
+- smartparens
+- slurping (swallowing stuff into enclosing parens)
+- check-parens
+* We need an xrandr interface in emacs.
+* Arne is writing curriculum for beginners
+* projectile-ag
+- ag is an alternative to grep
+* How to build stuff on Travis
+- emacs support
+- ycmd as an example
+- [[https://github.com/abingham/emacs-ycmd/blob/master/.travis.yml][ycmd at github]]
+- using cask for package management
+* cask
+- useful for developing emacs packages
+* eshell
+- you can run emacs commandst here
+- no one attending has managed to entirely switch to eshell
+* Reimplement emacs for JVM?
+* Discussion about thing-at-point-utils
+- by Andreas
+- [[https://github.com/andreas-roehler/werkstatt/tree/master/thing-at-point-utils][at github]]
