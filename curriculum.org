@@ -146,22 +146,54 @@ To exit Emacs, type ~C-x C-c~.
 
 You can quit a partially entered command, type ~C-g~.
 
+To close informational "windows" like an error message or help information, type `q`
+
 Let me repeat that
 
 | ~C-x C-c~ | Exit Emacs                   |
 | ~C-g~     | Quit partially typed command |
+| ~q~       | Close error message          |
 
 ** Introduction to editing
 
+*These sections need explanation and exercises, I just listed the main commands so people have something to get started with.*
 
-
+| Key     |                               | Emacs command     |
+|---------+-------------------------------+-------------------|
+| ~C-y~   | Paste                         | `yank`            |
+| ~C-k~   | Cut until the end of the line | `kill`            |
+| ~C-SPC~ | Start selecting text          | `set-mark-comand` |
+| ~M-w~   | Copy selected text            | `kill-ring-save`  |
+| ~C-w~   | Cut selected text             | `kill-region`     |
 
 
 ** Visiting files
+
+| Key       |            | Emacs command       |
+|-----------+------------+---------------------|
+| ~C-x C-f~ | Open File  | `find-file`         |
+| ~C-x C-s~ | Save File  | `save-buffer`       |
+| ~C-x s~   | Save All   | `save-some-buffers` |
+| ~C-x k~   | Close File | `kill-buffer`       |
+
 ** Switching buffers
+
+| Key       |                              | Emacs command      |
+|-----------+------------------------------+--------------------|
+| ~C-x C-b~ | Get a list of all open files | `list-buffers`     |
+| ~C-x b~   | Switch to another open file  | `switch-to-buffer` |
+|           |                              |                    |
+
+
 * First steps in Elisp
 ** evaluating forms
+
+*TODO*
+
 ** values, variables, functions, setq
+
+*TODO*
+
 * create first .emacs/init.el
 ** A blueprint to get started
 
@@ -210,9 +242,30 @@ Package-ception!
 #+END_SRC
 
 ** major/minor modes
-** set up elpa
-** set up use-package
 ** get to a "good enough" initial set up
+* References
+** Emacsish glossary
+
+Emacs is over 30 years old. It was developed in a time when computers took half
+a room, and before the rise of GUIs and desktop systems. A lot of its
+terminology also stems from this time, making it sound like Emacsers speak a
+different language.
+
+For your convenience we have compiled a simple phrase book translation Emacsish
+to English.
+
+| Emacsish  | English                  |
+|-----------+--------------------------|
+| point     | position of the cursor   |
+| mark      | end of the selected text |
+| region    | selection                |
+| frame     | window                   |
+| window    | split                    |
+| yank      | paste                    |
+| kill      | cut                      |
+| kill ring | clipboard                |
+| META key  | Alt key                  |
+
 * Where next
 ** how to use the help system
 ** a tour of emacs features and packages

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-04-27 Mi 21:54 -->
+<!-- 2016-04-28 Do 11:11 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs Berlin Beginners Curriculum</title>
@@ -180,19 +180,22 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline13">3.2. values, variables, functions, setq</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline20">4. create first .emacs/init.el</a>
+<li><a href="#orgheadline18">4. create first .emacs/init.el</a>
 <ul>
 <li><a href="#orgheadline15">4.1. A blueprint to get started</a></li>
 <li><a href="#orgheadline16">4.2. major/minor modes</a></li>
-<li><a href="#orgheadline17">4.3. set up elpa</a></li>
-<li><a href="#orgheadline18">4.4. set up use-package</a></li>
-<li><a href="#orgheadline19">4.5. get to a "good enough" initial set up</a></li>
+<li><a href="#orgheadline17">4.3. get to a "good enough" initial set up</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline23">5. Where next</a>
+<li><a href="#orgheadline20">5. References</a>
 <ul>
-<li><a href="#orgheadline21">5.1. how to use the help system</a></li>
-<li><a href="#orgheadline22">5.2. a tour of emacs features and packages</a></li>
+<li><a href="#orgheadline19">5.1. Emacsish glossary</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline23">6. Where next</a>
+<ul>
+<li><a href="#orgheadline21">6.1. how to use the help system</a></li>
+<li><a href="#orgheadline22">6.2. a tour of emacs features and packages</a></li>
 </ul>
 </li>
 </ul>
@@ -378,6 +381,10 @@ You can quit a partially entered command, type <code>C-g</code>.
 </p>
 
 <p>
+To close informational "windows" like an error message or help information, type `q`
+</p>
+
+<p>
 Let me repeat that
 </p>
 
@@ -399,39 +406,194 @@ Let me repeat that
 <td class="org-left"><code>C-g</code></td>
 <td class="org-left">Quit partially typed command</td>
 </tr>
+
+<tr>
+<td class="org-left"><code>q</code></td>
+<td class="org-left">Close error message</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-3">
+<h3 id="orgheadline8"><span class="section-number-3">2.4</span> Introduction to editing</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<b>These sections need explanation and exercises, I just listed the main commands so people have something to get started with.</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Emacs command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-y</code></td>
+<td class="org-left">Paste</td>
+<td class="org-left">`yank`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-k</code></td>
+<td class="org-left">Cut until the end of the line</td>
+<td class="org-left">`kill`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-SPC</code></td>
+<td class="org-left">Start selecting text</td>
+<td class="org-left">`set-mark-comand`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>M-w</code></td>
+<td class="org-left">Copy selected text</td>
+<td class="org-left">`kill-ring-save`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-w</code></td>
+<td class="org-left">Cut selected text</td>
+<td class="org-left">`kill-region`</td>
+</tr>
 </tbody>
 </table>
 </div>
 </div>
 
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="section-number-3">2.4</span> Introduction to editing</h3>
-</div>
-
-
-
-
-
 <div id="outline-container-orgheadline9" class="outline-3">
 <h3 id="orgheadline9"><span class="section-number-3">2.5</span> Visiting files</h3>
+<div class="outline-text-3" id="text-2-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Emacs command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-x C-f</code></td>
+<td class="org-left">Open File</td>
+<td class="org-left">`find-file`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x C-s</code></td>
+<td class="org-left">Save File</td>
+<td class="org-left">`save-buffer`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x s</code></td>
+<td class="org-left">Save All</td>
+<td class="org-left">`save-some-buffers`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x k</code></td>
+<td class="org-left">Close File</td>
+<td class="org-left">`kill-buffer`</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+
 <div id="outline-container-orgheadline10" class="outline-3">
 <h3 id="orgheadline10"><span class="section-number-3">2.6</span> Switching buffers</h3>
+<div class="outline-text-3" id="text-2-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Emacs command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>C-x C-b</code></td>
+<td class="org-left">Get a list of all open files</td>
+<td class="org-left">`list-buffers`</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>C-x b</code></td>
+<td class="org-left">Switch to another open file</td>
+<td class="org-left">`switch-to-buffer`</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+</div>
+
+
 <div id="outline-container-orgheadline14" class="outline-2">
 <h2 id="orgheadline14"><span class="section-number-2">3</span> First steps in Elisp</h2>
 <div class="outline-text-2" id="text-3">
 </div><div id="outline-container-orgheadline12" class="outline-3">
 <h3 id="orgheadline12"><span class="section-number-3">3.1</span> evaluating forms</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+<b>TODO</b>
+</p>
 </div>
+</div>
+
 <div id="outline-container-orgheadline13" class="outline-3">
 <h3 id="orgheadline13"><span class="section-number-3">3.2</span> values, variables, functions, setq</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+<b>TODO</b>
+</p>
 </div>
 </div>
-<div id="outline-container-orgheadline20" class="outline-2">
-<h2 id="orgheadline20"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
+</div>
+
+<div id="outline-container-orgheadline18" class="outline-2">
+<h2 id="orgheadline18"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
 <div class="outline-text-2" id="text-4">
 </div><div id="outline-container-orgheadline15" class="outline-3">
 <h3 id="orgheadline15"><span class="section-number-3">4.1</span> A blueprint to get started</h3>
@@ -494,29 +656,106 @@ Package-ception!
 <h3 id="orgheadline16"><span class="section-number-3">4.2</span> major/minor modes</h3>
 </div>
 <div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">4.3</span> set up elpa</h3>
-</div>
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18"><span class="section-number-3">4.4</span> set up use-package</h3>
-</div>
-<div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19"><span class="section-number-3">4.5</span> get to a "good enough" initial set up</h3>
+<h3 id="orgheadline17"><span class="section-number-3">4.3</span> get to a "good enough" initial set up</h3>
 </div>
 </div>
-<div id="outline-container-orgheadline23" class="outline-2">
-<h2 id="orgheadline23"><span class="section-number-2">5</span> Where next</h2>
+<div id="outline-container-orgheadline20" class="outline-2">
+<h2 id="orgheadline20"><span class="section-number-2">5</span> References</h2>
 <div class="outline-text-2" id="text-5">
+</div><div id="outline-container-orgheadline19" class="outline-3">
+<h3 id="orgheadline19"><span class="section-number-3">5.1</span> Emacsish glossary</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Emacs is over 30 years old. It was developed in a time when computers took half
+a room, and before the rise of GUIs and desktop systems. A lot of its
+terminology also stems from this time, making it sound like Emacsers speak a
+different language.
+</p>
+
+<p>
+For your convenience we have compiled a simple phrase book translation Emacsish
+to English.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Emacsish</th>
+<th scope="col" class="org-left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">point</td>
+<td class="org-left">position of the cursor</td>
+</tr>
+
+<tr>
+<td class="org-left">mark</td>
+<td class="org-left">end of the selected text</td>
+</tr>
+
+<tr>
+<td class="org-left">region</td>
+<td class="org-left">selection</td>
+</tr>
+
+<tr>
+<td class="org-left">frame</td>
+<td class="org-left">window</td>
+</tr>
+
+<tr>
+<td class="org-left">window</td>
+<td class="org-left">split</td>
+</tr>
+
+<tr>
+<td class="org-left">yank</td>
+<td class="org-left">paste</td>
+</tr>
+
+<tr>
+<td class="org-left">kill</td>
+<td class="org-left">cut</td>
+</tr>
+
+<tr>
+<td class="org-left">kill ring</td>
+<td class="org-left">clipboard</td>
+</tr>
+
+<tr>
+<td class="org-left">META key</td>
+<td class="org-left">Alt key</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline23" class="outline-2">
+<h2 id="orgheadline23"><span class="section-number-2">6</span> Where next</h2>
+<div class="outline-text-2" id="text-6">
 </div><div id="outline-container-orgheadline21" class="outline-3">
-<h3 id="orgheadline21"><span class="section-number-3">5.1</span> how to use the help system</h3>
+<h3 id="orgheadline21"><span class="section-number-3">6.1</span> how to use the help system</h3>
 </div>
 <div id="outline-container-orgheadline22" class="outline-3">
-<h3 id="orgheadline22"><span class="section-number-3">5.2</span> a tour of emacs features and packages</h3>
+<h3 id="orgheadline22"><span class="section-number-3">6.2</span> a tour of emacs features and packages</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Emacs Berlin</p>
-<p class="date">Created: 2016-04-27 Mi 21:54</p>
+<p class="date">Created: 2016-04-28 Do 11:11</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
