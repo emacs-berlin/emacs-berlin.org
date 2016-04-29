@@ -1,0 +1,31 @@
+* Emacs Meetup Berlin 30. March 2016
+** Search
+-try git-grep for helm projectile grep
+** It is hard(?) to change indentation in JavaScript
+** How to use chrome
+- try update-alternatives
+** All the different kill ring/clip boards are confusing
+** try expand region
+** try easy kill
+** Emacs has great support for right-to-left languages
+** Emojis in emacs
+    - :poop:
+** Try auto-revert-mode
+** True global-mark-ring
+** What's up with ivy?
+** Who is using etags/ctags
+** Pronouncing stuff
+- gif
+- png
+- glibc
+- gnome
+- magit
+** Try M-x butterfly
+** ed is the standrad text editor
+** Youtube talks
+- parens of the death
+- paredit by emacsrocks
+** Helm swoop edit: edit suff that matches
+** try helm-swoop
+** try fzf command line tool
+** try keyfreq

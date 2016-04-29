@@ -17,6 +17,16 @@ layout: default
 ## Previous meetings
 
 * [Wednesday 27 April 2016](20160427-notes.html) - [org-file](20160427-notes.org)
+* [Wednesday 30 March 2016](20160330-notes.html) - [org-file](20160330-notes.org)
+* Wednesday 24 February 2016
+* Wednesday 27 January 2016
+* Wednesday 30 December 2015
+* Wednesday 25 November 2015
+* Wednesday 28 October 2015
+* Wednesday 30 September 2015
+* Wednesday 26 August 2015
+* Wednesday 29 July 2015
+* Wednesday 24 June 2015
 * [Wednesday 27 May 2015](20150527-notes.html)
 * Wednesday 29 April 2015, 19:00
 * [Wednesday 25 March 2015](20150325-announce.html)
