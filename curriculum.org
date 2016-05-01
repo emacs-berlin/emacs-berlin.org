@@ -243,6 +243,118 @@ Package-ception!
 
 ** major/minor modes
 ** get to a "good enough" initial set up
+** Language specific sections
+
+For each language that you commonly program in, you should at least install a
+"major mode". This will provide syntax highlighting and other language-specific
+functionality. What follows are some example configs to get you started. Just
+copy over the ones that are relevant to you.
+
+*** Ruby
+
+There is a Ruby major mode already installed with Emacs, all you need to do is enable it
+
+#+BEGIN_SRC emacs-lisp
+(use-package ruby-mode)
+#+END_SRC
+
+Packages you could look into in the future include
+
+- ~enh-ruby-mode~
+- ~robe~
+- ~chruby~
+- ~rspec-mode~
+- ~inf-ruby-mode~
+
+*** Javascript
+
+Emacs comes bundled with a ~js-mode~, however you might prefer ~js2-mode~.
+
+#+BEGIN_SRC emacs-lisp
+(use-package js2-mode :ensure t)
+#+END_SRC
+
+*** CSS
+
+Emacs comes bundled with CSS mode. A nice extra is ~rainbow-mode~, which shows
+the color of color codes.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package css-mode
+    :config
+    (use-package rainbow-mode
+      :ensure t
+      :config
+      (add-hook 'css-mode-hook 'rainbow-mode)))
+#+END_SRC
+
+Example:
+
+#+BEGIN_SRC css
+  body {
+    color: #1e1e1e;
+    background: #3e77ff;
+  }
+#+END_SRC
+
+*** Clojure
+
+#+BEGIN_SRC emacs-lisp
+  (use-package clojure-mode
+    :ensure t
+    :config
+    (add-hook 'clojure-mode-hook 'cider-mode)
+
+    ;;;; Optional: add structural editing
+    ;;
+    ;; (use-package paredit
+    ;;   :ensure t
+    ;;   :config
+    ;;   (add-hook 'clojure-mode-hook 'paredit-mode))
+
+    ;;; Give matching parentheses matching colors
+    (use-package rainbow-delimiters
+      :ensure t
+      :config
+      (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
+    ;;; Integrated REPL environment
+    (use-package cider
+      :ensure t
+      :config
+      (use-package cider-eval-sexp-fu :ensure t)
+      (use-package clj-refactor
+        :ensure t
+        :config
+        (add-hook 'clojure-mode-hook 'clj-refactor-mode))))
+#+END_SRC
+
+*** HTML templates
+
+Web Mode does a good job of letting you edit various HTML template files. It
+knows about several popular template syntaxes, so it can provide smart code
+highlighting.
+
+Here's an example setup, we configure the file extensions that will use
+~web-mode~, and set the indentation to two spaces.
+
+Web mode provides a bunch of handy keyboard shortcuts, check the [[http://web-mode.org/][web mode
+website]] for more information.
+
+#+BEGIN_SRC emacs-lisp
+(use-package web-mode
+  :ensure t
+
+  :config
+  (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tmpl$" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+#+END_SRC
+
 * References
 ** Emacsish glossary
 
