@@ -382,3 +382,7 @@ to English.
 * Where next
 ** how to use the help system
 ** a tour of emacs features and packages
+
+# Local Variables:
+# org-html-table-align-individual-fields: nil
+# End:
