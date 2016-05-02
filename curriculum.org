@@ -326,7 +326,8 @@ Example:
       (use-package clj-refactor
         :ensure t
         :config
-        (add-hook 'clojure-mode-hook 'clj-refactor-mode))))
+        (add-hook 'clojure-mode-hook 'clj-refactor-mode)
+        (cljr-add-keybindings-with-prefix "C-c C-m"))))
 #+END_SRC
 
 *** HTML templates
