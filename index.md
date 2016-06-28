@@ -34,7 +34,7 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 25th 2016, 19:00 (Towel Day!)
+* Wednesday, June 29th 2016, 19:00
 
 <!--
 The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
