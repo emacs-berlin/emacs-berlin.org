@@ -34,8 +34,11 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, June 29th 2016, 19:00
-* Wednesday, July 27th 2016, 19:00
+* July: summer break, no meetup
+* Wednesday, August 31st 2016: social gettogether, location to be determined
+* Wednesday, September 28th 2016, 19:00, re-launch
+
+[Summer announcement](https://mailb.org/pipermail/emacs-berlin/2016/000331.html)
 
 <!--
 The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
@@ -44,7 +47,7 @@ Here [instructions on how to get to the Ganz Oben Office](https://gist.github.co
 Close to U8 Moritzplatz / U1 Prinzenstraße
 -->
 
-Location: [Contentful](http://contentful.com)
+Regular location: [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
 There's a glass elevator in the front court yard, take it up to the fifth floor.
