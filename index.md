@@ -36,13 +36,13 @@ Org-mode takes your ASCII art tables, and turns them into magic. Automatic forma
 
 A brief overview of a compositional project, featuring Clojure, Python and Lilypond. We'll start out with plain Clojure data structures and eventually end up with an engraved score and a recording.
 
+#### "general-close" — by Andreas
+
 #### "New features in Emacs 25.1" — by [Andy](https://twitter.com/pxlpnk)
 
 #### "Treating Markdown as if it's org-mode" — by [Arne](https://twitter.com/plexus)
 
 org-mode is a very powerful package, and a great format, but support for it outside Emacs' ecosystem is limited, so many of us end up using Markdown. We'll see how to get some of that org-mode feel when editing Markdown.
-
-#### "general-close" — by Andreas
 
 
 ## About Emacs Berlin
