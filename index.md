@@ -13,6 +13,37 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
+## Meetup 28 September 2016, 19:00
+
+### Talks
+
+* "Using Git from Emacs with Magit" — by [Julia](https://twitter.com/anderspree)
+
+* "Org-mode tables and Spreadsheet Functionality" - by [Til](https://twitter.com/til)
+
+Org-mode takes your ASCII art tables, and turns them into magic. Automatic formatting, moving columns or rows, it's all a breeze. With formulas and computed cells they even become full spreadsheets.
+
+### Lightning talks
+
+* "Making music inside of Emacs" — by [Fredrik](https://twitter.com/quesebifurcan)
+
+A brief overview of a compositional project, featuring Clojure, Python and Lilypond. We'll start out with plain Clojure data structures and eventually end up with an engraved score and a recording.
+
+* "New features in Emacs 25.1" — by [Andy](https://twitter.com/pxlpnk)
+
+* "Treating Markdown as if it's org-mode" — by [Arne](https://twitter.com/plexus)
+
+org-mode is a very powerful package, and a great format, but support for it outside Emacs' ecosystem is limited, so many of us end up using Markdown. We'll see how to get some of that org-mode feel when editing Markdown.
+
+* "general-close" — by Andreas
+
+location: [Contentful](http://contentful.com)
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+
+Into the courtyard, the place is on your left.
+
+## About Emacs Berlin
+
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
 the month (`<%%(diary-float t 3 -1)>` in org-mode).
 
@@ -28,15 +59,13 @@ You can also chat with us on irc:
 Or on Twitter:
 [@emacsberlin](https://twitter.com/emacsberlin) <span class='text-cursor'>&nbsp;</span>
 
-
-
 </div>
 <div class="medium-4 columns">
 ### Upcoming
 
-* July: summer break, no meetup
-* Wednesday, August 31st 2016: social gettogether, location to be determined
-* Wednesday, September 28th 2016, 19:00, re-launch
+* Wednesday, September 28th 2016, 19:00
+* Wednesday, October 26th 2016, 19:00
+* Wednesday, November 30th 2016, 19:00
 
 [Summer announcement](https://mailb.org/pipermail/emacs-berlin/2016/000331.html)
 
