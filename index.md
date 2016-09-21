@@ -22,7 +22,9 @@ Go into the courtyard, the place is on your left.
 
 ### Talks
 
-#### "Using Git from Emacs with Magit" — by [Julia](https://twitter.com/anderspree)
+#### "Introduction to Magit in Spacemacs" — by [Julia](https://twitter.com/anderspree)
+
+How I became the only one at work that loves Rebasing.
 
 #### "Org-mode tables and Spreadsheet Functionality" - by [Til](https://twitter.com/til)
 
