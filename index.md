@@ -15,6 +15,11 @@ layout: default
 
 ## Meetup 28 September 2016, 19:00
 
+location: [Contentful](http://contentful.com)
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+
+Go into the courtyard, the place is on your left.
+
 ### Talks
 
 * "Using Git from Emacs with Magit" — by [Julia](https://twitter.com/anderspree)
@@ -37,10 +42,6 @@ org-mode is a very powerful package, and a great format, but support for it outs
 
 * "general-close" — by Andreas
 
-location: [Contentful](http://contentful.com)
-[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
-
-Into the courtyard, the place is on your left.
 
 ## About Emacs Berlin
 
