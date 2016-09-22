@@ -15,6 +15,8 @@ layout: default
 
 ## Meetup 28 September 2016, 19:00
 
+There will be some food and beverages.
+
 location: [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
