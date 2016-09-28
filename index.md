@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-## Meetup 28 September 2016, 19:00
+## Meetup 26 October 2016, 19:00
 
 location: [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
@@ -22,30 +22,7 @@ Go into the courtyard, the place is on your left.
 
 There will be some food and beverages.
 
-### Talks
-
-#### "Introduction to Magit in Spacemacs" — by [Julia](https://twitter.com/anderspree)
-
-How I became the only one at work that loves Rebasing.
-
-#### "Org-mode tables and Spreadsheet Functionality" - by [Til](https://twitter.com/til)
-
-Org-mode takes your ASCII art tables, and turns them into magic. Automatic formatting, moving columns or rows, it's all a breeze. With formulas and computed cells they even become full spreadsheets.
-
-### Lightning talks
-
-#### "Making music inside of Emacs" — by [Fredrik](https://twitter.com/quesebifurcan)
-
-A brief overview of a compositional project, featuring Clojure, Python and Lilypond. We'll start out with plain Clojure data structures and eventually end up with an engraved score and a recording.
-
-#### "general-close" — by Andreas
-
-#### "New features in Emacs 25.1" — by [Andy](https://twitter.com/pxlpnk)
-
-#### "Treating Markdown as if it's org-mode" — by [Arne](https://twitter.com/plexus)
-
-org-mode is a very powerful package, and a great format, but support for it outside Emacs' ecosystem is limited, so many of us end up using Markdown. We'll see how to get some of that org-mode feel when editing Markdown.
-
+Talks: TBD. Suggestions welcome!
 
 ## About Emacs Berlin
 
@@ -68,9 +45,9 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, September 28th 2016, 19:00
 * Wednesday, October 26th 2016, 19:00
 * Wednesday, November 30th 2016, 19:00
+* Date for December meetup is TBD
 
 [Summer announcement](https://mailb.org/pipermail/emacs-berlin/2016/000331.html)
 
