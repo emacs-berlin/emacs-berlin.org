@@ -22,7 +22,16 @@ Go into the courtyard, the place is on your left.
 
 There will be some food and beverages.
 
-Talks: TBD. Suggestions welcome!
+Talks:
+
+"Spacemacs" - by Leon
+
+If you don't know what [Spacemacs](http://spacemacs.org/) is, check it
+out. In particular, but not only, interesting for vim users and
+beginners!
+
+And lightning talks, contributions welcome.
+
 
 ## About Emacs Berlin
 
