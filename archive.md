@@ -16,6 +16,7 @@ layout: default
 
 ## Previous meetings
 
+* [Wednesday 26 October 2016](20161026-notes.html)
 * [Wednesday 28 September 2016](20160928-notes.html)
 * Summer break
 * Wednesday 29 June 2016

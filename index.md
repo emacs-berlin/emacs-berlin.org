@@ -13,17 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-## Meetup 26 October 2016, 19:00
+## Meetup 30 November 2016, 19:00
 
-Talks:
-
-"Spacemacs" - by Leon
-
-If you don't know what [Spacemacs](http://spacemacs.org/) is, check it
-out. In particular, but not only, interesting for vim users and
-beginners!
-
-And lightning talks, contributions welcome.
+Talks: TBD
 
 There will be some food and beverages.
 
@@ -55,7 +47,6 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 26th 2016, 19:00
 * Wednesday, November 30th 2016, 19:00
 * Date for December meetup is TBD
 
