@@ -15,13 +15,6 @@ layout: default
 
 ## Meetup 26 October 2016, 19:00
 
-location: [Contentful](http://contentful.com)
-[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
-
-Go into the courtyard, the place is on your left.
-
-There will be some food and beverages.
-
 Talks:
 
 "Spacemacs" - by Leon
@@ -32,6 +25,14 @@ beginners!
 
 And lightning talks, contributions welcome.
 
+There will be some food and beverages.
+
+Location: [Contentful](http://contentful.com)
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+
+Go through the first courtyard, into the second courtyard, then turn
+to your left. The entry is on ground level, with a few steps inside
+leading downwards.
 
 ## About Emacs Berlin
 
