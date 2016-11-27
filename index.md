@@ -15,7 +15,7 @@ layout: default
 
 ## Meetup 30 November 2016, 19:00
 
-Talks: TBD
+Talks: still TBD, please suggest something!
 
 There will be some food and beverages.
 
@@ -48,7 +48,7 @@ Or on Twitter:
 ### Upcoming
 
 * Wednesday, November 30th 2016, 19:00
-* Date for December meetup is TBD
+* In December it is going to be earlier then usual, on the 21st
 
 [Summer announcement](https://mailb.org/pipermail/emacs-berlin/2016/000331.html)
 
