@@ -13,9 +13,11 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-## Meetup 30 November 2016, 19:00
+## `M-x christmas`
 
-Talks: still TBD, please suggest something!
+The next meetup will be a week earlier than usual, on **December 21st**.
+
+Talks: TBD, please suggest something!
 
 There will be some food and beverages.
 
@@ -47,8 +49,7 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, November 30th 2016, 19:00
-* In December it is going to be earlier then usual, on the 21st
+* Wednesday, December 21st, 19:00
 
 [Summer announcement](https://mailb.org/pipermail/emacs-berlin/2016/000331.html)
 
