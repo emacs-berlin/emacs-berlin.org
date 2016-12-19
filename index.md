@@ -15,6 +15,8 @@ layout: default
 
 ## `M-x christmas`
 
+**WARNING: NEW LOCATION**
+
 The next meetup will be a week earlier than usual, on **December 21st**.
 
 Babbel is hosting us and kindly providing drinks and food. Thanks, Babbel!
