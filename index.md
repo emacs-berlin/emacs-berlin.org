@@ -13,25 +13,23 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-## `M-x christmas`
+## `C-u 2017 M-x new-year`
 
-**WARNING: NEW LOCATION**
+The first meetup in 2017 will be on **January 25th**, back at our
+traditional host Contentful.
 
-The next meetup will be a week earlier than usual, on **December 21st**.
+There will be short presentations, time for impromptu lightning
+talks/demos, and some food.
 
-Babbel is hosting us and kindly providing drinks and food. Thanks, Babbel!
+Location: [Contentful](http://contentful.com)
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
-There will be some short presentations, and time for impromptu lightning talks/demos.
+Go through the first courtyard, into the second courtyard, then turn
+to your left. The entry is on ground level, with a few steps inside
+leading downwards.
 
-<!-- Location: [Contentful](http://contentful.com) -->
-<!-- [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N) -->
-
-<!-- Go through the first courtyard, into the second courtyard, then turn -->
-<!-- to your left. The entry is on ground level, with a few steps inside -->
-<!-- leading downwards. -->
-
-Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br>
-Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2)
+<!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
+<!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
 
 ## About Emacs Berlin
@@ -55,10 +53,12 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, December 21st, 19:00 @ Babbel
+* Wednesday, January 25th, 19:00 @ Contentful
+* Wednesday, February 27th, 19:00
+* Wednesday, March 29th, 19:00
 
-Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br>
-Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2)
+<!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
+<!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
 <!--
 The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
@@ -67,8 +67,8 @@ Here [instructions on how to get to the Ganz Oben Office](https://gist.github.co
 Close to U8 Moritzplatz / U1 Prinzenstraße
 -->
 
-<!-- Regular location: [Contentful](http://contentful.com) -->
-<!-- [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N) -->
+Regular location: [Contentful](http://contentful.com)
+[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
 <!-- There's a glass elevator in the front court yard, take it up to the fifth floor. -->
 
