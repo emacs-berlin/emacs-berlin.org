@@ -13,15 +13,23 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-## `C-u 2017 M-x new-year`
+# `C-u 2017 M-x new-year RET`
 
 The first meetup in 2017 will be on **January 25th**, back at our
-traditional host Contentful.
+traditional host Contentful, with two talks:
 
-There will be short presentations, time for impromptu lightning
-talks/demos, and some food.
+**Introduction to [Magit](https://magit.vc/) in Spacemacs** — by [Julia](https://twitter.com/anderspree)
+<br>
+How I became the only one at work that loves Rebasing.
 
-Location: [Contentful](http://contentful.com)
+[Jack Rusher](http://jackrusher.com/) uses Emacs for basically
+everything for 30+ years and will **surprise us with something cool**!
+
+There will also be time for lightning talks/demos and some food.
+
+### Location
+
+[Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
 Go through the first courtyard, into the second courtyard, then turn
@@ -32,7 +40,7 @@ leading downwards.
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
 
-## About Emacs Berlin
+### About Emacs Berlin
 
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
 the month (`<%%(diary-float t 3 -1)>` in org-mode).
