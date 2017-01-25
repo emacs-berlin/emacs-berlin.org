@@ -13,17 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# `C-u 2017 M-x new-year RET`
+# February meetup
 
-The first meetup in 2017 will be on **January 25th**, back at our
-traditional host Contentful, with two talks:
-
-**Introduction to [Magit](https://magit.vc/) in Spacemacs** — by [Julia](https://twitter.com/anderspree)
-<br>
-How I became the only one at work that loves Rebasing.
-
-[Jack Rusher](http://jackrusher.com/) uses Emacs for basically
-everything for 30+ years and will **surprise us with something cool**!
+Next meetup will be on February 22nd. Talks to be determined, stay
+tuned. If you want to give a talk, let us know!
 
 There will also be time for lightning talks/demos and some food.
 
@@ -61,9 +54,9 @@ Or on Twitter:
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, January 25th, 19:00 @ Contentful
-* Wednesday, February 27th, 19:00
+* Wednesday, February 22nd, 19:00
 * Wednesday, March 29th, 19:00
+* Wednesday, April 26th, 19:00
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
