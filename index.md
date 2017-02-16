@@ -15,10 +15,21 @@ layout: default
 
 # February meetup
 
-Next meetup will be on February 22nd. Talks to be determined, stay
-tuned. If you want to give a talk, let us know!
+Next meetup will be on February 22nd.
 
-There will also be time for lightning talks/demos and some food.
+“Paredit in Spacemacs” — by Paulus. There's been increasing interest
+in Spacemacs, and if you're doing any kind of Lisp programming then
+Paredit is a must have. Paulus will show us how to combine the two.
+
+“Awesome talk” — by ... you?
+
+Once the scheduled talks are over it's open mic! Did you discover a new
+package, learned something about Elisp, or just used Emacs for developing a
+cool project, then we want to hear about it!
+
+We've had some great impromptu lightning talks, and we definitely want to
+see more of those. Emacs Berlin is a friendly and inclusive community. If
+you have anything to share then we want to hear your voice!
 
 ### Location
 
@@ -31,6 +42,9 @@ leading downwards.
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
+
+Doors open 19:00, Contentful provides the *drinks*, we'll get *pizza* as
+well, and put out a jar for contributions.
 
 
 ### About Emacs Berlin
