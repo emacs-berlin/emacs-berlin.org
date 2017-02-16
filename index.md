@@ -62,7 +62,9 @@ You can also chat with us on irc:
 [#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
 
 Or on Twitter:
-[@emacsberlin](https://twitter.com/emacsberlin) <span class='text-cursor'>&nbsp;</span>
+[@emacsberlin](https://twitter.com/emacsberlin)
+
+And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw) <span class='text-cursor'>&nbsp;</span>
 
 </div>
 <div class="medium-4 columns">
