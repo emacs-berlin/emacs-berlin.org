@@ -12,7 +12,7 @@
    height="949.02203"
    viewBox="0 0 2597.0969 4745.1102"
    id="svg3036"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="logo.svg">
   <metadata
      id="metadata3052">
@@ -37,16 +37,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1918"
-     inkscape:window-height="1078"
+     inkscape:window-width="1920"
+     inkscape:window-height="540"
      id="namedview3048"
      showgrid="false"
      showborder="true"
-     inkscape:zoom="0.57142857"
-     inkscape:cx="128.05761"
+     inkscape:zoom="2.7415227"
+     inkscape:cx="259.70969"
      inkscape:cy="540.82781"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="540"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3036"
      fit-margin-top="0"
@@ -59,7 +59,10 @@
      id="desc3040">der Berliner Baer ist das Wappentier der Stadt Berlin</desc>
   <g
      id="g3130"
-     transform="translate(0,614.11023)">
+     transform="translate(0,614.11023)"
+     inkscape:export-filename="/tmp/emacs-berlin.png"
+     inkscape:export-xdpi="200.00591"
+     inkscape:export-ydpi="200.00591">
     <path
        inkscape:connector-curvature="0"
        style="fill:#ff0000"

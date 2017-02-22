@@ -15,11 +15,13 @@ layout: default
 
 # February meetup
 
-Next meetup will be on February 22nd.
+Next meetup will be on Wednedsday February 22nd.
 
-“Paredit in Spacemacs” — by Paulus. There's been increasing interest
-in Spacemacs, and if you're doing any kind of Lisp programming then
-Paredit is a must have. Paulus will show us how to combine the two.
+“Structural Editing with Paredit” — by Paulus.
+
+“Emacs and Clojure — A Lispy Love Affair” — by Arne.
+
+“Using Emacs + CIDER When Doing High-performance GPU Computing.“ — by Dragan (lightning talk)
 
 “Awesome talk” — by ... you?
 
