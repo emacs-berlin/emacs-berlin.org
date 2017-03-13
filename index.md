@@ -13,15 +13,11 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# February meetup
+# March meetup
 
-Next meetup will be on Wednedsday February 22nd.
+Next meetup will be on Wednedsday March 29th.
 
-“Structural Editing with Paredit” — by Paulus.
-
-“Emacs and Clojure — A Lispy Love Affair” — by Arne.
-
-“Using Emacs + CIDER When Doing High-performance GPU Computing.“ — by Dragan (lightning talk)
+*We are still looking for talks*
 
 “Awesome talk” — by ... you?
 
@@ -72,7 +68,6 @@ And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4f
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 22nd, 19:00
 * Wednesday, March 29th, 19:00
 * Wednesday, April 26th, 19:00
 
