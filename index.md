@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# March meetup
+# March meetup - Request for talks
 
 Next meetup will be on Wednedsday March 29th.
 
