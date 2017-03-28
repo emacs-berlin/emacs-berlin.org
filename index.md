@@ -13,15 +13,19 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# March meetup - Talks - 3. year birthday
+#  29. March meetup - Talks - 3. anniversary
 
 Next meetup will be on Wednedsday March 29th.
 
-cmus - the perfect command line music player. - Matthias - @wikimatze - Günther
+> __cmus - the perfect command line music player.__
+>
+> Matthias - @wikimatze - Günther
 
-From *scratch* to MELPA in 14 years and 12 hours - Getting your ELisp on MELPA is simple and you can do it, too. - Stefan Kamphausen
+> __From *scratch* to MELPA in 14 years and 12 hours - Getting your ELisp on MELPA is simple and you can do it, too.__
+>
+> Stefan - @stka23 - Kamphausen
 
-On top of that we are celebrating our third birthday as a meetup! There will be some tasty cake and some tasty talks.
+On top of that we are celebrating our *third birthday* as a meetup! There will be some tasty *cake* 🎂 and some tasty talks.
 
 Once the scheduled talks are over it's open mic! Did you discover a new
 package, learned something about Elisp, or just used Emacs for developing a
