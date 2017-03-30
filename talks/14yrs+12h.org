@@ -1,0 +1,117 @@
+#+TITLE: From *scratch* to MELPA in 14 Years And 12 Hours 
+#+AUTHOR: Stefan Kamphausen
+#+DATE: 2017-03-29
+#+STARTUP: overview
+
+* 2002
+
+  - Postscript was still a thing and people actually used it.
+  - A quite modern viewer was =gv=
+  - After scrolling a pageful, it showed the former windows boundary
+    with a black line across the screen. Funny enough, it does seem to
+    do this these days anymore.
+  - I like it, wanted it in XEmacs and wrote highlight-context-line.el
+
+
+* 2002-2017
+
+  - Some minor tweaks in 2003
+  - After that, I just used my own little library.
+  - Switched to GNU Emacs in 2007. Happy that it was already
+    compatible.
+  - From time to time I had to change the face used for highlighting
+    because I changed the design of my Emacs (Xresources, later
+    themes).
+
+
+* 2017
+
+** Darktooth Theme
+
+   - On <2017-03-09 Do> I watched [[https://www.youtube.com/watch?v=OMIxZhLU71U][a video on magit]] and I was very fond
+     of the theme I saw in that video.
+   - So I installed it.
+   - And had to change my highlight face once again.
+   - Oh, and while I was at it, I wanted to take a quick look at the
+     code to make it highlight the full line not just the text. A
+     feature that was added to Emacs a few years ago.
+
+
+** The Code
+
+   - Looking at the source, I did not like what I saw.
+   - If the highlighting of the full line worked, the special
+     treatment of empty lines could just be removed.
+   - And what about all those "extents". These days, it's all
+     "overlays".
+   - I don't use XEmacs anyway. Switched to GNU Emacs ca. 10
+     years ago.
+   - Hm, =devadvice= is a smell, too.
+   - Ah, crap, let's just rewrite this thing.
+   - This is <2017-03-10 Fr 14:10>
+
+
+** <2017-03-10 Fr> Part I: The Rewrite
+
+*** <2017-03-10 Fr 14:10> Decision to re-write the whole thing.
+*** <2017-03-10 Fr 14:17> New local git repo
+    First commit with the old version. 
+*** Do some daylight work
+*** <2017-03-10 Fr 22:00> Pick up the work again in the evening.
+*** <2017-03-10 Fr 22:56> Re-write is basically done.
+    Hm, I might just as well put this on Github. Maybe others find it
+    useful.
+*** <2017-03-10 Fr 23:01> Created public repo on github
+    - There we are.
+    - It is kinda lame though, because you can't install it via the
+      Emacs package management.
+    - I postponed reading about it for years. Let's have a brief look
+      at how it works.
+
+
+** <2017-03-10 Fr> Part II: MELPA
+
+    - Just go to [[https://github.com/melpa/melpa][the GitHub MELPA page]] and study the README.
+    - Oh, adding a package to MELPA is actually just a pull request
+      with a recipe.
+    - And recipies for GitHub-hosted projects are pretty trivial: 
+    #+BEGIN_SRC 
+(highlight-context-line
+	:repo "ska2342/highlight-context-line"
+        :fetcher github)
+    #+END_SRC
+    - That was super easy! Now quick, the pull request!
+    - Oh hang on, they have [[https://github.com/melpa/melpa/blob/master/CONTRIBUTING.md][guidelines for contributing]]
+      - ELisp conventions
+      - Package conventions (Version header, first, last line, comment
+        headings with ;;;)
+    - Cool, there is a [[https://github.com/purcell/package-lint][linter]] for the package format. Quickly install
+      it and fix some minor issues with the code.
+    - Also run =checkdoc= and fix those issues.
+    - Fork MELPA repo, add my recipe, and run the tests
+      - =make recipes/highlight-context-line=
+      - =EMACS_COMMAND=`which emacs` make sandbox=
+    - It is now <2017-03-10 Fr 23:38>
+
+*** <2017-03-10 Fr 23:49> Pull request on MELPA
+
+*** Watch some videos or something. Can't remember.
+
+
+** Saturday, <2017-03-11 Sa 02:22> Pull request accepted.
+
+   Technically speaking, it is now Saturday. But for me, it is just
+   late.
+
+   Almost exactly 12 hours after I made the decision to rewrite this
+   old library of mine. I did not know anything about MELPA, packages,
+   the publishing process. Given that I had to give Real Life some
+   time on this, it actually only took some 4 hours from scratch to
+   being accepted for MELPA.
+
+   Really, it is totally easy.  
+
+   You have some code lying around waiting to be published?
+
+
+
