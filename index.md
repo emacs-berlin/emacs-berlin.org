@@ -13,19 +13,11 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  29. March meetup - Talks - 3. anniversary
+#  April 26th Meetup
 
-Next meetup will be on Wednedsday March 29th.
+Next meetup will be on Wednesday April 26th.
 
-> __cmus - the perfect command line music player.__
->
-> Matthias - @wikimatze - Günther
-
-> __From *scratch* to MELPA in 14 years and 12 hours - Getting your ELisp on MELPA is simple and you can do it, too.__
->
-> Stefan - @stka23 - Kamphausen
-
-On top of that we are celebrating our *third birthday* as a meetup! There will be some tasty *cake* 🎂 and some tasty talks.
+Talks not determined yet, let us know if you have something.
 
 Once the scheduled talks are over it's open mic! Did you discover a new
 package, learned something about Elisp, or just used Emacs for developing a
@@ -74,8 +66,8 @@ And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4f
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 29th, 19:00
 * Wednesday, April 26th, 19:00
+* Wednesday, May 31st, 19:00
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
