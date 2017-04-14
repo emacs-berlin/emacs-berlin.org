@@ -62,6 +62,8 @@ Or on Twitter:
 
 And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw) <span class='text-cursor'>&nbsp;</span>
 
+Non-public contact via email: [organizers email][contact]
+
 </div>
 <div class="medium-4 columns">
 ### Upcoming
@@ -148,4 +150,5 @@ document, and to behave accordingly.
 
 [ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
 [mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
+[contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
