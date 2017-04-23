@@ -17,11 +17,17 @@ layout: default
 
 Next meetup will be on Wednesday April 26th.
 
-Talks not determined yet, let us know if you have something.
+There will be two talks:
+
+* **connection-local variables** - devops / netops with tramp by Michael Albinus
+* **yasnippets** by Francesc Elies
 
 Once the scheduled talks are over it's open mic! Did you discover a new
 package, learned something about Elisp, or just used Emacs for developing a
 cool project, then we want to hear about it!
+
+One of them will be Arne demoing the
+[Emacs Mastodon client](https://github.com/jdenen/mastodon.el)
 
 We've had some great impromptu lightning talks, and we definitely want to
 see more of those. Emacs Berlin is a friendly and inclusive community. If
