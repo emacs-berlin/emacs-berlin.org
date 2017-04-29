@@ -13,25 +13,14 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  April 26th Meetup
+#  May 31st Meetup
 
-Next meetup will be on Wednesday April 26th.
+Next meetup will be on Wednesday May 31st.
 
-There will be two talks:
-
-* **connection-local variables** - devops / netops with tramp by Michael Albinus
-* **yasnippets** by Francesc Elies
-
-Once the scheduled talks are over it's open mic! Did you discover a new
-package, learned something about Elisp, or just used Emacs for developing a
-cool project, then we want to hear about it!
-
-One of them will be Arne demoing the
-[Emacs Mastodon client](https://github.com/jdenen/mastodon.el)
-
-We've had some great impromptu lightning talks, and we definitely want to
-see more of those. Emacs Berlin is a friendly and inclusive community. If
-you have anything to share then we want to hear your voice!
+No talks yet, feel free to suggest one. Also we've had some great
+impromptu lightning talks, and we definitely want to see more of
+those. Emacs Berlin is a friendly and inclusive community. If you have
+anything to share then we want to hear your voice!
 
 ### Location
 
@@ -74,8 +63,8 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, April 26th, 19:00
 * Wednesday, May 31st, 19:00
+* Wednesday, June 28th, 19:00
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->

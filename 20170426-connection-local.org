@@ -1,0 +1,339 @@
+# -*- mode: Org; fill-column: 60; -*-
+#+TITLE:    Emacs Berlin Meetup: Connection-Local Variables
+#+AUTHOR:   Michael Albinus
+#+EMAIL:    michael.albinus@gmx.de
+#+DATE:     <2017-04-26>
+#+STARTUP:  overview hideblocks hidestars
+#+PROPERTY: header-args :results verbatim :noweb yes
+
+* Motivation
+
+** This presentation is based on the ideas of [[Literate DevOps]]
+   and [[NetOps]].  That is the examples are given as source code
+   blocks, and they will be evaluated during presentation.
+
+
+** Local variables are either let-bound or buffer-local
+
+*** Global variables
+
+    #+NAME: Declare_global_variable
+    #+BEGIN_SRC elisp
+    (defvar foo 'foo "A global variable.")
+    (describe-variable 'foo)
+    #+END_SRC
+
+    #+NAME: Change_global_variable
+    #+BEGIN_SRC elisp
+    (setq foo 'foofoo)
+    (describe-variable 'foo)
+    #+END_SRC
+
+
+*** Let-bound variables
+
+    #+NAME: Let-bound_variable
+    #+BEGIN_SRC elisp
+    (let ((foo 'bla))
+      (describe-variable 'foo))
+    #+END_SRC
+
+    #+NAME: Still_global_value
+    #+BEGIN_SRC elisp
+    (describe-variable 'foo)
+    #+END_SRC
+
+
+*** Buffer-local variables
+
+    #+NAME: Buffer-local_variable
+    #+BEGIN_SRC elisp
+    (with-temp-buffer
+      (setq-local foo 'baz)
+      (describe-variable 'foo))
+    #+END_SRC
+
+    #+NAME: Still_global_value
+    #+BEGIN_SRC elisp
+    (describe-variable 'foo)
+    #+END_SRC
+
+
+** File-local variables are buffer-local.  They are set when
+   a given file is visited in a buffer.
+
+   Specification happens either in the [[file:connection-local.org::1][first line]] of the
+   file or in a [[The End][special block]] at the end of the file.
+
+
+** Directory-local variables are buffer-local.  They apply
+   for every file visited in a given directory and its
+   subdirectories.
+
+   Specification happens in a special file [[file:~/src/emacs/.dir-locals.el][.dir-locals.el]].
+   When visiting a file in Emacs, directories are traversed
+   upwards for that special file.
+
+
+** But what about global connection specific variables?
+   They cannot be emulated by directory-local variables.
+
+*** Directory-local variables are applied for buffers visiting
+    a file.  That's not what we want.
+
+
+*** Directory-local variables are not applied for remote
+    connections by default (performance, security).
+
+    If we are working on a local directory, variable
+    =indent-tabs-mode= is set in [[file:~/src/emacs/.dir-locals.el][~/src/emacs/.dir-locals.el]].
+
+    #+NAME: Directory-local_indent-tabs-mode
+    #+BEGIN_SRC elisp :dir ~/
+    (let* ((file "src/emacs/lisp/files.el")
+           (buffer (get-file-buffer file)))
+      (and buffer (kill-buffer buffer))
+
+      (find-file file)
+      (describe-variable 'indent-tabs-mode))
+    #+END_SRC
+
+    Per default, =enable-remote-dir-locals= is nil.
+
+    #+NAME: No_directory-local_indent-tabs-mode_for_remote_directory
+    #+BEGIN_SRC elisp :dir /ssh::~/
+    <<Directory-local_indent-tabs-mode>>
+    #+END_SRC
+
+    Only when =enable-remote-dir-locals= is non-nil, remote
+    directory-local variables are taken into account.
+
+    #+NAME: Directory-local_indent-tabs-mode_for_remote_directory
+    #+BEGIN_SRC elisp :dir /ssh::~/ :var enable-remote-dir-locals=1
+    <<Directory-local_indent-tabs-mode>>
+    #+END_SRC
+
+
+*** A directory-local file "/.dir-locals.el" cannot be
+    installed on most of the remote machines due to missing
+    permissions.
+
+    And often, it is overruled by a subdirectory specific
+    ".dir-locals.el".
+
+
+*** Directory-local variables are applied when a remote
+    connection has been established already, and a file is
+    visited in a buffer. Sometimes, that's too late.
+
+    Example: calling =shell= interactively.
+
+    A local shell uses =shell-file-name= for determining the
+    shell program to be used.
+
+    #+NAME: Open_interactive_shell
+    #+BEGIN_SRC elisp :dir ~/
+    ;; Cleanup
+    (let (kill-buffer-query-functions)
+      (and (get-buffer "*shell*") (kill-buffer "*shell*")))
+
+    (call-interactively 'shell)
+    #+END_SRC
+
+    A remote shell (that is, =default-directory= is a remote
+    file name) cannot use the local =shell-file-name=.
+    Instead, it uses =explicit-shell-file-name=, or (in the
+    interactive case, when it isn't set) the path of the
+    remote shell is asked for.
+
+    #+NAME: Remote_shell_uses_explicit-shell-file-name
+    #+BEGIN_SRC elisp :dir /ssh::~/
+    <<Open_interactive_shell>>
+    #+END_SRC
+
+
+* Solution
+
+** Connection-local variables provide a general mechanism
+   for different variable settings in buffers with a remote
+   connection.  These buffer-local variables are bound and
+   set depending on the remote connection a buffer is
+   dedicated to.
+
+   In contrast to file-local and directory-local variables,
+   connection-local variables are *not* only set for buffers
+   visiting a file.  Instead, they are set also in buffers
+   bound to a remote process.
+
+   A remote connection is identified as a plist of :protocol,
+   :user and :machine.  All properties are optional, their
+   values are strings.  Example:
+
+   =(:protocol "ssh" :user "albinus" :machine "localhost")=
+
+*** First step: Declare a set of variables and their settings
+    (a connection profile)
+
+    #+NAME: Declare_connection_profiles
+    #+BEGIN_SRC elisp
+    (connection-local-set-profile-variables
+      ;; The connection profile name, just a symbol.
+      'remote-bash
+      ;; An alist of (VARIABLE . VALUE) entries.
+      '((explicit-shell-file-name . "/bin/bash")
+       (explicit-bash-args . ("-i"))))
+
+    (connection-local-set-profile-variables
+      'remote-ksh
+      '((explicit-shell-file-name . "/bin/ksh")
+        (explicit-ksh-args . ("-i"))))
+    #+END_SRC
+
+
+*** Second step: Assign connection profiles to remote
+    connections identified by a given criteria
+
+    #+NAME: Assign_connection_profiles
+    #+BEGIN_SRC elisp
+    (connection-local-set-profiles
+      `(:protocol "sudo" :user "root" :machine ,(system-name))
+      'remote-ksh)
+
+    (connection-local-set-profiles
+      '(:application tramp :protocol "ssh" :machine "localhost")
+      'remote-bash)
+    #+END_SRC
+
+    A criteria, the first parameter of
+    =connection-local-set-profiles=, is a plist
+    of :application and the properties describing the
+    connection, :protocol, :user and :machine, all
+    optional.  :application shall be used in case different
+    applications (for example, Tramp, GnuTLS) use the same
+    connection-local variable with a different meaning.
+
+
+*** Open the interactive shell
+
+    #+NAME: Remote_shell_with_bash
+    #+BEGIN_SRC elisp :dir /ssh:localhost:~/
+    <<Open_interactive_shell>>
+    #+END_SRC
+
+    #+NAME: Remote_shell_with_ksh
+    #+BEGIN_SRC elisp :dir /sudo::~/
+    <<Open_interactive_shell>>
+    #+END_SRC
+
+
+*** How does it work: [[file:~/src/emacs/lisp/shell.el::/Apply connection-local variables/][shell]]
+
+    See also [[info:elisp#Connection Local Variables]].
+
+
+** Another example.
+
+   Sometimes, it is useful to handle small shell commands as
+   source code blocks.  Especially, when it goes remote.
+
+   #+NAME: Remote_shell_command
+   #+BEGIN_SRC sh :dir /sudo::~/
+   df -h /
+   #+END_SRC
+
+   But this is too slow.  Better, to keep a session open for
+   all the remote commands.
+
+   #+NAME: Remote_shell_command_in_session
+   #+BEGIN_SRC sh :dir /sudo::~/ :session *session*
+   df -h /
+   #+END_SRC
+
+   However, the result is shortened.  See [[elisp:(switch-to-buffer "*session*")][Buffer *session*]].
+   The "%"-character is regarded as prompt delimeter.  So we
+   must change the prompt.
+
+   #+NAME: Change_remote_prompt
+   #+BEGIN_SRC elisp
+   ;; Cleanup
+   (let (kill-buffer-query-functions)
+     (and (get-buffer "*session*") (kill-buffer "*session*")))
+
+   (connection-local-set-profile-variables
+     'comint-prompt-regexp-without-percent
+     '((comint-prompt-regexp . "^[^#%$>\n]*[#$>] *")
+       (comint-use-prompt-regexp . t)))
+
+   (connection-local-set-profiles
+     `(:protocol "sudo" :user "root" :machine ,(system-name))
+     'comint-prompt-regexp-without-percent)
+
+   (add-hook
+     'shell-mode-hook
+     'tramp-set-connection-local-variables-for-buffer)
+   #+END_SRC
+
+   Applying a major mode kills all buffer-local variables.
+   Therefore, we apply the connection-local variables in
+   =shell-mode-hook=, run at the end of enabling major mode.
+
+   [[file:~/src/emacs/lisp/net/tramp.el::/defun tramp-set-connection-local-variables-for-buffer/][tramp-set-connection-local-variables-for-buffer]] is a
+   Tramp function which sets connection-local variables
+   according to =default-directory=.
+
+   #+NAME: Remote_shell_command_in_session_without_percent
+   #+BEGIN_SRC sh :dir /sudo::~/ :session *session*
+   df -h /
+   #+END_SRC
+
+
+** Work in progress.  Bugs guaranteed :-)
+
+*** Add connection-local variables setup to =run-mode-hooks=.
+    This would avoid to add it to the mode specific actions
+    in =*-mode-hook= yourself.  File-local and
+    directory-local variables are already set there.
+
+
+*** Make :protocol, :user and :machine regexps.
+    It would be convenient to support something like
+    =(:machine ".+\\.dom\\.ain\\'")=
+
+
+*** Handle default values in Tramp.
+    =/sudo::= corresponds to
+    =`(:protocol "sudo" :user "root" :machine ,(system-name))=
+    It is stupid to write all these values every time.
+
+
+*** So far, it has been applied to Tramp only.
+    Further candidates are
+
+    - Gnus (server settings)
+    - GnuTLS (gnutls-boot-parameters)
+    - NSM (security policies)
+    - eww/shr (proxy settings)
+    - auth-source (server specific backends)
+    - ...
+
+
+*** Extend it to a custom API.
+    A template could be used, collecting all relevant
+    variables for a connection profile, and which could be
+    extended to different profiles.  Hooked into the
+    customization group of what :application is specified.
+
+
+* The End
+
+** Literate DevOps
+   [[http://www.howardism.org/Technical/Emacs/literate-devops.html]]
+
+** NetOps
+   [[https://vincent.bernat.im/en/blog/2017-netops-org-mode]]
+
+
+** Local Variables:
+** org-confirm-babel-evaluate: nil
+** org-return-follows-link: t
+** End:

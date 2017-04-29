@@ -15,6 +15,7 @@ layout: default
 # Archive
 
 ## Previous meetings
+* [Wednesday 26 April 2017](20170426-notes.html)
 * [Wednesday 29 March 2017](20170329-notes.html)
 * [Wednesday 22 February 2017](#)
 * [Wednesday 26 January 2017](20170126-notes.html)
