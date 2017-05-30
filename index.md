@@ -17,10 +17,12 @@ layout: default
 
 Next meetup will be on Wednesday May 31st.
 
-No talks yet, feel free to suggest one. Also we've had some great
-impromptu lightning talks, and we definitely want to see more of
-those. Emacs Berlin is a friendly and inclusive community. If you have
-anything to share then we want to hear your voice!
+Jack Rusher will do a talk, "A Forgotten Dream"
+
+Apart from that we'll do our usual lightning talk open mic. We've had some great
+impromptu lightning talks, and we definitely want to see more of those. Emacs
+Berlin is a friendly and inclusive community. If you have anything to share then
+we want to hear your voice!
 
 ### Location
 
