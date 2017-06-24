@@ -13,16 +13,17 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  May 31st Meetup
+#  June 28th Meetup
 
-Next meetup will be on Wednesday May 31st.
+Next meetup will be on Wednesday June 28th.
 
-Jack Rusher will do a talk, "A Forgotten Dream"
+Final lightning talk edition before the summer break. We'll also have
+the very first Emacs Quiz! Come and play
 
-Apart from that we'll do our usual lightning talk open mic. We've had some great
-impromptu lightning talks, and we definitely want to see more of those. Emacs
-Berlin is a friendly and inclusive community. If you have anything to share then
-we want to hear your voice!
+As always there will be snacks and drinks, and you can hang around
+afterwards in the FooBar to toast to another successful season of
+Emacs Berlin.
+
 
 ### Location
 
@@ -36,8 +37,7 @@ leading downwards.
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
-Doors open 19:00, Contentful provides the *drinks*, we'll get *pizza* as
-well, and put out a jar for contributions.
+Doors open 19:00, Contentful provides *drinks* and *pizza*.
 
 
 ### About Emacs Berlin
@@ -65,8 +65,7 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 31st, 19:00
-* Wednesday, June 28th, 19:00
+* July and August: Summer break
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
