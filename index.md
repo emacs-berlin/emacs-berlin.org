@@ -13,17 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  June 28th Meetup
+#  September  27th Meetup
 
-Next meetup will be on Wednesday June 28th.
-
-Final lightning talk edition before the summer break. We'll also have
-the very first Emacs Quiz! Come and play
-
-As always there will be snacks and drinks, and you can hang around
-afterwards in the FooBar to toast to another successful season of
-Emacs Berlin.
-
+Next meetup will be on Wednesday September 27th.
 
 ### Location
 
