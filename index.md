@@ -29,7 +29,8 @@ leading downwards.
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
-Doors open 19:00, Contentful provides *drinks* and *pizza*.
+Doors open 19:00, Contentful provides *drinks* (and maybe *pizza*,
+we'll see).
 
 
 ### About Emacs Berlin
@@ -57,7 +58,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* July and August: Summer break
+* Wednesday, September 27th
+
+* Wednesday, October 25th
+
+* Wednesday, November 29th
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
