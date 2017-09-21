@@ -17,6 +17,20 @@ layout: default
 
 Next meetup will be on Wednesday September 27th.
 
+Confirmed talks so far
+
+#### Daniel will talk about one of his pet projects
+
+#### Max: "Writing GPL code for profit (and fun)"
+
+Sharing experience of being paid for writing GPL code - where $$ comes
+from, where they don't come from (but should), where they could come
+from and how the (splurge?) future looks like.
+
+#### you?
+
+Ad-hoc lightning talks always welcome!
+
 ### Location
 
 [Contentful](http://contentful.com)
@@ -29,8 +43,8 @@ leading downwards.
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
-Doors open 19:00, Contentful provides *drinks* (and maybe *pizza*,
-we'll see).
+Doors open 19:00, Contentful provides *drinks* (and, most likely,
+*pizza*).
 
 
 ### About Emacs Berlin
