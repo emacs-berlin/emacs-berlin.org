@@ -19,7 +19,12 @@ Next meetup will be on Wednesday September 27th.
 
 Confirmed talks so far
 
-#### Daniel will talk about one of his pet projects
+#### Daniel: Easy OTP management in Emacs
+
+Recently more and more sites are offering 2FA (Two-factor
+authentication) to their users, by providing means of one time
+password tokens. This talk is about explaining what OTPs are, and how
+to handle them from the comfort of your Emacs setup.
 
 #### Max: "Writing GPL code for profit (and fun)"
 
