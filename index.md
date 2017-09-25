@@ -48,8 +48,7 @@ leading downwards.
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
-Doors open 19:00, Contentful provides *drinks* (and, most likely,
-*pizza*).
+Doors open 19:00, Contentful provides *drinks* and *pizza*.
 
 
 ### About Emacs Berlin
