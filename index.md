@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  November 29th Meetup
+#  January 31th Meetup
 
-Next meetup will be on Wednesday November 29th.
+Next meetup will be on Wednesday January 31th 2018.
 
 No confirmed talks so far, therefore let us know if you have something
 you want to talk about, anything more or less Emacs related is
