@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  January 31th Meetup
+#  January 31st Meetup
 
-Next meetup will be on Wednesday January 31th 2018.
+The next meetup will be on Wednesday January 31st 2018.
 
 No confirmed talks so far, therefore let us know if you have something
 you want to talk about, anything more or less Emacs related is
@@ -62,7 +62,9 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, January 31th
+* Wednesday, January 31st 2018
+
+* Wednesday, February 28th 2018
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
