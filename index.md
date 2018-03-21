@@ -56,6 +56,9 @@ Or on Twitter:
 
 And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw) <span class='text-cursor'>&nbsp;</span>
 
+And on
+[meetup.com/Emacs-Berlin-Meetup](https://www.meetup.com/Emacs-Berlin-Meetup/)
+
 Non-public contact via email: [organizers email][contact]
 
 </div>
