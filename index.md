@@ -44,7 +44,7 @@ the month (`<%%(diary-float t 3 -1)>` in org-mode).
 
 The best way to stay posted is through our mailing list.
 [Sign up][ml] and meet your fellow Emacsers, or have a look at the
-[mailing list archives][mla].
+[mailing list archives][mla] ([gmane][mlag]).
 
 Feel free to send an email introducing yourself after subscribing!
 
@@ -150,5 +150,6 @@ document, and to behave accordingly.
 
 [ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
 [mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
+[mlag]: news://news.gmane.org/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
