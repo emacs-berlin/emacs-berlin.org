@@ -13,13 +13,12 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  March 28th Meetup
+#  April 25th Meetup
 
-The next meetup will be on Wednesday March 28th, 2018.
+The next meetup will be on Wednesday April 25th, 2018.
 
-There will be one talk at least by Til, something related to org-mode,
-to be specified further. Let us know if you have something you want to
-talk about, anything more or less Emacs related is welcome!
+Let us know if you have something you want to talk about, anything
+more or less Emacs related is welcome!
 
 
 ### Location
@@ -34,7 +33,7 @@ leading downwards.
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
 
-Doors open 19:00, Contentful provides *drinks* and probably *pizza*.
+Doors open 19:00, Contentful provides *drinks* and *pizza*.
 
 
 ### About Emacs Berlin
@@ -65,11 +64,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 28th 2018
-
 * Wednesday, April 25th 2018
 
 * Wednesday, May 30th 2018
+
+* Wednesday, June 27th 2018
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
