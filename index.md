@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  April 25th Meetup
+#  May 30th Meetup
 
-The next meetup will be on Wednesday April 25th, 2018.
+The next meetup will be on Wednesday May 30th, 2018.
 
 Let us know if you have something you want to talk about, anything
 more or less Emacs related is welcome!
@@ -64,11 +64,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, April 25th 2018
-
 * Wednesday, May 30th 2018
 
 * Wednesday, June 27th 2018
+
+* Wednesday, July 25th 2018 (or summer break, tbd)
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
