@@ -13,12 +13,14 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  June 27th Meetup
+#  July 25th Meetup
 
-The next meetup will be on Wednesday June 27th, 2018.
+Yes, there will be a meetup in July! Come visit us at the usual
+location, on Wednesday July 25th, 2018.
 
-Let us know if you have something you want to talk about, anything
-more or less Emacs related is welcome!
+As always: let us know if you have something you want to talk about,
+anything more or less Emacs related is welcome! Bring your laptop for
+spontanous show-and-tell.
 
 
 ### Location
@@ -64,11 +66,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, June 27th 2018
-
 * Wednesday, July 25th 2018
 
-* Wednesday, July 29th 2018 (probably, or less likely, summer break)
+* Wednesday, August 29th 2018
+
+* Wednesday, September 26th 2018
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
