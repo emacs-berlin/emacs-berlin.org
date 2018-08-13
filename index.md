@@ -13,10 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  July 25th Meetup
+#  August 29th Meetup
 
-Yes, there will be a meetup in July! Come visit us at the usual
-location, on Wednesday July 25th, 2018.
+There will be a meetup in August. Come visit us at the usual
+location, on Wednesday August 29th, 2018.
 
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
@@ -65,8 +65,6 @@ Non-public contact via email: [organizers email][contact]
 </div>
 <div class="medium-4 columns">
 ### Upcoming
-
-* Wednesday, July 25th 2018
 
 * Wednesday, August 29th 2018
 
