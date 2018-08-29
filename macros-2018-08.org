@@ -1,0 +1,167 @@
+# Created 2018-08-29 Wed 18:29
+#+TITLE: about keyboard macros
+#+AUTHOR: Marco
+* basics
+
+macros can help ease repetetive keyboard action.
+
+** generic
+
+*** record
+
+- start recording.
+- press some keys.
+- finalize recording.
+
+==> have a macro.
+
+*** replay
+
+the macro can be replayed!
+
+no shit Sherlock!
+
+** concrete
+
+*** record
+
+- function key <f3>
+- action: type something: e.g. "emacs ".
+- <f4>
+
+stop recording any time with C-g.
+
+*** replay
+
+- <f4>
+
+* beyond the basics
+
+** record (and some replay)
+
+- start alternatives:
+  - <f3>
+  - key sequence :: C-x (
+  - command :: M-x kmacro-start-macro
+- finalize recording:
+  - C-x )
+  - M-x kmacro-end-macro
+
+  - <f4>
+  - M-x kmacro-end-or-call-macro
+
+  - C-x e
+  - M-x kmacro-end-and-call-macro
+  - C-x e e e
+
+** replay a number of times
+
+- have a macro.
+- prefix argument indicates number of repeats of the macro.
+  #+begin_example
+      e.g. C-u 42 C-x e
+  #+end_example
+- special prefix argument 0.
+  ==> repeat until error.
+  - use case: do something for all occurances.
+
+** replay for every line in region
+
+C-x C-k r       apply-macro-to-region-lines
+
+* view last macro
+
+C-x C-k C-v     kmacro-view-macro-repeat
+
+* edit a kmacro
+
+- C-x C-k E :: M-x edit-last-kbd-macro .
+- do some edits.
+- C-c C-c :: apply the edits.
+- enjoy the changes.
+
+* step through a macro
+
+C-x C-k SPC     kmacro-step-edit-macro
+
+* counter
+
+- there is a counter for use with keyboard macros.
+- C-x C-k C-c :: M-x kmacro-set-counter.
+- <f3> or C-x C-k C-i :: M-x kmacro-insert-counter.
+  - automatically +1 to the counter .
+  - detail :: prefix-arg defines the amount to sum.
+- C-x C-k C-f :: M-x kmacro-set-format.
+     format strings look like "%03d".
+
+* break the flow
+
+- C-x q :: give control to the user.
+- C-u C-x q :: enter recursive edit.
+
+* bind a macro to key
+
+- C-x C-k b  kmacro-bind-to-key
+
+** bind to a register
+
+- C-x C-k x register :: kmacro-to-register
+- C-x r j register ::
+
+* more ways to edit
+
+- C-x C-k l  kmacro-edit-lossage
+- C-x C-k e  edit-kbd-macro
+
+* save a macro
+
+- name a macro.
+  - C-x C-k n       kmacro-name-last-macro
+
+- let a macro survive the switch off.  (aka persistence)
+  - name the macro.
+  - switch to a writable buffer.
+  - M-x insert-kbd-macro
+    - choose the named macro.
+  - ==> find code which defines the macro.  insert that in your config
+    file.
+
+* macro ring
+
+- there is a ring (aka list) which keeps the accessible macros.  (without the
+  named macros, I think.)
+- the head of that ring is the "last macro".
+- operations on the ring.
+
+C-x C-k C-n     kmacro-cycle-ring-next
+C-x C-k C-p     kmacro-cycle-ring-previous
+C-x C-k C-d     kmacro-delete-ring-head
+C-x C-k C-t     kmacro-swap-ring
+C-x C-k C-l     kmacro-call-ring-2nd-repeat
+
+* more
+
+** repeat movement
+
+- M-x repeat
+
+** performance
+
+:(
+
+** documentation
+
+- [[info:emacs#Keyboard%20Macros][info:emacs#Keyboard Macros]]
+  (info "(emacs) Keyboard Macros")
+- source code.
+
+** lisp macros
+
+- keyboard macros vs. lisp macros.
+  - it's not the same.
+
+** as always...
+
+- get creative!
+- do as you like!
+- thanks!

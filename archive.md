@@ -18,6 +18,7 @@ Not every meeting gets an archive page, only when someone creates it
 ([PRs welcome](https://github.com/emacs-berlin/emacs-berlin.org/)).
 
 ## Previous meetings
+* Wednesday 29 August 2018: [macros](macros-2018-08.html) by Marco ([org-file](macros-2018-08.org))
 * [Wednesday 31 January 2018](20180131-notes.html)
 * [Wednesday 31 May 2017](20170531-notes.html)
 * [Wednesday 26 April 2017](20170426-notes.html)

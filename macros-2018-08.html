@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-08-29 Wed 23:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>about keyboard macros</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Marco" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style>here</style>
+</head>
+<body>
+<div id="content">
+<h1 class="title">about keyboard macros</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org38cbdba">1. basics</a>
+<ul>
+<li><a href="#orge16b563">1.1. generic</a>
+<ul>
+<li><a href="#orgf16430c">1.1.1. record</a></li>
+<li><a href="#org3e386e3">1.1.2. replay</a></li>
+</ul>
+</li>
+<li><a href="#org8296205">1.2. concrete</a>
+<ul>
+<li><a href="#org0d457cd">1.2.1. record</a></li>
+<li><a href="#org4247da4">1.2.2. replay</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga1c58f9">2. beyond the basics</a>
+<ul>
+<li><a href="#orgd879c8a">2.1. record (and some replay)</a></li>
+<li><a href="#org3bfc3f4">2.2. replay a number of times</a></li>
+<li><a href="#org80f7570">2.3. replay for every line in region</a></li>
+</ul>
+</li>
+<li><a href="#org0110c70">3. view last macro</a></li>
+<li><a href="#org2bcdf2b">4. edit a kmacro</a></li>
+<li><a href="#orgf934cbd">5. step through a macro</a></li>
+<li><a href="#org7e96849">6. counter</a></li>
+<li><a href="#org3470db8">7. break the flow</a></li>
+<li><a href="#orgf4291dc">8. bind a macro to key</a>
+<ul>
+<li><a href="#orgbfbbf1c">8.1. bind to a register</a></li>
+</ul>
+</li>
+<li><a href="#orga3d1566">9. more ways to edit</a></li>
+<li><a href="#org671f56e">10. save a macro</a></li>
+<li><a href="#org787d49b">11. macro ring</a></li>
+<li><a href="#orgf02122b">12. more</a>
+<ul>
+<li><a href="#orgf35adff">12.1. repeat movement</a></li>
+<li><a href="#org7d55153">12.2. performance</a></li>
+<li><a href="#org1d92c12">12.3. documentation</a></li>
+<li><a href="#org2083265">12.4. lisp macros</a></li>
+<li><a href="#org620388a">12.5. as always&#x2026;</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org38cbdba" class="outline-2">
+<h2 id="org38cbdba"><span class="section-number-2">1</span> basics</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+macros can help ease repetetive keyboard action.
+</p>
+</div>
+
+<div id="outline-container-orge16b563" class="outline-3">
+<h3 id="orge16b563"><span class="section-number-3">1.1</span> generic</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgf16430c" class="outline-4">
+<h4 id="orgf16430c"><span class="section-number-4">1.1.1</span> record</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>start recording.</li>
+<li>press some keys.</li>
+<li>finalize recording.</li>
+</ul>
+
+<p>
+==&gt; have a macro.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e386e3" class="outline-4">
+<h4 id="org3e386e3"><span class="section-number-4">1.1.2</span> replay</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+the macro can be replayed!
+</p>
+
+<p>
+no shit Sherlock!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8296205" class="outline-3">
+<h3 id="org8296205"><span class="section-number-3">1.2</span> concrete</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org0d457cd" class="outline-4">
+<h4 id="org0d457cd"><span class="section-number-4">1.2.1</span> record</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>function key &lt;f3&gt;</li>
+<li>action: type something: e.g. "emacs ".</li>
+<li>&lt;f4&gt;</li>
+</ul>
+
+<p>
+stop recording any time with C-g.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4247da4" class="outline-4">
+<h4 id="org4247da4"><span class="section-number-4">1.2.2</span> replay</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>&lt;f4&gt;</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga1c58f9" class="outline-2">
+<h2 id="orga1c58f9"><span class="section-number-2">2</span> beyond the basics</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgd879c8a" class="outline-3">
+<h3 id="orgd879c8a"><span class="section-number-3">2.1</span> record (and some replay)</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>start alternatives:
+<ul class="org-ul">
+<li>&lt;f3&gt;</li>
+<li id="key sequence">C-x (</li>
+<li id="command">M-x kmacro-start-macro</li>
+</ul></li>
+<li>finalize recording:
+<ul class="org-ul">
+<li>C-x )</li>
+<li>M-x kmacro-end-macro</li>
+
+<li>&lt;f4&gt;</li>
+<li>M-x kmacro-end-or-call-macro</li>
+
+<li>C-x e</li>
+<li>M-x kmacro-end-and-call-macro</li>
+<li>C-x e e e</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3bfc3f4" class="outline-3">
+<h3 id="org3bfc3f4"><span class="section-number-3">2.2</span> replay a number of times</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>have a macro.</li>
+<li><p>
+prefix argument indicates number of repeats of the macro.
+</p>
+<pre class="example">
+e.g. C-u 42 C-x e
+</pre></li>
+<li>special prefix argument 0.
+==&gt; repeat until error.
+<ul class="org-ul">
+<li>use case: do something for all occurances.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org80f7570" class="outline-3">
+<h3 id="org80f7570"><span class="section-number-3">2.3</span> replay for every line in region</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+C-x C-k r       apply-macro-to-region-lines
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0110c70" class="outline-2">
+<h2 id="org0110c70"><span class="section-number-2">3</span> view last macro</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+C-x C-k C-v     kmacro-view-macro-repeat
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2bcdf2b" class="outline-2">
+<h2 id="org2bcdf2b"><span class="section-number-2">4</span> edit a kmacro</h2>
+<div class="outline-text-2" id="text-4">
+<dl class="org-dl">
+<dt>C-x C-k E</dt><dd>M-x edit-last-kbd-macro .</dd>
+<dt>(no term)</dt><dd>do some edits.</dd>
+<dt>C-c C-c</dt><dd>apply the edits.</dd>
+<dt>(no term)</dt><dd>enjoy the changes.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orgf934cbd" class="outline-2">
+<h2 id="orgf934cbd"><span class="section-number-2">5</span> step through a macro</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+C-x C-k SPC     kmacro-step-edit-macro
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e96849" class="outline-2">
+<h2 id="org7e96849"><span class="section-number-2">6</span> counter</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>there is a counter for use with keyboard macros.</li>
+<li id="C-x C-k C-c">M-x kmacro-set-counter.</li>
+<li id="&lt;f3&gt; or C-x C-k C-i">M-x kmacro-insert-counter.
+<ul class="org-ul">
+<li>automatically +1 to the counter .</li>
+<li id="detail">prefix-arg defines the amount to sum.</li>
+</ul></li>
+<li id="C-x C-k C-f">M-x kmacro-set-format.
+format strings look like "%03d".</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3470db8" class="outline-2">
+<h2 id="org3470db8"><span class="section-number-2">7</span> break the flow</h2>
+<div class="outline-text-2" id="text-7">
+<dl class="org-dl">
+<dt>C-x q</dt><dd>give control to the user.</dd>
+<dt>C-u C-x q</dt><dd>enter recursive edit.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orgf4291dc" class="outline-2">
+<h2 id="orgf4291dc"><span class="section-number-2">8</span> bind a macro to key</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>C-x C-k b  kmacro-bind-to-key</li>
+</ul>
+</div>
+
+<div id="outline-container-orgbfbbf1c" class="outline-3">
+<h3 id="orgbfbbf1c"><span class="section-number-3">8.1</span> bind to a register</h3>
+<div class="outline-text-3" id="text-8-1">
+<dl class="org-dl">
+<dt>C-x C-k x register</dt><dd>kmacro-to-register</dd>
+<dt>C-x r j register</dt><dd></dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga3d1566" class="outline-2">
+<h2 id="orga3d1566"><span class="section-number-2">9</span> more ways to edit</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>C-x C-k l  kmacro-edit-lossage</li>
+<li>C-x C-k e  edit-kbd-macro</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org671f56e" class="outline-2">
+<h2 id="org671f56e"><span class="section-number-2">10</span> save a macro</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>name a macro.
+<ul class="org-ul">
+<li>C-x C-k n       kmacro-name-last-macro</li>
+</ul></li>
+
+<li>let a macro survive the switch off.  (aka persistence)
+<ul class="org-ul">
+<li>name the macro.</li>
+<li>switch to a writable buffer.</li>
+<li>M-x insert-kbd-macro
+<ul class="org-ul">
+<li>choose the named macro.</li>
+</ul></li>
+<li>==&gt; find code which defines the macro.  insert that in your config
+file.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org787d49b" class="outline-2">
+<h2 id="org787d49b"><span class="section-number-2">11</span> macro ring</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>there is a ring (aka list) which keeps the accessible macros.  (without the
+named macros, I think.)</li>
+<li>the head of that ring is the "last macro".</li>
+<li>operations on the ring.</li>
+</ul>
+
+<p>
+C-x C-k C-n     kmacro-cycle-ring-next
+C-x C-k C-p     kmacro-cycle-ring-previous
+C-x C-k C-d     kmacro-delete-ring-head
+C-x C-k C-t     kmacro-swap-ring
+C-x C-k C-l     kmacro-call-ring-2nd-repeat
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf02122b" class="outline-2">
+<h2 id="orgf02122b"><span class="section-number-2">12</span> more</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-orgf35adff" class="outline-3">
+<h3 id="orgf35adff"><span class="section-number-3">12.1</span> repeat movement</h3>
+<div class="outline-text-3" id="text-12-1">
+<ul class="org-ul">
+<li>M-x repeat</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d55153" class="outline-3">
+<h3 id="org7d55153"><span class="section-number-3">12.2</span> performance</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+:(
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d92c12" class="outline-3">
+<h3 id="org1d92c12"><span class="section-number-3">12.3</span> documentation</h3>
+<div class="outline-text-3" id="text-12-3">
+<ul class="org-ul">
+<li><a href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Keyboard-Macros">info:emacs#Keyboard Macros</a>
+(info "(emacs) Keyboard Macros")</li>
+<li>source code.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2083265" class="outline-3">
+<h3 id="org2083265"><span class="section-number-3">12.4</span> lisp macros</h3>
+<div class="outline-text-3" id="text-12-4">
+<ul class="org-ul">
+<li>keyboard macros vs. lisp macros.
+<ul class="org-ul">
+<li>it's not the same.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org620388a" class="outline-3">
+<h3 id="org620388a"><span class="section-number-3">12.5</span> as always&#x2026;</h3>
+<div class="outline-text-3" id="text-12-5">
+<ul class="org-ul">
+<li>get creative!</li>
+<li>do as you like!</li>
+<li>thanks!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Marco</p>
+<p class="date">Created: 2018-08-29 Wed 23:24</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
