@@ -18,6 +18,10 @@ layout: default
 The next meetup is on September 26th. Come visit us at the usual
 location.
 
+<b>Michael</b> will present <b>"Thread-safe Tramp"</b> - an overview
+over thread programming in Emacs followed by asynchronous file
+operations with Tramp.
+
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
 spontanous show-and-tell.
