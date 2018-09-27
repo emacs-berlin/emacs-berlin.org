@@ -13,14 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  September 26th Meetup
+#  October 31st Meetup
 
-The next meetup is on September 26th. Come visit us at the usual
+The next meetup is on October 31st. Come visit us at the usual
 location.
-
-<b>Michael</b> will present <b>"Thread-safe Tramp"</b> - an overview
-over thread programming in Emacs followed by asynchronous file
-operations with Tramp.
 
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
@@ -70,11 +66,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, September 26th 2018
-
 * Wednesday, October 31st 2018
 
 * Wednesday, November 28th 2018
+
+* December 26th? TBD
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
