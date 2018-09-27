@@ -1,0 +1,395 @@
+# -*- mode: Org; fill-column: 60; -*-
+#+TITLE:    Emacs Berlin Meetup: Using Threads in Emacs Lisp - the Tramp Case
+#+AUTHOR:   Michael Albinus
+#+EMAIL:    michael.albinus@gmx.de
+#+DATE:     <2018-09-26>
+#+STARTUP:  overview hideblocks hidestars
+#+PROPERTY: header-args :results verbatim :noweb yes
+
+* Emacs Lisp and Threads
+
+** Treads have been added in Emacs 26.1. No major package
+   has used it there, 'tho.
+
+
+** During the current development of Emacs 27, Tramp has
+   started as first major package to apply threads. While
+   implementing this, thread support in Emacs has been
+   extended as needs arise. The following examples are based
+   on the Emacs git branch ~feature/tramp-thread-safe~; some
+   examples will work only there.
+
+
+** Other packages (Gnus, for example) plan also to use threads.
+
+
+* Basic Thread Functions in Emacs Lisp
+
+** A thread is the concurrent invocation of a Lisp function.
+   It runs until the execution of the function is finished,
+   or it is interrupted by a signal.  This is *mostly
+   cooperative*, meaning that Emacs will only switch
+   execution between threads at well-defined times.
+
+   #+NAME: Make_thread
+   #+BEGIN_SRC elisp
+   (defun my-thread ()
+     (sleep-for 10))
+
+   (make-thread #'my-thread "my thread")
+   #+END_SRC
+
+   There is no real concurrency that two threads run in
+   parallel on different CPUs.  There is always only one
+   active thread at any given time.  Emacs threads are not
+   intended for number crunching.
+
+
+** If Emacs is compiled with thread support, there are some
+   helper functions:
+
+   #+NAME: Thread_helper
+   #+BEGIN_SRC elisp
+   main-thread
+   (current-thread)
+   (all-threads)
+   #+END_SRC
+
+
+** Thread switching will occur upon explicit request via
+   ~thread-yield~, when waiting for keyboard input or for
+   process output (e.g., during ~accept-process-output~), or
+   during blocking operations relating to threads, such as
+   mutex locking or ~thread-join~.
+
+   #+NAME: Thread_yield
+   #+BEGIN_SRC elisp
+   (defvar wait t)
+   (defun my-thread ()
+     (while wait (thread-yield))
+     (setq wait t))
+
+   (setq wait t)
+   (make-thread #'my-thread "my thread 1")
+   (make-thread #'my-thread "my thread 2")
+
+   ;; (setq wait nil)
+   #+END_SRC
+
+
+** The result of a thread evaluation is captured by
+   ~thread-join~.  It blocks the current thread until the requested
+   thread exits, or the current thread is signaled.  This result could
+   be even retrieved by a ~thread-join~ call after that thread has
+   finished, as many time as requested.
+
+   #+NAME: Thread_join
+   #+BEGIN_SRC elisp
+   (defun my-thread1 ()
+     (sleep-for 10)
+     ;; The result.
+     42)
+
+   (defun my-thread2 ()
+     (message "Thread %s has returned %s" thread1 (thread-join thread1)))
+
+   (setq thread1 (make-thread #'my-thread1 "my thread 1"))
+   (setq thread2 (make-thread #'my-thread2 "my thread 2"))
+
+   ;; (thread-join thread1)
+   #+END_SRC
+
+
+** A thread could be signaled from another thread by ~thread-signal~.
+
+   #+NAME: Thread_signal
+   #+BEGIN_SRC elisp
+   (defun my-thread1 ()
+     (sleep-for 10)
+     (thread-signal thread2 'error '(data)))
+
+   (defun my-thread2 ()
+     (condition-case err
+         (while t (sleep-for 0.1))
+       (error (message "Thread %s signaled by `%s'" (current-thread) err))))
+
+   (setq thread1 (make-thread #'my-thread1 "my thread 1"))
+   (setq thread2 (make-thread #'my-thread2 "my thread 2"))
+   #+END_SRC
+
+   Restriction: signaling the main thread does not work this
+   way.  The main thread just prints the error message.
+
+   #+NAME: Main_thread_signal
+   #+BEGIN_SRC elisp
+   (defun my-thread ()
+     (thread-signal main-thread 'error '(data)))
+
+   (setq thread (make-thread #'my-thread "my thread"))
+   #+END_SRC
+
+
+** There are further convenience variables and functions like
+
+   #+NAME: Thread_convenience
+   #+BEGIN_SRC elisp
+   (thread-name (make-thread #'ignore "my thread"))
+   (thread-live-p (make-thread #'ignore "my thread"))
+   #+END_SRC
+
+   Read the Elisp manual at [[info:elisp#Basic Thread Functions]]
+
+
+* Thread Synchronization
+
+** A mutex is an exclusive lock.  At any moment, zero or one
+   threads may own a mutex.  If a thread attempts to acquire
+   a mutex, and the mutex is already owned by some other
+   thread, then the acquiring thread will block until the
+   mutex becomes available.  If the mutex is owned by the
+   acquiring thread already, a counter is increased.
+
+   When done, a thread owning a mutex shall release it as
+   soon as possible.  It is an error not to release a mutex.
+
+   While there are basic functions like ~mutex-lock~ and
+   ~mutex-unlock~, it is recommended to use the macro ~with-mutex~.
+
+   #+NAME: Mutex
+   #+BEGIN_SRC elisp
+   (defvar mutex (make-mutex "my mutex"))
+
+   (defun my-thread ()
+     (with-mutex mutex
+       (sleep-for 10)))
+
+   (make-thread #'my-thread "my thread 1")
+   (make-thread #'my-thread "my thread 2")
+   #+END_SRC
+
+   Read the Elisp manual at [[info:elisp#Mutexes]]
+
+
+** A condition variable is a way for a thread to block
+   until some event occurs.  A thread can wait on a
+   condition variable, to be woken up when some other thread
+   notifies the condition.
+
+   A condition variable is associated with a mutex.  For
+   proper operation, the mutex must be acquired, and then a
+   waiting thread must wait on the condition variable.
+
+   #+NAME: Cond_var
+   #+BEGIN_SRC elisp
+   (defvar mutex (make-mutex "my mutex"))
+   (defvar cond-var (make-condition-variable mutex "my condition variable"))
+
+   (defun my-thread1 ()
+     (with-mutex mutex
+       (condition-wait cond-var))
+     (sleep-for 10))
+
+   (defun my-thread2 ()
+     (sleep-for 10)
+     (with-mutex mutex
+       (condition-notify cond-var))
+     (sleep-for 5))
+
+   (make-thread #'my-thread1 "my thread 1")
+   (make-thread #'my-thread2 "my thread 2")
+   #+END_SRC
+
+   Read the Elisp manual at [[info:elisp#Condition Variables]]
+
+
+* I/O
+
+** Read or write to a given file descriptor in Emacs can be
+   done to only one thread at any time.
+
+
+** For processes, there are the functions ~process-thread~
+   and ~set-process-thread~, which assign process related
+   file descriptors to a given thread.  If another thread
+   shall take over control, this must be requested
+   explicitly.
+
+
+** For all other file descriptors, there exists an
+   implementation to assign them to a given thread
+   on-the-fly. This does not work well (see bug#25214 and
+   bug#32426), as a consequence keyboard input shall be
+   restricted to the main thread as-of-today.
+
+   We're working on this.
+
+
+** A further problem is how to make it obvious to a user
+   where keyboard input goes to.  Imagine the possible
+   scenario to copy a file, and to remove another file in
+   parallel.  Both operations require user confirmation
+   ("Overwrite file a/b?" "Remove file c/d?"), and it must
+   be obvious for which question the answer "y" is intended
+   for.  See discussion in the emacs-devel@gnu.org mailing
+   list [[http://lists.gnu.org/archive/html/emacs-devel/2018-08/msg00456.html]]
+
+
+* Tramp Adaptions for Being thread-safe
+
+** Tramp is just a library of basic file operations,
+   replacing default file operations for files located on
+   remote hosts.
+
+   It does not create any thread on its own.  Whether
+   concurrent operations do run, is decided by the user.
+
+   Changes to make Tramp thread-safe were surprisingly simple.
+
+
+** Tramp creates a mutex for every connection to a remote
+   host.  That means, operations for a given connection are
+   run sequentially (see [[file:~/src/tramp/lisp/tramp.el::2275][~tramp-file-name-handler~]]).
+
+
+** Whenever a Tramp function is invoked, the connection
+   process is locked to the current thread.  This gives a
+   kind of dynamics in locking the process, but it is safe
+   due to the mutex.
+
+
+** Superfluous ~save-excursion~ calls have been removed.
+   They made concurrent editing impossible (flipping cursor).
+
+
+** Minor changes like compatibility functions and thread
+   information in the debug buffer.
+
+
+* Asynchronous File Operations
+
+** Shall be triggered by the user.  In order to do this,
+   there is a new prefix command ~universal-async-argument~
+   ({{{C-x & ...}}}), like the prefix argument ~universal-argument~
+   ({{{C-u ...}}}) for interactive commands.  This is *not* only
+   for remote files (Tramp).
+
+
+** In the future, this prefix command is not restricted to
+   asynchronous file operations.  Any interactive command,
+   which could run also asynchronously, shall use this as
+   user indication.
+
+   It is up to the command to decide, what asynchronous
+   means.  For example, ~gnus~ would rather retrieve
+   articles from the respective servers, and not care about
+   file operations.
+
+
+** Implemented so far for the file visiting family of commands:
+
+   ~find-file~ 	      	      	       {{{C-x & C-x C-f}}}
+   ~find-file-other-window~            {{{C-x & C-x 4 f}}}
+   ~find-file-other-frame~     	       {{{C-x & C-x 5 f}}}
+   ~find-file-existing~ 	       {{{C-x & M-x find-file-existing}}}
+   ~find-file-read-only~ 	       {{{C-x & C-x C-r}}}
+   ~find-file-read-only-other-window~  {{{C-x & C-x 4 r}}}
+   ~find-file-read-only-other-frame~   {{{C-x & C-x 5 f}}}
+   ~find-alternate-file~ 	       {{{C-x & C-x C-v}}}
+   ~find-alternate-file-other-window~  {{{C-x & M-x find-alternate-file-other-window}}}
+   ~find-file-literally~ 	       {{{C-x & M-x find-file-literally}}}
+
+
+** Visiting local files would profit only for veeeery large
+   files (some hundred of MB).  Natural candidates are remote
+   files to be visited, and local files to be visited with wildcard.
+
+   However, visiting local files has not been adapted yet to
+   throw sufficient ~thread-yield~ calls.  The main thread
+   keeps blocked.  Therefore, remote file operations remain
+   best candidates as of today.
+
+   #+NAME: Visit_remote_file
+   #+BEGIN_SRC elisp
+   ;; (find-file "/sftp::/var/log/ConsoleKit/history.1" nil t)
+   ;; (find-file "/gdrive:michael.rd.albinus@gmail.com:20180825_091134.jpg" nil t)
+   (find-file "/nextcloud:albinus@ford#8081:20180825_091134.jpg" nil t)
+   #+END_SRC
+
+   #+NAME: Visit_remote_files_wildcard
+   #+BEGIN_SRC elisp
+   (find-file "/sftp::~/src/emacs/lisp/net/tramp*.el" t t)
+   #+END_SRC
+
+   #+NAME: Kill_threads_and_buffers
+   #+BEGIN_SRC elisp
+   (dolist (thread (all-threads))
+     (unless (eq thread main-thread)
+       (thread-signal thread 'quit nil)))
+   (dolist (buffer (buffer-list))
+     (when (string-match "^tramp" (buffer-name buffer))
+       (kill-buffer buffer)))
+   #+END_SRC
+
+   ~vc-refresh-state~ recomputes the VC state of a file.  In
+   the Tramp case, it often takes more time to compute it
+   for git, than just loading the file into a buffer.
+   Therefore, this function gets also an own thread.  It
+   needs to be tuned to throw proper ~thread-yield~ calls.
+
+
+** An alternative approach to use asynchronous file operations
+   is user option ~execute-file-commands-asynchronously~.
+   If this variable is non-nil, a file will be visited
+   asynchronously when called interactively.  If it is a
+   regular expression, it must match the file name to be
+   visited.
+
+   It toggles the behavior of ({{{C-x & ...}}}).
+
+   #+NAME: Visit_remote_files_wildcard_execute_file_commands_asynchronously
+   #+BEGIN_SRC elisp
+   (setq execute-file-commands-asynchronously tramp-file-name-regexp)
+   (find-file
+     "/sftp::~/src/emacs/lisp/net/tramp*.el"
+     t execute-file-commands-asynchronously)
+   #+END_SRC
+
+
+* Outlook
+
+** Solve the I/O problem.  First for input (keyboard), but
+   also for arriving events (D-Bus, file notifications, ...)
+
+
+** Improve performance.  Apply more fine-tuned ~thread-yield~
+   calls.  Add thread priority, especially with high
+   priority for the main thread.
+
+
+** Implement thread support for further file operations,
+   like ~save-buffer~, ~copy-file~, ~rename-file~, ...
+
+
+** Make file operations for local files thread-aware.
+
+
+** Make ~vc-refresh-state~ thread-aware (call ~thried-yield~).
+
+
+** Add indication for running asynchronous file operations
+   in the background (modeline?).
+
+
+** Add thread support to other packages, like ~dired~.
+
+
+* The End
+
+** Local Variables:
+** org-confirm-babel-evaluate: nil
+** org-return-follows-link: t
+** org-hide-macro-markers: t
+** eval: (setq large-file-warning-threshold 100000000)
+** eval: (switch-to-buffer-other-frame (list-threads))
+** eval: (find-file "/nextcloud:albinus@ford#8081:20180825_091134.jpg")
+** End:

@@ -18,6 +18,7 @@ Not every meeting gets an archive page, only when someone creates it
 ([PRs welcome](https://github.com/emacs-berlin/emacs-berlin.org/)).
 
 ## Previous meetings
+* September 2018: [Thread-safe Tramp](thread-safe-tramp-2018-09.html) by Michael Albinus ([org-file](thread-safe-tramp-2018-09.org))
 * August 2018: [macros](macros-2018-08.html) by Marco ([org-file](macros-2018-08.org))
 * [January 2018](20180131-notes.html)
 * [May 2017](20170531-notes.html)

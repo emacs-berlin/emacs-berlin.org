@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-09-27 Thu 21:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs Berlin Meetup: Using Threads in Emacs Lisp - the Tramp Case</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Michael Albinus" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style>here</style>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Emacs Berlin Meetup: Using Threads in Emacs Lisp - the Tramp Case</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgdeeb637">1. Emacs Lisp and Threads</a>
+<ul>
+<li><a href="#orge8e926d">1.1. Treads have been added in Emacs 26.1. No major package</a></li>
+<li><a href="#org726417d">1.2. During the current development of Emacs 27, Tramp has</a></li>
+<li><a href="#org01ec4b2">1.3. Other packages (Gnus, for example) plan also to use threads.</a></li>
+</ul>
+</li>
+<li><a href="#orgcec892d">2. Basic Thread Functions in Emacs Lisp</a>
+<ul>
+<li><a href="#org829ce5a">2.1. A thread is the concurrent invocation of a Lisp function.</a></li>
+<li><a href="#org2d0df8d">2.2. If Emacs is compiled with thread support, there are some</a></li>
+<li><a href="#orgcda4933">2.3. Thread switching will occur upon explicit request via</a></li>
+<li><a href="#orgfbd7bec">2.4. The result of a thread evaluation is captured by</a></li>
+<li><a href="#org421ac96">2.5. A thread could be signaled from another thread by <code>thread-signal</code>.</a></li>
+<li><a href="#orgd15fded">2.6. There are further convenience variables and functions like</a></li>
+</ul>
+</li>
+<li><a href="#org473ce04">3. Thread Synchronization</a>
+<ul>
+<li><a href="#org3a4873e">3.1. A mutex is an exclusive lock.  At any moment, zero or one</a></li>
+<li><a href="#org3383cee">3.2. A condition variable is a way for a thread to block</a></li>
+</ul>
+</li>
+<li><a href="#orgc14bcd0">4. I/O</a>
+<ul>
+<li><a href="#org505f052">4.1. Read or write to a given file descriptor in Emacs can be</a></li>
+<li><a href="#org37c2fa4">4.2. For processes, there are the functions <code>process-thread</code></a></li>
+<li><a href="#orgf80fa1d">4.3. For all other file descriptors, there exists an</a></li>
+<li><a href="#org2f3172d">4.4. A further problem is how to make it obvious to a user</a></li>
+</ul>
+</li>
+<li><a href="#orgb9dc162">5. Tramp Adaptions for Being thread-safe</a>
+<ul>
+<li><a href="#orgfee8762">5.1. Tramp is just a library of basic file operations,</a></li>
+<li><a href="#orgd8fc9a2">5.2. Tramp creates a mutex for every connection to a remote</a></li>
+<li><a href="#org24a3b17">5.3. Whenever a Tramp function is invoked, the connection</a></li>
+<li><a href="#org7a30401">5.4. Superfluous <code>save-excursion</code> calls have been removed.</a></li>
+<li><a href="#org5ad7deb">5.5. Minor changes like compatibility functions and thread</a></li>
+</ul>
+</li>
+<li><a href="#org998e6cc">6. Asynchronous File Operations</a>
+<ul>
+<li><a href="#org80de116">6.1. Shall be triggered by the user.  In order to do this,</a></li>
+<li><a href="#org986423c">6.2. In the future, this prefix command is not restricted to</a></li>
+<li><a href="#org0ff6df9">6.3. Implemented so far for the file visiting family of commands:</a></li>
+<li><a href="#org5d6821f">6.4. Visiting local files would profit only for veeeery large</a></li>
+<li><a href="#orgfe6f854">6.5. An alternative approach to use asynchronous file operations</a></li>
+</ul>
+</li>
+<li><a href="#orgd9957cf">7. Outlook</a>
+<ul>
+<li><a href="#org005539c">7.1. Solve the I/O problem.  First for input (keyboard), but</a></li>
+<li><a href="#org7b57df0">7.2. Improve performance.  Apply more fine-tuned <code>thread-yield</code></a></li>
+<li><a href="#orgf2372b1">7.3. Implement thread support for further file operations,</a></li>
+<li><a href="#org72a9585">7.4. Make file operations for local files thread-aware.</a></li>
+<li><a href="#orgf6f655a">7.5. Make <code>vc-refresh-state</code> thread-aware (call <code>thried-yield</code>).</a></li>
+<li><a href="#org4ae1f24">7.6. Add indication for running asynchronous file operations</a></li>
+<li><a href="#orgdaa65c1">7.7. Add thread support to other packages, like <code>dired</code>.</a></li>
+</ul>
+</li>
+<li><a href="#org0147ba1">8. The End</a>
+<ul>
+<li><a href="#orgdc6262d">8.1. Local Variables:</a></li>
+<li><a href="#org7693bd6">8.2. org-confirm-babel-evaluate: nil</a></li>
+<li><a href="#orga3ccbe3">8.3. org-return-follows-link: t</a></li>
+<li><a href="#orgbe757d8">8.4. org-hide-macro-markers: t</a></li>
+<li><a href="#org2cc2c32">8.5. eval: (setq large-file-warning-threshold 100000000)</a></li>
+<li><a href="#orga512fda">8.6. eval: (switch-to-buffer-other-frame (list-threads))</a></li>
+<li><a href="#org14c4ef9">8.7. eval: (find-file "/nextcloud:albinus@ford#8081:20180825<sub>091134.jpg</sub>")</a></li>
+<li><a href="#orgd07a82b">8.8. End:</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdeeb637" class="outline-2">
+<h2 id="orgdeeb637"><span class="section-number-2">1</span> Emacs Lisp and Threads</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orge8e926d" class="outline-3">
+<h3 id="orge8e926d"><span class="section-number-3">1.1</span> Treads have been added in Emacs 26.1. No major package</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+has used it there, 'tho.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org726417d" class="outline-3">
+<h3 id="org726417d"><span class="section-number-3">1.2</span> During the current development of Emacs 27, Tramp has</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+started as first major package to apply threads. While
+implementing this, thread support in Emacs has been
+extended as needs arise. The following examples are based
+on the Emacs git branch <code>feature/tramp-thread-safe</code>; some
+examples will work only there.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org01ec4b2" class="outline-3">
+<h3 id="org01ec4b2"><span class="section-number-3">1.3</span> Other packages (Gnus, for example) plan also to use threads.</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgcec892d" class="outline-2">
+<h2 id="orgcec892d"><span class="section-number-2">2</span> Basic Thread Functions in Emacs Lisp</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org829ce5a" class="outline-3">
+<h3 id="org829ce5a"><span class="section-number-3">2.1</span> A thread is the concurrent invocation of a Lisp function.</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+It runs until the execution of the function is finished,
+or it is interrupted by a signal.  This is <b>mostly
+cooperative</b>, meaning that Emacs will only switch
+execution between threads at well-defined times.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org20ba416">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread</span> ()
+  (sleep-for 10))
+
+(make-thread #'my-thread <span style="color: #8b2252;">"my thread"</span>)
+</pre>
+</div>
+
+<p>
+There is no real concurrency that two threads run in
+parallel on different CPUs.  There is always only one
+active thread at any given time.  Emacs threads are not
+intended for number crunching.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2d0df8d" class="outline-3">
+<h3 id="org2d0df8d"><span class="section-number-3">2.2</span> If Emacs is compiled with thread support, there are some</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+helper functions:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="orga0408e9">main-thread
+(current-thread)
+(all-threads)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgcda4933" class="outline-3">
+<h3 id="orgcda4933"><span class="section-number-3">2.3</span> Thread switching will occur upon explicit request via</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<code>thread-yield</code>, when waiting for keyboard input or for
+process output (e.g., during <code>accept-process-output</code>), or
+during blocking operations relating to threads, such as
+mutex locking or <code>thread-join</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org72f9ba8">(<span style="color: #a020f0;">defvar</span> <span style="color: #a0522d;">wait</span> t)
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread</span> ()
+  (<span style="color: #a020f0;">while</span> wait (thread-yield))
+  (<span style="color: #a020f0;">setq</span> wait t))
+
+(<span style="color: #a020f0;">setq</span> wait t)
+(make-thread #'my-thread <span style="color: #8b2252;">"my thread 1"</span>)
+(make-thread #'my-thread <span style="color: #8b2252;">"my thread 2"</span>)
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(setq wait nil)</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgfbd7bec" class="outline-3">
+<h3 id="orgfbd7bec"><span class="section-number-3">2.4</span> The result of a thread evaluation is captured by</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<code>thread-join</code>.  It blocks the current thread until the requested
+thread exits, or the current thread is signaled.  This result could
+be even retrieved by a <code>thread-join</code> call after that thread has
+finished, as many time as requested.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgf6440d5">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread1</span> ()
+  (sleep-for 10)
+  <span style="color: #b22222;">;; </span><span style="color: #b22222;">The result.</span>
+  42)
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread2</span> ()
+  (message <span style="color: #8b2252;">"Thread %s has returned %s"</span> thread1 (thread-join thread1)))
+
+(<span style="color: #a020f0;">setq</span> thread1 (make-thread #'my-thread1 <span style="color: #8b2252;">"my thread 1"</span>))
+(<span style="color: #a020f0;">setq</span> thread2 (make-thread #'my-thread2 <span style="color: #8b2252;">"my thread 2"</span>))
+
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(thread-join thread1)</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org421ac96" class="outline-3">
+<h3 id="org421ac96"><span class="section-number-3">2.5</span> A thread could be signaled from another thread by <code>thread-signal</code>.</h3>
+<div class="outline-text-3" id="text-2-5">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgec9e100">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread1</span> ()
+  (sleep-for 10)
+  (thread-signal thread2 'error '(data)))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread2</span> ()
+  (<span style="color: #a020f0;">condition-case</span> err
+      (<span style="color: #a020f0;">while</span> t (sleep-for 0.1))
+    (<span style="color: #ff0000; font-weight: bold;">error</span> (message <span style="color: #8b2252;">"Thread %s signaled by `</span><span style="color: #008b8b;">%s</span><span style="color: #8b2252;">'"</span> (current-thread) err))))
+
+(<span style="color: #a020f0;">setq</span> thread1 (make-thread #'my-thread1 <span style="color: #8b2252;">"my thread 1"</span>))
+(<span style="color: #a020f0;">setq</span> thread2 (make-thread #'my-thread2 <span style="color: #8b2252;">"my thread 2"</span>))
+</pre>
+</div>
+
+<p>
+Restriction: signaling the main thread does not work this
+way.  The main thread just prints the error message.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org88bb5bc">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread</span> ()
+  (thread-signal main-thread 'error '(data)))
+
+(<span style="color: #a020f0;">setq</span> thread (make-thread #'my-thread <span style="color: #8b2252;">"my thread"</span>))
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd15fded" class="outline-3">
+<h3 id="orgd15fded"><span class="section-number-3">2.6</span> There are further convenience variables and functions like</h3>
+<div class="outline-text-3" id="text-2-6">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org03cca29">(thread-name (make-thread #'ignore <span style="color: #8b2252;">"my thread"</span>))
+(thread-live-p (make-thread #'ignore <span style="color: #8b2252;">"my thread"</span>))
+</pre>
+</div>
+
+<p>
+Read the Elisp manual at <a href="https://www.gnu.org/software/emacs/manual/html_mono/elisp.html#Basic-Thread-Functions">elisp#Basic Thread Functions</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org473ce04" class="outline-2">
+<h2 id="org473ce04"><span class="section-number-2">3</span> Thread Synchronization</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org3a4873e" class="outline-3">
+<h3 id="org3a4873e"><span class="section-number-3">3.1</span> A mutex is an exclusive lock.  At any moment, zero or one</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+threads may own a mutex.  If a thread attempts to acquire
+a mutex, and the mutex is already owned by some other
+thread, then the acquiring thread will block until the
+mutex becomes available.  If the mutex is owned by the
+acquiring thread already, a counter is increased.
+</p>
+
+<p>
+When done, a thread owning a mutex shall release it as
+soon as possible.  It is an error not to release a mutex.
+</p>
+
+<p>
+While there are basic functions like <code>mutex-lock</code> and
+<code>mutex-unlock</code>, it is recommended to use the macro <code>with-mutex</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgc8a5615">(<span style="color: #a020f0;">defvar</span> <span style="color: #a0522d;">mutex</span> (make-mutex <span style="color: #8b2252;">"my mutex"</span>))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread</span> ()
+  (<span style="color: #a020f0;">with-mutex</span> mutex
+    (sleep-for 10)))
+
+(make-thread #'my-thread <span style="color: #8b2252;">"my thread 1"</span>)
+(make-thread #'my-thread <span style="color: #8b2252;">"my thread 2"</span>)
+</pre>
+</div>
+
+<p>
+Read the Elisp manual at <a href="https://www.gnu.org/software/emacs/manual/html_mono/elisp.html#Mutexes">elisp#Mutexes</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3383cee" class="outline-3">
+<h3 id="org3383cee"><span class="section-number-3">3.2</span> A condition variable is a way for a thread to block</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+until some event occurs.  A thread can wait on a
+condition variable, to be woken up when some other thread
+notifies the condition.
+</p>
+
+<p>
+A condition variable is associated with a mutex.  For
+proper operation, the mutex must be acquired, and then a
+waiting thread must wait on the condition variable.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgd5c0e34">(<span style="color: #a020f0;">defvar</span> <span style="color: #a0522d;">mutex</span> (make-mutex <span style="color: #8b2252;">"my mutex"</span>))
+(<span style="color: #a020f0;">defvar</span> <span style="color: #a0522d;">cond-var</span> (make-condition-variable mutex <span style="color: #8b2252;">"my condition variable"</span>))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread1</span> ()
+  (<span style="color: #a020f0;">with-mutex</span> mutex
+    (condition-wait cond-var))
+  (sleep-for 10))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-thread2</span> ()
+  (sleep-for 10)
+  (<span style="color: #a020f0;">with-mutex</span> mutex
+    (condition-notify cond-var))
+  (sleep-for 5))
+
+(make-thread #'my-thread1 <span style="color: #8b2252;">"my thread 1"</span>)
+(make-thread #'my-thread2 <span style="color: #8b2252;">"my thread 2"</span>)
+</pre>
+</div>
+
+<p>
+Read the Elisp manual at <a href="https://www.gnu.org/software/emacs/manual/html_mono/elisp.html#Condition-Variables">elisp#Condition Variables</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc14bcd0" class="outline-2">
+<h2 id="orgc14bcd0"><span class="section-number-2">4</span> I/O</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org505f052" class="outline-3">
+<h3 id="org505f052"><span class="section-number-3">4.1</span> Read or write to a given file descriptor in Emacs can be</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+done to only one thread at any time.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org37c2fa4" class="outline-3">
+<h3 id="org37c2fa4"><span class="section-number-3">4.2</span> For processes, there are the functions <code>process-thread</code></h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+and <code>set-process-thread</code>, which assign process related
+file descriptors to a given thread.  If another thread
+shall take over control, this must be requested
+explicitly.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf80fa1d" class="outline-3">
+<h3 id="orgf80fa1d"><span class="section-number-3">4.3</span> For all other file descriptors, there exists an</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+implementation to assign them to a given thread
+on-the-fly. This does not work well (see bug#25214 and
+bug#32426), as a consequence keyboard input shall be
+restricted to the main thread as-of-today.
+</p>
+
+<p>
+We're working on this.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2f3172d" class="outline-3">
+<h3 id="org2f3172d"><span class="section-number-3">4.4</span> A further problem is how to make it obvious to a user</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+where keyboard input goes to.  Imagine the possible
+scenario to copy a file, and to remove another file in
+parallel.  Both operations require user confirmation
+("Overwrite file a/b?" "Remove file c/d?"), and it must
+be obvious for which question the answer "y" is intended
+for.  See discussion in the emacs-devel@gnu.org mailing
+list <a href="http://lists.gnu.org/archive/html/emacs-devel/2018-08/msg00456.html">http://lists.gnu.org/archive/html/emacs-devel/2018-08/msg00456.html</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb9dc162" class="outline-2">
+<h2 id="orgb9dc162"><span class="section-number-2">5</span> Tramp Adaptions for Being thread-safe</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgfee8762" class="outline-3">
+<h3 id="orgfee8762"><span class="section-number-3">5.1</span> Tramp is just a library of basic file operations,</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+replacing default file operations for files located on
+remote hosts.
+</p>
+
+<p>
+It does not create any thread on its own.  Whether
+concurrent operations do run, is decided by the user.
+</p>
+
+<p>
+Changes to make Tramp thread-safe were surprisingly simple.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd8fc9a2" class="outline-3">
+<h3 id="orgd8fc9a2"><span class="section-number-3">5.2</span> Tramp creates a mutex for every connection to a remote</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+host.  That means, operations for a given connection are
+run sequentially (see <a href="file:///home/tils/src/tramp/lisp/tramp.el#MissingReference"><code>tramp-file-name-handler</code></a>).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org24a3b17" class="outline-3">
+<h3 id="org24a3b17"><span class="section-number-3">5.3</span> Whenever a Tramp function is invoked, the connection</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+process is locked to the current thread.  This gives a
+kind of dynamics in locking the process, but it is safe
+due to the mutex.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7a30401" class="outline-3">
+<h3 id="org7a30401"><span class="section-number-3">5.4</span> Superfluous <code>save-excursion</code> calls have been removed.</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+They made concurrent editing impossible (flipping cursor).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5ad7deb" class="outline-3">
+<h3 id="org5ad7deb"><span class="section-number-3">5.5</span> Minor changes like compatibility functions and thread</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+information in the debug buffer.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org998e6cc" class="outline-2">
+<h2 id="org998e6cc"><span class="section-number-2">6</span> Asynchronous File Operations</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org80de116" class="outline-3">
+<h3 id="org80de116"><span class="section-number-3">6.1</span> Shall be triggered by the user.  In order to do this,</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+there is a new prefix command <code>universal-async-argument</code>
+({{{C-x &amp; &#x2026;}}}), like the prefix argument <code>universal-argument</code>
+({{{C-u &#x2026;}}}) for interactive commands.  This is <b>not</b> only
+for remote files (Tramp).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org986423c" class="outline-3">
+<h3 id="org986423c"><span class="section-number-3">6.2</span> In the future, this prefix command is not restricted to</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+asynchronous file operations.  Any interactive command,
+which could run also asynchronously, shall use this as
+user indication.
+</p>
+
+<p>
+It is up to the command to decide, what asynchronous
+means.  For example, <code>gnus</code> would rather retrieve
+articles from the respective servers, and not care about
+file operations.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org0ff6df9" class="outline-3">
+<h3 id="org0ff6df9"><span class="section-number-3">6.3</span> Implemented so far for the file visiting family of commands:</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+<code>find-file</code>                       {{{C-x &amp; C-x C-f}}}
+<code>find-file-other-window</code>            {{{C-x &amp; C-x 4 f}}}
+<code>find-file-other-frame</code>             {{{C-x &amp; C-x 5 f}}}
+<code>find-file-existing</code>         {{{C-x &amp; M-x find-file-existing}}}
+<code>find-file-read-only</code>         {{{C-x &amp; C-x C-r}}}
+<code>find-file-read-only-other-window</code>  {{{C-x &amp; C-x 4 r}}}
+<code>find-file-read-only-other-frame</code>   {{{C-x &amp; C-x 5 f}}}
+<code>find-alternate-file</code>         {{{C-x &amp; C-x C-v}}}
+<code>find-alternate-file-other-window</code>  {{{C-x &amp; M-x find-alternate-file-other-window}}}
+<code>find-file-literally</code>         {{{C-x &amp; M-x find-file-literally}}}
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5d6821f" class="outline-3">
+<h3 id="org5d6821f"><span class="section-number-3">6.4</span> Visiting local files would profit only for veeeery large</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+files (some hundred of MB).  Natural candidates are remote
+files to be visited, and local files to be visited with wildcard.
+</p>
+
+<p>
+However, visiting local files has not been adapted yet to
+throw sufficient <code>thread-yield</code> calls.  The main thread
+keeps blocked.  Therefore, remote file operations remain
+best candidates as of today.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org8966918"><span style="color: #b22222;">;; </span><span style="color: #b22222;">(find-file "/sftp::/var/log/ConsoleKit/history.1" nil t)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(find-file "/gdrive:michael.rd.albinus@gmail.com:20180825_091134.jpg" nil t)</span>
+(find-file <span style="color: #8b2252;">"/nextcloud:albinus@ford#8081:20180825_091134.jpg"</span> nil t)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org3de4511">(find-file <span style="color: #8b2252;">"/sftp::~/src/emacs/lisp/net/tramp*.el"</span> t t)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org299f21b">(<span style="color: #a020f0;">dolist</span> (thread (all-threads))
+  (<span style="color: #a020f0;">unless</span> (eq thread main-thread)
+    (thread-signal thread 'quit nil)))
+(<span style="color: #a020f0;">dolist</span> (buffer (buffer-list))
+  (<span style="color: #a020f0;">when</span> (string-match <span style="color: #8b2252;">"^tramp"</span> (buffer-name buffer))
+    (kill-buffer buffer)))
+</pre>
+</div>
+
+<p>
+<code>vc-refresh-state</code> recomputes the VC state of a file.  In
+the Tramp case, it often takes more time to compute it
+for git, than just loading the file into a buffer.
+Therefore, this function gets also an own thread.  It
+needs to be tuned to throw proper <code>thread-yield</code> calls.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfe6f854" class="outline-3">
+<h3 id="orgfe6f854"><span class="section-number-3">6.5</span> An alternative approach to use asynchronous file operations</h3>
+<div class="outline-text-3" id="text-6-5">
+<p>
+is user option <code>execute-file-commands-asynchronously</code>.
+If this variable is non-nil, a file will be visited
+asynchronously when called interactively.  If it is a
+regular expression, it must match the file name to be
+visited.
+</p>
+
+<p>
+It toggles the behavior of ({{{C-x &amp; &#x2026;}}}).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org541018f">(<span style="color: #a020f0;">setq</span> execute-file-commands-asynchronously tramp-file-name-regexp)
+(find-file
+  <span style="color: #8b2252;">"/sftp::~/src/emacs/lisp/net/tramp*.el"</span>
+  t execute-file-commands-asynchronously)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd9957cf" class="outline-2">
+<h2 id="orgd9957cf"><span class="section-number-2">7</span> Outlook</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org005539c" class="outline-3">
+<h3 id="org005539c"><span class="section-number-3">7.1</span> Solve the I/O problem.  First for input (keyboard), but</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+also for arriving events (D-Bus, file notifications, &#x2026;)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7b57df0" class="outline-3">
+<h3 id="org7b57df0"><span class="section-number-3">7.2</span> Improve performance.  Apply more fine-tuned <code>thread-yield</code></h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+calls.  Add thread priority, especially with high
+priority for the main thread.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf2372b1" class="outline-3">
+<h3 id="orgf2372b1"><span class="section-number-3">7.3</span> Implement thread support for further file operations,</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+like <code>save-buffer</code>, <code>copy-file</code>, <code>rename-file</code>, &#x2026;
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org72a9585" class="outline-3">
+<h3 id="org72a9585"><span class="section-number-3">7.4</span> Make file operations for local files thread-aware.</h3>
+</div>
+
+
+<div id="outline-container-orgf6f655a" class="outline-3">
+<h3 id="orgf6f655a"><span class="section-number-3">7.5</span> Make <code>vc-refresh-state</code> thread-aware (call <code>thried-yield</code>).</h3>
+</div>
+
+
+<div id="outline-container-org4ae1f24" class="outline-3">
+<h3 id="org4ae1f24"><span class="section-number-3">7.6</span> Add indication for running asynchronous file operations</h3>
+<div class="outline-text-3" id="text-7-6">
+<p>
+in the background (modeline?).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdaa65c1" class="outline-3">
+<h3 id="orgdaa65c1"><span class="section-number-3">7.7</span> Add thread support to other packages, like <code>dired</code>.</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org0147ba1" class="outline-2">
+<h2 id="org0147ba1"><span class="section-number-2">8</span> The End</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-orgdc6262d" class="outline-3">
+<h3 id="orgdc6262d"><span class="section-number-3">8.1</span> Local Variables:</h3>
+</div>
+<div id="outline-container-org7693bd6" class="outline-3">
+<h3 id="org7693bd6"><span class="section-number-3">8.2</span> org-confirm-babel-evaluate: nil</h3>
+</div>
+<div id="outline-container-orga3ccbe3" class="outline-3">
+<h3 id="orga3ccbe3"><span class="section-number-3">8.3</span> org-return-follows-link: t</h3>
+</div>
+<div id="outline-container-orgbe757d8" class="outline-3">
+<h3 id="orgbe757d8"><span class="section-number-3">8.4</span> org-hide-macro-markers: t</h3>
+</div>
+<div id="outline-container-org2cc2c32" class="outline-3">
+<h3 id="org2cc2c32"><span class="section-number-3">8.5</span> eval: (setq large-file-warning-threshold 100000000)</h3>
+</div>
+<div id="outline-container-orga512fda" class="outline-3">
+<h3 id="orga512fda"><span class="section-number-3">8.6</span> eval: (switch-to-buffer-other-frame (list-threads))</h3>
+</div>
+<div id="outline-container-org14c4ef9" class="outline-3">
+<h3 id="org14c4ef9"><span class="section-number-3">8.7</span> eval: (find-file "/nextcloud:albinus@ford#8081:20180825<sub>091134.jpg</sub>")</h3>
+</div>
+<div id="outline-container-orgd07a82b" class="outline-3">
+<h3 id="orgd07a82b"><span class="section-number-3">8.8</span> End:</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2018-09-26 Wed 00:00</p>
+<p class="author">Author: Michael Albinus</p>
+<p class="date">Created: 2018-09-27 Thu 21:08</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
