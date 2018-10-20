@@ -13,9 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  October 31st Meetup
+#  October 24th Meetup
 
-The next meetup is on October 31st. Come visit us at the usual
+The next meetup is on Wednesday, October 24th (moved one week forward,
+not last Wednesday of the month this time). Come visit us at the usual
 location.
 
 As always: let us know if you have something you want to talk about,
@@ -66,7 +67,7 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 31st 2018
+* Wednesday, October 24th 2018 (attn, not last Wed of month this time)
 
 * Wednesday, November 28th 2018
 
