@@ -19,6 +19,9 @@ The next meetup is on Wednesday, October 24th (moved one week forward,
 not last Wednesday of the month this time). Come visit us at the usual
 location.
 
+This month we have one short talk confirmed: **Smooth TDD for Elisp**,
+by Ulas Turkmen.
+
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
 spontanous show-and-tell.
