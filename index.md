@@ -13,14 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  October 24th Meetup
+#  November 28th Meetup
 
-The next meetup is on Wednesday, October 24th (moved one week forward,
-not last Wednesday of the month this time). Come visit us at the usual
-location.
-
-This month we have one short talk confirmed: **Smooth TDD for Elisp**,
-by Ulas Turkmen.
+The next meetup is on Wednesday, November 28th (back to the last
+Wednesday of the month). Come visit us at the usual location.
 
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
@@ -70,11 +66,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 24th 2018 (attn, not last Wed of month this time)
-
 * Wednesday, November 28th 2018
 
-* December 26th? TBD
+* No meetup in December
+
+* Wednesday, January 30th 2019
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
