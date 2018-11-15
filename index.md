@@ -17,6 +17,10 @@ layout: default
 
 The next meetup is on Wednesday, November 28th (back to the last
 Wednesday of the month). Come visit us at the usual location.
+Confirmed talks so far:
+
+- Gary with an update on his mobile Emacs experiences with the Planet
+Computers Gemini smartphone
 
 As always: let us know if you have something you want to talk about,
 anything more or less Emacs related is welcome! Bring your laptop for
