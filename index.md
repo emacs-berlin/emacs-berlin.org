@@ -16,13 +16,14 @@ layout: default
 #  January 30th, 2019 Meetup
 
 The next meetup is on Wednesday, January 30th in the new year 2019.
-Come visit us at the usual location. There will probably be a talk
-about [iA writer
+Come visit us at the usual location.
+
+Azer Koçulu will present [iA writer
 mode](https://azer.bike/journal/ia-writer-mode-for-emacs/).
 
-As always: let us know if you have something you want to talk about,
-anything more or less Emacs related is welcome! Bring your laptop for
-spontanous show-and-tell.
+There is space for more: let us know if you have something you want to
+talk about, anything more or less Emacs related is welcome! Bring your
+laptop for spontaneous show-and-tell.
 
 
 ### Location
