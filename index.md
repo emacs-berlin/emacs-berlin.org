@@ -13,17 +13,13 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  February 27th, 2019 Meetup
+#  March 27th, 2019 Meetup
 
-The next meetup is on Wednesday, February 27th 2019.
+The next meetup is on Wednesday, March 27th 2019.
 
-Azer Koçulu will present [iA writer
-mode](https://azer.bike/journal/ia-writer-mode-for-emacs/) (postponed
-from January).
-
-There is space for more: let us know if you have something you want to
-talk about, anything more or less Emacs related is welcome! Bring your
-laptop for spontaneous show-and-tell.
+There is space for talks: let us know if you have something you want
+to talk about, anything more or less Emacs related is welcome! Bring
+your laptop for spontaneous show-and-tell.
 
 
 ### Location
@@ -31,12 +27,11 @@ laptop for spontaneous show-and-tell.
 [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
-Attention: the actual location within Contentful is to be determined,
-either in the meeting room as usual, or a smaller room on the first
-floor. In any case, the address will be the same. There will be an
-update here, and signs at the door.
+In the first courtyard, enter the door on the right, up to 1st floor,
+there will be signs.
 
-Doors open 19:00, Contentful provides *drinks* and *pizza*.
+Doors open 19:00, talks start around 19:30, Contentful provides
+*drinks* and *pizza*.
 
 
 ### About Emacs Berlin
@@ -67,11 +62,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 27th 2019
-
 * Wednesday, March 27th 2019
 
 * Wednesday, April 30th 2019
+
+* Wednesday, May 29th 2019
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
