@@ -17,9 +17,16 @@ layout: default
 
 The next meetup is on Wednesday, March 27th 2019.
 
-There is space for talks: let us know if you have something you want
-to talk about, anything more or less Emacs related is welcome! Bring
-your laptop for spontaneous show-and-tell.
+There'll be two presentations:
+
+Max: **config management with org-mode**, templates, variables,
+documentation - that sort of thing
+
+Marco: **calc, the "advanced desk calculator"** (info "(calc) Top")
+
+Let us know if you have something you want to talk about, anything
+more or less Emacs related is welcome! Bring your laptop for
+spontaneous show-and-tell.
 
 
 ### Location
