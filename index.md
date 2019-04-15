@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  April 30th, 2019 Meetup
+#  April 24th, 2019 Meetup
 
-The next meetup is on Wednesday, April 30th 2019.
+The next meetup is on Wednesday, April 24th 2019.
 
 Let us know if you have something you want to talk about, anything
 more or less Emacs related is welcome! Bring your laptop for
@@ -62,7 +62,7 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, April 30th 2019
+* Wednesday, April 24th 2019
 
 * Wednesday, May 29th 2019
 
