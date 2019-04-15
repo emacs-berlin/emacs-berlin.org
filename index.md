@@ -13,16 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  March 27th, 2019 Meetup
+#  April 30th, 2019 Meetup
 
-The next meetup is on Wednesday, March 27th 2019.
-
-There'll be two presentations:
-
-Max: **config management with org-mode**, templates, variables,
-documentation - that sort of thing
-
-Marco: **calc, the "advanced desk calculator"** (info "(calc) Top")
+The next meetup is on Wednesday, April 30th 2019.
 
 Let us know if you have something you want to talk about, anything
 more or less Emacs related is welcome! Bring your laptop for
@@ -69,11 +62,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 27th 2019
-
 * Wednesday, April 30th 2019
 
 * Wednesday, May 29th 2019
+
+* Wednesday, June 26th 2019
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
