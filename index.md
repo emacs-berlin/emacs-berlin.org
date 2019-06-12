@@ -13,15 +13,15 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  May 29th, 2019 Meetup
+#  June 26th, 2019 Meetup
 
-The next meetup is on Wednesday, May 29th 2019 (right before the public
-holiday Maria Himmelfahrt on Thursday).
+The next meetup is on Wednesday, June 26th 2019.
 
-The preliminary plan is to center the meetup around orgmode, and how
-people organize their lives with it. Let us know if you have something
-you want to talk about. Anything more or less Emacs related is
-welcome! Bring your laptop for spontaneous show-and-tell.
+This meetup will be centered around orgmode, and how people organize
+their lives with it. Clocking, deadlines, todos etc. Still looking for
+talks, let us know if you want to contribute. Anything more or less
+Emacs related is welcome! As always, bring your laptop for spontaneous
+show-and-tell.
 
 
 ### Location
@@ -64,11 +64,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 29th 2019
-
 * Wednesday, June 26th 2019
 
 * Wednesday, July 31st 2019 (tbc)
+
+* Wednesday, August 28th 2019 (tbc)
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
