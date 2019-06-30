@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  July 26th, 2019 Meetup
+#  July 31st, 2019 Meetup
 
 The next meetup is on Wednesday, July 31st 2019.
 
