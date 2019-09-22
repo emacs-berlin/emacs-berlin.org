@@ -13,12 +13,16 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  July 31st, 2019 Meetup
+#  September 25th, 2019 Meetup
 
-The next meetup is on Wednesday, July 31st 2019.
+The next meetup is on Wednesday, September 25th 2019.
 
-Slots open for talks. And as always, bring your laptop for spontaneous
+Friendly get-together open for questions, presentations and
+discussion. As always, bring your laptop for some spontaneous
 show-and-tell.
+
+And yes, there was a meetup in August, but nobody updated the website,
+tsk.
 
 
 ### Location
@@ -30,7 +34,8 @@ In the first courtyard, enter the door on the right, up to 1st floor,
 there will be signs.
 
 Doors open 19:00, talks start around 19:30, Contentful provides
-*drinks* and *pizza*.
+*drinks* and *pizza* (drinks have non-alcoholic and alcoholic options,
+pizza has vegan, vegetarian and non-veg options).
 
 
 ### About Emacs Berlin
@@ -61,14 +66,9 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, July 31st 2019
-
-* Wednesday, August 28th 2019
-
-* Wednesday, September 25th 2019
-<!-- Wednesday, October 30th 2019 -->
-<!-- Wednesday, November 27th 2019 -->
-<!-- December most likely cancelled -->
+* Wednesday, October 30th 2019
+* Wednesday, November 27th 2019
+* December most likely cancelled
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
