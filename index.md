@@ -13,16 +13,13 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  September 25th, 2019 Meetup
+#  October 30th, 2019 Meetup
 
-The next meetup is on Wednesday, September 25th 2019.
+The next meetup is on Wednesday, October 30th 2019.
 
 Friendly get-together open for questions, presentations and
 discussion. As always, bring your laptop for some spontaneous
 show-and-tell.
-
-And yes, there was a meetup in August, but nobody updated the website,
-tsk.
 
 
 ### Location
@@ -66,9 +63,8 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 30th 2019
 * Wednesday, November 27th 2019
-* December most likely cancelled
+* December no meetup due to holidays
 
 <!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
 <!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
