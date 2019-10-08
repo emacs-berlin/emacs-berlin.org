@@ -199,7 +199,24 @@ Let me repeat that
 |-----------+------------------------------+--------------------|
 | ~C-x C-b~ | Get a list of all open files | ~list-buffers~     |
 | ~C-x b~   | Switch to another open file  | ~switch-to-buffer~ |
-|           |                              |                    |
+
+** Getting help
+
+| Key     |                                                       | Emacs command       |
+|---------+-------------------------------------------------------+---------------------|
+| ~C-h f~ | See the docstring for a function                      | ~describe-function~ |
+| ~C-h k~ | Find which command a key is bound to                  | ~describe-key~      |
+| ~C-h i~ | Open the Emacs manual (info pages)                    | ~info~              |
+| ~C-h m~ | See documentation of the current major and minor mode | ~describe-mode~     |
+
+** Working with windows
+
+| Key     |                                    | Emacs command          |
+|---------+------------------------------------+------------------------|
+| ~C-x 2~ | Split vertically                   | ~split-window-below~   |
+| ~C-x 3~ | Split horizontally                 | ~split-window-right~   |
+| ~C-x o~ | Go to next window                  | ~other-window~         |
+| ~C-x 1~ | Maximize window (close all others) | ~delete-other-windows~ |
 
 * First steps in Elisp
 ** evaluating forms

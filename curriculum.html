@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-28 Fr 21:45 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2019-10-08 Di 09:48 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs Berlin Beginners Curriculum</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Emacs Berlin" />
-<meta  name="description" content="A modern beginners guide to setting up and using Emacs."
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Emacs Berlin" />
+<meta name="description" content="A modern beginners guide to setting up and using Emacs."
  />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -55,13 +55,98 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -78,6 +163,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -94,6 +192,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <meta charset="utf-8" />
@@ -108,7 +207,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -157,54 +256,56 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline4">1. Installation</a>
+<li><a href="#org2a63d7f">1. Installation</a>
 <ul>
-<li><a href="#orgheadline1">1.1. Windows</a></li>
-<li><a href="#orgheadline2">1.2. OS X</a></li>
-<li><a href="#orgheadline3">1.3. Linux</a></li>
+<li><a href="#org6dc4a84">1.1. Windows</a></li>
+<li><a href="#org4010818">1.2. OS X</a></li>
+<li><a href="#org859016f">1.3. Linux</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline13">2. First steps</a>
+<li><a href="#orgc5fdebf">2. First steps</a>
 <ul>
-<li><a href="#orgheadline5">2.1. Hello, Emacs</a></li>
-<li><a href="#orgheadline8">2.2. A word about key combinations</a></li>
-<li><a href="#orgheadline9">2.3. Survival Emacs</a></li>
-<li><a href="#orgheadline10">2.4. Introduction to editing</a></li>
-<li><a href="#orgheadline11">2.5. Visiting files</a></li>
-<li><a href="#orgheadline12">2.6. Switching buffers</a></li>
+<li><a href="#org2bb2dbc">2.1. Hello, Emacs</a></li>
+<li><a href="#org352f7fb">2.2. A word about key combinations</a></li>
+<li><a href="#orgc410497">2.3. Survival Emacs</a></li>
+<li><a href="#org1b8b900">2.4. Introduction to editing</a></li>
+<li><a href="#orga9fcecb">2.5. Visiting files</a></li>
+<li><a href="#org1a0e39b">2.6. Switching buffers</a></li>
+<li><a href="#orgac3b8f2">2.7. Getting help</a></li>
+<li><a href="#orgf47471b">2.8. Working with windows</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline16">3. First steps in Elisp</a>
+<li><a href="#org7fe22ab">3. First steps in Elisp</a>
 <ul>
-<li><a href="#orgheadline14">3.1. evaluating forms</a></li>
-<li><a href="#orgheadline15">3.2. values, variables, functions, setq</a></li>
+<li><a href="#orgc276a85">3.1. evaluating forms</a></li>
+<li><a href="#orgb5c0450">3.2. values, variables, functions, setq</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline26">4. create first .emacs/init.el</a>
+<li><a href="#org152a102">4. create first .emacs/init.el</a>
 <ul>
-<li><a href="#orgheadline17">4.1. A blueprint to get started</a></li>
-<li><a href="#orgheadline18">4.2. major/minor modes</a></li>
-<li><a href="#orgheadline19">4.3. get to a "good enough" initial set up</a></li>
-<li><a href="#orgheadline25">4.4. Language specific sections</a></li>
+<li><a href="#orge61d383">4.1. A blueprint to get started</a></li>
+<li><a href="#org31586a0">4.2. major/minor modes</a></li>
+<li><a href="#orgaef7a71">4.3. get to a "good enough" initial set up</a></li>
+<li><a href="#orgf5bbda7">4.4. Language specific sections</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline28">5. References</a>
+<li><a href="#org5460dc4">5. References</a>
 <ul>
-<li><a href="#orgheadline27">5.1. Emacsish glossary</a></li>
+<li><a href="#org593a011">5.1. Emacsish glossary</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline31">6. Where next</a>
+<li><a href="#org70fe0fb">6. Where next</a>
 <ul>
-<li><a href="#orgheadline29">6.1. how to use the help system</a></li>
-<li><a href="#orgheadline30">6.2. a tour of emacs features and packages</a></li>
+<li><a href="#orgace5a0c">6.1. how to use the help system</a></li>
+<li><a href="#org042d2ce">6.2. a tour of emacs features and packages</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">1</span> Installation</h2>
+<div id="outline-container-org2a63d7f" class="outline-2">
+<h2 id="org2a63d7f"><span class="section-number-2">1</span> Installation</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 How to install Emacs depends on your operating system. Make sure you install
@@ -212,8 +313,8 @@ How to install Emacs depends on your operating system. Make sure you install
 </p>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Windows</h3>
+<div id="outline-container-org6dc4a84" class="outline-3">
+<h3 id="org6dc4a84"><span class="section-number-3">1.1</span> Windows</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Windows versions of GNU Emacs are distributed as zip-files, which can be found
@@ -233,8 +334,8 @@ The <code>runemacs.exe</code> program in the <code>bin</code> directory will sta
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.2</span> OS X</h3>
+<div id="outline-container-org4010818" class="outline-3">
+<h3 id="org4010818"><span class="section-number-3">1.2</span> OS X</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 OS X already comes with a version of Emacs installed, but it's very old (Emacs
@@ -247,7 +348,6 @@ If you have Homebrew available then that is the most straightforward option.
 </p>
 
 <div class="org-src-container">
-
 <pre class="src src-sh">$ brew update
 $ brew install emacs --with-cocoa
 $ brew linkapps emacs
@@ -265,8 +365,8 @@ That should be enough to get you going. Emacs Redux has some more tips on
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3"><span class="section-number-3">1.3</span> Linux</h3>
+<div id="outline-container-org859016f" class="outline-3">
+<h3 id="org859016f"><span class="section-number-3">1.3</span> Linux</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Your package manager should have ready-made packages available. If you have a
@@ -277,11 +377,12 @@ from the command line with <code>apt-get</code> or <code>yum</code>.
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="section-number-2">2</span> First steps</h2>
+<div id="outline-container-orgc5fdebf" class="outline-2">
+<h2 id="orgc5fdebf"><span class="section-number-2">2</span> First steps</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">2.1</span> Hello, Emacs</h3>
+</div>
+<div id="outline-container-org2bb2dbc" class="outline-3">
+<h3 id="org2bb2dbc"><span class="section-number-3">2.1</span> Hello, Emacs</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 If you've managed to install and start Emacs, you should see a screen that looks like this,
@@ -315,8 +416,7 @@ Try typing this line of code
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">dotimes</span> <span style="color: #8abeb7;">(</span>x 10<span style="color: #8abeb7;">)</span> <span style="color: #8abeb7;">(</span>insert <span style="color: #8abeb7;">"</span><span style="color: #b294bb;">\</span><span style="color: #b294bb;">n</span><span style="color: #8abeb7;">Hello Emacs!"</span><span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">dotimes</span> <span style="color: #8abeb7;">(</span>x <span style="color: #81a2be;">10</span><span style="color: #8abeb7;">)</span> <span style="color: #8abeb7;">(</span>insert <span style="color: #8abeb7;">"\nHello Emacs!"</span><span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
 </pre>
 </div>
 
@@ -332,11 +432,12 @@ Congratulations! You just wrote and executed your first piece of Emacs Lisp code
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="section-number-3">2.2</span> A word about key combinations</h3>
+<div id="outline-container-org352f7fb" class="outline-3">
+<h3 id="org352f7fb"><span class="section-number-3">2.2</span> A word about key combinations</h3>
 <div class="outline-text-3" id="text-2-2">
-</div><div id="outline-container-orgheadline6" class="outline-4">
-<h4 id="orgheadline6"><span class="section-number-4">2.2.1</span> The Control Key</h4>
+</div>
+<div id="outline-container-org7e263f7" class="outline-4">
+<h4 id="org7e263f7"><span class="section-number-4">2.2.1</span> The Control Key</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Emacs makes heavy use of key combinations like "ctrl + g" or "alt + x". In the
@@ -352,13 +453,18 @@ notation. For example,
 </div>
 </div>
 
-<div id="outline-container-orgheadline7" class="outline-4">
-<h4 id="orgheadline7"><span class="section-number-4">2.2.2</span> The Meta (Alt) Key</h4>
+<div id="outline-container-orge8bc703" class="outline-4">
+<h4 id="orge8bc703"><span class="section-number-4">2.2.2</span> The Meta (Alt) Key</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Besides the <code>Ctrl</code> key, Emacs makes heavy use of the <code>Meta</code> key. This is kind of
 sad, because modern keyboards no longer have a <code>Meta</code> key. Instead the "Alt" key
-is typically used as "Meta". If you're on Mac it might also be the "Cmd/⌘" key.
+is typically used as "Meta". Some Mac users prefer to use <code>Cmd/⌘</code> as their
+<code>Meta</code> key. Depending on where you got your Emacs from it might even be using
+"Cmd/⌘" already.
+</p>
+
+<p>
 The <code>Meta</code> key (Alt or Cmd/⌘) is abbreviated with <code>M-</code>.
 </p>
 
@@ -373,15 +479,29 @@ Here are some key combinations
 </dl>
 
 <p>
-(You don't need to memorize these commands now.)
+This last one means: press <code>Alt</code> and <code>x</code> together, then type <code>emacs-version</code>,
+then press enter. <code>emacs-version</code> is just one of money Emacs command that you
+can invoke by typing <code>M-x</code> and then the name of the command.
+</p>
+
+<p>
+(You don't need to memorize these key combinations for now.)
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="section-number-3">2.3</span> Survival Emacs</h3>
+<div id="outline-container-orgc410497" class="outline-3">
+<h3 id="orgc410497"><span class="section-number-3">2.3</span> Survival Emacs</h3>
 <div class="outline-text-3" id="text-2-3">
+<p>
+From here on it gets real, you should try to practice the commands that follow
+until they are committed to memory. It's a good idea to write these on a small
+piece of paper or index card. Keep it close to your computer as a reference.
+</p>
+
+
+
 <p>
 To exit Emacs, type <code>C-x C-c</code>.
 </p>
@@ -391,7 +511,7 @@ You can quit a partially entered command, type <code>C-g</code>.
 </p>
 
 <p>
-To close informational "windows" like an error message or help information, type `q`
+To close informational "windows" like an error message or help information, type <code>q</code>
 </p>
 
 <p>
@@ -426,8 +546,8 @@ Let me repeat that
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="section-number-3">2.4</span> Introduction to editing</h3>
+<div id="outline-container-org1b8b900" class="outline-3">
+<h3 id="org1b8b900"><span class="section-number-3">2.4</span> Introduction to editing</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 <b>These sections need explanation and exercises, I just listed the main commands so people have something to get started with.</b>
@@ -454,31 +574,31 @@ Let me repeat that
 <tr>
 <td><code>C-y</code></td>
 <td>Paste</td>
-<td>`yank`</td>
+<td><code>yank</code></td>
 </tr>
 
 <tr>
 <td><code>C-k</code></td>
 <td>Cut until the end of the line</td>
-<td>`kill`</td>
+<td><code>kill</code></td>
 </tr>
 
 <tr>
 <td><code>C-SPC</code></td>
 <td>Start selecting text</td>
-<td>`set-mark-comand`</td>
+<td><code>set-mark-comand</code></td>
 </tr>
 
 <tr>
 <td><code>M-w</code></td>
 <td>Copy selected text</td>
-<td>`kill-ring-save`</td>
+<td><code>kill-ring-save</code></td>
 </tr>
 
 <tr>
 <td><code>C-w</code></td>
 <td>Cut selected text</td>
-<td>`kill-region`</td>
+<td><code>kill-region</code></td>
 </tr>
 </tbody>
 </table>
@@ -486,8 +606,8 @@ Let me repeat that
 </div>
 
 
-<div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="section-number-3">2.5</span> Visiting files</h3>
+<div id="outline-container-orga9fcecb" class="outline-3">
+<h3 id="orga9fcecb"><span class="section-number-3">2.5</span> Visiting files</h3>
 <div class="outline-text-3" id="text-2-5">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -510,33 +630,33 @@ Let me repeat that
 <tr>
 <td><code>C-x C-f</code></td>
 <td>Open File</td>
-<td>`find-file`</td>
+<td><code>find-file</code></td>
 </tr>
 
 <tr>
 <td><code>C-x C-s</code></td>
 <td>Save File</td>
-<td>`save-buffer`</td>
+<td><code>save-buffer</code></td>
 </tr>
 
 <tr>
 <td><code>C-x s</code></td>
 <td>Save All</td>
-<td>`save-some-buffers`</td>
+<td><code>save-some-buffers</code></td>
 </tr>
 
 <tr>
 <td><code>C-x k</code></td>
 <td>Close File</td>
-<td>`kill-buffer`</td>
+<td><code>kill-buffer</code></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12"><span class="section-number-3">2.6</span> Switching buffers</h3>
+<div id="outline-container-org1a0e39b" class="outline-3">
+<h3 id="org1a0e39b"><span class="section-number-3">2.6</span> Switching buffers</h3>
 <div class="outline-text-3" id="text-2-6">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -559,19 +679,111 @@ Let me repeat that
 <tr>
 <td><code>C-x C-b</code></td>
 <td>Get a list of all open files</td>
-<td>`list-buffers`</td>
+<td><code>list-buffers</code></td>
 </tr>
 
 <tr>
 <td><code>C-x b</code></td>
 <td>Switch to another open file</td>
-<td>`switch-to-buffer`</td>
+<td><code>switch-to-buffer</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgac3b8f2" class="outline-3">
+<h3 id="orgac3b8f2"><span class="section-number-3">2.7</span> Getting help</h3>
+<div class="outline-text-3" id="text-2-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col">Key</th>
+<th scope="col">&#xa0;</th>
+<th scope="col">Emacs command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-h f</code></td>
+<td>See the docstring for a function</td>
+<td><code>describe-function</code></td>
 </tr>
 
 <tr>
-<td>&#xa0;</td>
-<td>&#xa0;</td>
-<td>&#xa0;</td>
+<td><code>C-h k</code></td>
+<td>Find which command a key is bound to</td>
+<td><code>describe-key</code></td>
+</tr>
+
+<tr>
+<td><code>C-h i</code></td>
+<td>Open the Emacs manual (info pages)</td>
+<td><code>info</code></td>
+</tr>
+
+<tr>
+<td><code>C-h m</code></td>
+<td>See documentation of the current major and minor mode</td>
+<td><code>describe-mode</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf47471b" class="outline-3">
+<h3 id="orgf47471b"><span class="section-number-3">2.8</span> Working with windows</h3>
+<div class="outline-text-3" id="text-2-8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col">Key</th>
+<th scope="col">&#xa0;</th>
+<th scope="col">Emacs command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-x 2</code></td>
+<td>Split vertically</td>
+<td><code>split-window-below</code></td>
+</tr>
+
+<tr>
+<td><code>C-x 3</code></td>
+<td>Split horizontally</td>
+<td><code>split-window-right</code></td>
+</tr>
+
+<tr>
+<td><code>C-x o</code></td>
+<td>Go to next window</td>
+<td><code>other-window</code></td>
+</tr>
+
+<tr>
+<td><code>C-x 1</code></td>
+<td>Maximize window (close all others)</td>
+<td><code>delete-other-windows</code></td>
 </tr>
 </tbody>
 </table>
@@ -579,11 +791,12 @@ Let me repeat that
 </div>
 </div>
 
-<div id="outline-container-orgheadline16" class="outline-2">
-<h2 id="orgheadline16"><span class="section-number-2">3</span> First steps in Elisp</h2>
+<div id="outline-container-org7fe22ab" class="outline-2">
+<h2 id="org7fe22ab"><span class="section-number-2">3</span> First steps in Elisp</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgheadline14" class="outline-3">
-<h3 id="orgheadline14"><span class="section-number-3">3.1</span> evaluating forms</h3>
+</div>
+<div id="outline-container-orgc276a85" class="outline-3">
+<h3 id="orgc276a85"><span class="section-number-3">3.1</span> evaluating forms</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 <b>TODO</b>
@@ -591,8 +804,8 @@ Let me repeat that
 </div>
 </div>
 
-<div id="outline-container-orgheadline15" class="outline-3">
-<h3 id="orgheadline15"><span class="section-number-3">3.2</span> values, variables, functions, setq</h3>
+<div id="outline-container-orgb5c0450" class="outline-3">
+<h3 id="orgb5c0450"><span class="section-number-3">3.2</span> values, variables, functions, setq</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 <b>TODO</b>
@@ -601,11 +814,12 @@ Let me repeat that
 </div>
 </div>
 
-<div id="outline-container-orgheadline26" class="outline-2">
-<h2 id="orgheadline26"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
+<div id="outline-container-org152a102" class="outline-2">
+<h2 id="org152a102"><span class="section-number-2">4</span> create first .emacs/init.el</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">4.1</span> A blueprint to get started</h3>
+</div>
+<div id="outline-container-orge61d383" class="outline-3">
+<h3 id="orge61d383"><span class="section-number-3">4.1</span> A blueprint to get started</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 There are many ways to organize the configuration of your Emacs. We'll give you
@@ -622,12 +836,11 @@ the two main "package repositories", GNU ELPA and MELPA.
 <p>
 A package may require some extra setup or configuration, such as customizing
 variables or creating key bindings. To keep that all in one place we'll use a
-command called `use-package', which is itself installed as&#x2026; a package.
+command called <code>use-package</code>, which is itself installed as&#x2026; a package.
 Package-ception!
 </p>
 
 <div class="org-src-container">
-
 <pre class="src src-emacs-lisp"><span style="color: #969896; font-style: italic;">;; </span><span style="color: #969896; font-style: italic;">Install packages from these sources</span>
 <span style="color: #969896; font-style: italic;">;;   </span><span style="color: #969896; font-style: italic;">- GNU ELPA: The official GNU package repository, relatively small</span>
 <span style="color: #969896; font-style: italic;">;;   </span><span style="color: #969896; font-style: italic;">- MELPA: The main community-run package archive</span>
@@ -641,12 +854,12 @@ Package-ception!
 <span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">unless</span> <span style="color: #8abeb7;">(</span>file-exists-p <span style="color: #8abeb7;">"~/.emacs.d/elpa/archives/melpa"</span><span style="color: #8abeb7;">)</span>
   <span style="color: #8abeb7;">(</span>package-refresh-contents<span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
 
-<span style="color: #969896; font-style: italic;">;; </span><span style="color: #969896; font-style: italic;">The `</span><span style="color: #4271ae; font-style: italic;">use-package</span><span style="color: #969896; font-style: italic;">' package makes it easy to install and configure packages</span>
+<span style="color: #969896; font-style: italic;">;; </span><span style="color: #969896; font-style: italic;">The `</span><span style="color: #81a2be; font-style: italic;">use-package</span><span style="color: #969896; font-style: italic;">' package makes it easy to install and configure packages</span>
 <span style="color: #c5c8c6;">(</span>package-install 'use-package<span style="color: #c5c8c6;">)</span>
 
 
 <span style="color: #969896; font-style: italic;">;; </span><span style="color: #969896; font-style: italic;">For example,</span>
-<span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">multiple-cursors</span>
+<span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">multiple-cursors</span>
 
   <span style="color: #969896; font-style: italic;">;; </span><span style="color: #969896; font-style: italic;">install the package if it isn't already</span>
   <span style="color: #b294bb;">:ensure</span> t
@@ -661,14 +874,14 @@ Package-ception!
 </div>
 </div>
 
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18"><span class="section-number-3">4.2</span> major/minor modes</h3>
+<div id="outline-container-org31586a0" class="outline-3">
+<h3 id="org31586a0"><span class="section-number-3">4.2</span> major/minor modes</h3>
 </div>
-<div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19"><span class="section-number-3">4.3</span> get to a "good enough" initial set up</h3>
+<div id="outline-container-orgaef7a71" class="outline-3">
+<h3 id="orgaef7a71"><span class="section-number-3">4.3</span> get to a "good enough" initial set up</h3>
 </div>
-<div id="outline-container-orgheadline25" class="outline-3">
-<h3 id="orgheadline25"><span class="section-number-3">4.4</span> Language specific sections</h3>
+<div id="outline-container-orgf5bbda7" class="outline-3">
+<h3 id="orgf5bbda7"><span class="section-number-3">4.4</span> Language specific sections</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 For each language that you commonly program in, you should at least install a
@@ -678,16 +891,15 @@ copy over the ones that are relevant to you.
 </p>
 </div>
 
-<div id="outline-container-orgheadline20" class="outline-4">
-<h4 id="orgheadline20"><span class="section-number-4">4.4.1</span> Ruby</h4>
+<div id="outline-container-orgaa23304" class="outline-4">
+<h4 id="orgaa23304"><span class="section-number-4">4.4.1</span> Ruby</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <p>
 There is a Ruby major mode already installed with Emacs, all you need to do is enable it
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">ruby-mode</span><span style="color: #c5c8c6;">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">ruby-mode</span><span style="color: #c5c8c6;">)</span>
 </pre>
 </div>
 
@@ -705,23 +917,22 @@ Packages you could look into in the future include
 </div>
 </div>
 
-<div id="outline-container-orgheadline21" class="outline-4">
-<h4 id="orgheadline21"><span class="section-number-4">4.4.2</span> Javascript</h4>
+<div id="outline-container-org653ed0d" class="outline-4">
+<h4 id="org653ed0d"><span class="section-number-4">4.4.2</span> Javascript</h4>
 <div class="outline-text-4" id="text-4-4-2">
 <p>
 Emacs comes bundled with a <code>js-mode</code>, however you might prefer <code>js2-mode</code>.
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">js2-mode</span> <span style="color: #b294bb;">:ensure</span> t<span style="color: #c5c8c6;">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">js2-mode</span> <span style="color: #b294bb;">:ensure</span> t<span style="color: #c5c8c6;">)</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline22" class="outline-4">
-<h4 id="orgheadline22"><span class="section-number-4">4.4.3</span> CSS</h4>
+<div id="outline-container-orgaaa748a" class="outline-4">
+<h4 id="orgaaa748a"><span class="section-number-4">4.4.3</span> CSS</h4>
 <div class="outline-text-4" id="text-4-4-3">
 <p>
 Emacs comes bundled with CSS mode. A nice extra is <code>rainbow-mode</code>, which shows
@@ -729,10 +940,9 @@ the color of color codes.
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">css-mode</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">css-mode</span>
   <span style="color: #b294bb;">:config</span>
-  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">rainbow-mode</span>
+  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">rainbow-mode</span>
     <span style="color: #b294bb;">:ensure</span> t
     <span style="color: #b294bb;">:config</span>
     <span style="color: #f0c674;">(</span>add-hook 'css-mode-hook 'rainbow-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
@@ -744,22 +954,20 @@ Example:
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-css"><span style="color: #de935f;">body </span>{
-  <span style="color: #f0c674;">color</span>: #1e1e1e;
-  <span style="color: #f0c674;">background</span>: #3e77ff;
-}
+<pre class="src src-css"><span style="color: #de935f;">body </span><span style="color: #c5c8c6;">{</span>
+  <span style="color: #b5bd68;">color</span>: <span style="color: #ffffff; background-color: #1e1e1e;">#1e1e1e</span>;
+  <span style="color: #b5bd68;">background</span>: <span style="color: #ffffff; background-color: #3e77ff;">#3e77ff</span>;
+<span style="color: #c5c8c6;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline23" class="outline-4">
-<h4 id="orgheadline23"><span class="section-number-4">4.4.4</span> Clojure</h4>
+<div id="outline-container-orgff59f36" class="outline-4">
+<h4 id="orgff59f36"><span class="section-number-4">4.4.4</span> Clojure</h4>
 <div class="outline-text-4" id="text-4-4-4">
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">clojure-mode</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">clojure-mode</span>
   <span style="color: #b294bb;">:ensure</span> t
   <span style="color: #b294bb;">:config</span>
   <span style="color: #8abeb7;">(</span>add-hook 'clojure-mode-hook 'cider-mode<span style="color: #8abeb7;">)</span>
@@ -772,17 +980,17 @@ Example:
   <span style="color: #969896; font-style: italic;">;;   </span><span style="color: #969896; font-style: italic;">(add-hook 'clojure-mode-hook 'paredit-mode))</span>
 
   <span style="color: #969896; font-style: italic;">;;; </span><span style="color: #969896; font-style: italic;">Give matching parentheses matching colors</span>
-  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">rainbow-delimiters</span>
+  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">rainbow-delimiters</span>
     <span style="color: #b294bb;">:ensure</span> t
     <span style="color: #b294bb;">:config</span>
     <span style="color: #f0c674;">(</span>add-hook 'clojure-mode-hook 'rainbow-delimiters-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
 
   <span style="color: #969896; font-style: italic;">;;; </span><span style="color: #969896; font-style: italic;">Integrated REPL environment</span>
-  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">cider</span>
+  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">cider</span>
     <span style="color: #b294bb;">:ensure</span> t
     <span style="color: #b294bb;">:config</span>
-    <span style="color: #f0c674;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">cider-eval-sexp-fu</span> <span style="color: #b294bb;">:ensure</span> t<span style="color: #f0c674;">)</span>
-    <span style="color: #f0c674;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">clj-refactor</span>
+    <span style="color: #f0c674;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">cider-eval-sexp-fu</span> <span style="color: #b294bb;">:ensure</span> t<span style="color: #f0c674;">)</span>
+    <span style="color: #f0c674;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">clj-refactor</span>
       <span style="color: #b294bb;">:ensure</span> t
       <span style="color: #b294bb;">:config</span>
       <span style="color: #b5bd68;">(</span>add-hook 'clojure-mode-hook 'clj-refactor-mode<span style="color: #b5bd68;">)</span>
@@ -792,8 +1000,8 @@ Example:
 </div>
 </div>
 
-<div id="outline-container-orgheadline24" class="outline-4">
-<h4 id="orgheadline24"><span class="section-number-4">4.4.5</span> HTML templates</h4>
+<div id="outline-container-orgd747bf1" class="outline-4">
+<h4 id="orgd747bf1"><span class="section-number-4">4.4.5</span> HTML templates</h4>
 <div class="outline-text-4" id="text-4-4-5">
 <p>
 Web Mode does a good job of letting you edit various HTML template files. It
@@ -812,18 +1020,17 @@ website</a> for more information.
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #4271ae;">web-mode</span>
+<pre class="src src-emacs-lisp"><span style="color: #c5c8c6;">(</span><span style="color: #b5bd68;">use-package</span> <span style="color: #81a2be;">web-mode</span>
   <span style="color: #b294bb;">:ensure</span> t
 
   <span style="color: #b294bb;">:config</span>
-  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"</span><span style="color: #b294bb;">\</span><span style="color: #b294bb;">\</span><span style="color: #8abeb7;">.erb$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
-  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"</span><span style="color: #b294bb;">\</span><span style="color: #b294bb;">\</span><span style="color: #8abeb7;">.hbs$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
-  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"</span><span style="color: #b294bb;">\</span><span style="color: #b294bb;">\</span><span style="color: #8abeb7;">.tmpl$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
-  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"</span><span style="color: #b294bb;">\</span><span style="color: #b294bb;">\</span><span style="color: #8abeb7;">.html$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
+  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"\\.erb$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
+  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"\\.hbs$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
+  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"\\.tmpl$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
+  <span style="color: #8abeb7;">(</span>add-to-list 'auto-mode-alist '<span style="color: #f0c674;">(</span><span style="color: #8abeb7;">"\\.html$"</span> . web-mode<span style="color: #f0c674;">)</span><span style="color: #8abeb7;">)</span>
 
-  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">setq</span> web-mode-markup-indent-offset 2<span style="color: #8abeb7;">)</span>
-  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">setq</span> web-mode-code-indent-offset 2<span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
+  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">setq</span> web-mode-markup-indent-offset <span style="color: #81a2be;">2</span><span style="color: #8abeb7;">)</span>
+  <span style="color: #8abeb7;">(</span><span style="color: #b5bd68;">setq</span> web-mode-code-indent-offset <span style="color: #81a2be;">2</span><span style="color: #8abeb7;">)</span><span style="color: #c5c8c6;">)</span>
 </pre>
 </div>
 </div>
@@ -831,11 +1038,12 @@ website</a> for more information.
 </div>
 </div>
 
-<div id="outline-container-orgheadline28" class="outline-2">
-<h2 id="orgheadline28"><span class="section-number-2">5</span> References</h2>
+<div id="outline-container-org5460dc4" class="outline-2">
+<h2 id="org5460dc4"><span class="section-number-2">5</span> References</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgheadline27" class="outline-3">
-<h3 id="orgheadline27"><span class="section-number-3">5.1</span> Emacsish glossary</h3>
+</div>
+<div id="outline-container-org593a011" class="outline-3">
+<h3 id="org593a011"><span class="section-number-3">5.1</span> Emacsish glossary</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Emacs is over 30 years old. It was developed in a time when computers took half
@@ -914,20 +1122,23 @@ to English.
 </div>
 </div>
 
-<div id="outline-container-orgheadline31" class="outline-2">
-<h2 id="orgheadline31"><span class="section-number-2">6</span> Where next</h2>
+<div id="outline-container-org70fe0fb" class="outline-2">
+<h2 id="org70fe0fb"><span class="section-number-2">6</span> Where next</h2>
 <div class="outline-text-2" id="text-6">
-</div><div id="outline-container-orgheadline29" class="outline-3">
-<h3 id="orgheadline29"><span class="section-number-3">6.1</span> how to use the help system</h3>
 </div>
-<div id="outline-container-orgheadline30" class="outline-3">
-<h3 id="orgheadline30"><span class="section-number-3">6.2</span> a tour of emacs features and packages</h3>
+<div id="outline-container-orgace5a0c" class="outline-3">
+<h3 id="orgace5a0c"><span class="section-number-3">6.1</span> how to use the help system</h3>
+</div>
+<div id="outline-container-org042d2ce" class="outline-3">
+<h3 id="org042d2ce"><span class="section-number-3">6.2</span> a tour of emacs features and packages</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Emacs Berlin</p>
-<p class="date">Created: 2016-10-28 Fr 21:45</p>
+<p class="date">Created: 2019-10-08 Di 09:48</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
