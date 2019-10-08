@@ -89,7 +89,6 @@ graphical package manager look for an "emacs" package, or install the package
 from the command line with ~apt-get~ or ~yum~.
 
 * First steps
-
 ** Hello, Emacs
 
 If you've managed to install and start Emacs, you should see a screen that looks like this,
@@ -157,8 +156,6 @@ From here on it gets real, you should try to practice the commands that follow
 until they are committed to memory. It's a good idea to write these on a small
 piece of paper or index card. Keep it close to your computer as a reference.
 
-
-
 To exit Emacs, type ~C-x C-c~.
 
 You can quit a partially entered command, type ~C-g~.
@@ -173,7 +170,15 @@ Let me repeat that
 
 ** Introduction to editing
 
-*These sections need explanation and exercises, I just listed the main commands so people have something to get started with.*
+Emacs predates the modern terminology of copy/cut/paste. Cut is called ~kill~,
+this deletes some text from the buffer, and appends it to the ~kill ring~. To
+"paste" it you ~yank~ it from the kill ring back to the buffer.
+
+The command to "copy" is called ~kill-ring-save~, since it adds a piece of text
+to the kill ring, without deleting it from the buffer.
+
+~C-y~ / ~yank~ inserts at the current cursor position, which in Emacs
+terminology is called ~point~.
 
 | Key     |                               | Emacs command     |
 |---------+-------------------------------+-------------------|
@@ -182,7 +187,6 @@ Let me repeat that
 | ~C-SPC~ | Start selecting text          | ~set-mark-comand~ |
 | ~M-w~   | Copy selected text            | ~kill-ring-save~  |
 | ~C-w~   | Cut selected text             | ~kill-region~     |
-
 
 ** Visiting files
 
@@ -217,11 +221,15 @@ Let me repeat that
 | ~C-x 3~ | Split horizontally                 | ~split-window-right~   |
 | ~C-x o~ | Go to next window                  | ~other-window~         |
 | ~C-x 1~ | Maximize window (close all others) | ~delete-other-windows~ |
+| ~C-x 0~ | Minimize window (close currentk)   | ~delete-window~        |
 
 * First steps in Elisp
 ** evaluating forms
 
-*TODO*
+You already used the command `eval-last-sexp`, bound to `C-x C-e`, which
+evaluates the s-expression preceding ~point~ (the cursor position).
+
+Another command for evaluating is `C-M-x`, which evaluates the outermost form.
 
 ** values, variables, functions, setq
 
