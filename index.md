@@ -22,8 +22,8 @@ day worth celebrating, for multiple reasons!<!-- ha, birthday.org remembers -->
 
 ### Location
 
-[Contentful](http://contentful.com)
-[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+[Contentful](https://contentful.com/)
+[Ritterstr. 12-14, 10969 Berlin](https://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
 
 In the first courtyard, enter the door on the right, up to 1st floor,
 there will be signs.
@@ -66,9 +66,6 @@ Non-public contact via email: [organizers email][contact]
 * Wednesday, February 26th 2020
 * Wednesday, March 25th 2020
 
-Regular location: [Contentful](http://contentful.com)
-[Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
-
 (if you see a past date here, pls check the [mailing list][mla])
 
 ### Archive
@@ -109,7 +106,7 @@ At the moment the best place to propose talks is on the [mailing list][ml].
 ## Code of Conduct
 
 Emacs Berlin has adopted the
-[Berlin Code of Conduct](http://berlincodeofconduct.org/), all who attend our
+[Berlin Code of Conduct](https://berlincodeofconduct.org/), all who attend our
 events or participate on our mailing list are expected to have read this
 document, and to behave accordingly.
 
@@ -122,7 +119,7 @@ document, and to behave accordingly.
 <!-- * [pxlpnk](https://github.com/pxlpnk/emacs.d) -->
 <!-- * [febeling](https://github.com/febeling/emacsd) -->
 <!-- * [Jano](https://github.com/janogonzalez/.emacs.d) -->
-<!-- * [Stefan](http://www.skamphausen.de/cgi-bin/ska/My_Configuration_of_Emacsen) -->
+<!-- * [Stefan](https://www.skamphausen.de/cgi-bin/ska/My_Configuration_of_Emacsen) -->
 <!-- * [Diez](https://bitbucket.org/deets/emacs-git) -->
 <!-- * [Jack](https://github.com/jackrusher/dotemacs) -->
 <!-- * [til](https://tils.net/init.el.txt) -->
