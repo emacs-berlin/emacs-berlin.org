@@ -13,14 +13,11 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  November 27th, 2019 Meetup
+#  January 29th, 2020 Meetup
 
-The next meetup is on Wednesday, November 27th 2019 (the last one in
-2019).
-
-Friendly get-together open for questions, presentations and
-discussion. As always, bring your laptop for some spontaneous
-show-and-tell.
+It's a wrap! At least for 2019, we had our last meetup of 2019 in
+November, so the next one is going to be on January 29th. That'll be a
+day worth celebrating, for multiple reasons!<!-- ha, birthday.org remembers -->
 
 
 ### Location
@@ -31,7 +28,7 @@ show-and-tell.
 In the first courtyard, enter the door on the right, up to 1st floor,
 there will be signs.
 
-Doors open 19:00, talks start around 19:30, Contentful provides
+Doors open 18:30, talks start around 19:00, Contentful provides
 *drinks* and *pizza* (drinks have non-alcoholic and alcoholic options,
 pizza has vegan, vegetarian and non-veg options).
 
@@ -64,24 +61,13 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, November 27th 2019
 * December no meetup due to holidays
 * Wednesday, January 29th 2020
-
-<!-- Location: [Babbel (Lesson Nine Gmbh)](https://www.babbel.com/)<br> -->
-<!-- Map: [Max-Beer-Straße 2, 10119 Berlin](https://goo.gl/maps/bXK48PS1qmG2) -->
-
-<!--
-The "Ganz Oben Office" (behind/above Betahouse, the old Travis office).
-Here [instructions on how to get to the Ganz Oben Office](https://gist.github.com/svenfuchs/5364262)
-
-Close to U8 Moritzplatz / U1 Prinzenstraße
--->
+* Wednesday, February 26th 2020
+* Wednesday, March 25th 2020
 
 Regular location: [Contentful](http://contentful.com)
 [Ritterstr. 12-14, 10969 Berlin](http://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
-
-<!-- There's a glass elevator in the front court yard, take it up to the fifth floor. -->
 
 (if you see a past date here, pls check the [mailing list][mla])
 
