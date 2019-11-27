@@ -18,6 +18,7 @@ Not every meeting gets an archive page, only when someone creates it
 ([PRs welcome](https://github.com/emacs-berlin/emacs-berlin.org/)).
 
 ## Previous meetings
+* November 2019: Intro to elisp with a quick link-to-GitHub tool by Daniel, then watched [Emacs: The Editor for the Next Forty Years](https://media.emacsconf.org/2019/26.html)
 * November 2018: [Emacs, India and Geminis](https://worldgeek.org/gemini-in-action-india-2018/gemini-in-action.html) by [Gary](https://worldgeek.org/)
 * September 2018: [Thread-safe Tramp](thread-safe-tramp-2018-09.html) by Michael Albinus ([org-file](thread-safe-tramp-2018-09.org))
 * August 2018: [macros](macros-2018-08.html) by Marco ([org-file](macros-2018-08.org))
