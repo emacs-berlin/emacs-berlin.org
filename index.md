@@ -19,6 +19,9 @@ It's a wrap! At least for 2019, we had our last meetup of 2019 in
 November, so the next one is going to be on January 29th. That'll be a
 day worth celebrating, for multiple reasons!<!-- ha, birthday.org remembers -->
 
+One talk confirmed so far, by Dieter about a variety of topics:
+building emacs-28, designing charts with emacs and LaTeX,
+administering directory services with emacs.
 
 ### Location
 
