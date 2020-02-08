@@ -13,15 +13,12 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  January 29th, 2020 Meetup
+#  February 26th, 2020 Meetup
 
-It's a wrap! At least for 2019, we had our last meetup of 2019 in
-November, so the next one is going to be on January 29th. That'll be a
-day worth celebrating, for multiple reasons!<!-- ha, birthday.org remembers -->
+The next regular meetup is going to be on Wednesday, February 26th.
+New to Emacs? Longtime elisp expert? Just want to know what this is
+all about? Come join us!
 
-One talk confirmed so far, by Dieter about a variety of topics:
-building emacs-28, designing charts with emacs and LaTeX,
-administering directory services with emacs.
 
 ### Location
 
@@ -64,10 +61,9 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* December no meetup due to holidays
-* Wednesday, January 29th 2020
 * Wednesday, February 26th 2020
 * Wednesday, March 25th 2020
+* Wednesday, April 29th 2020
 
 (if you see a past date here, pls check the [mailing list][mla])
 
