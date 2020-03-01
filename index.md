@@ -13,11 +13,11 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  February 26th, 2020 Meetup
+#  March 25th, 2020 Meetup
 
-The next regular meetup is going to be on Wednesday, February 26th.
-New to Emacs? Longtime elisp expert? Just want to know what this is
-all about? Come join us!
+The next regular meetup is going to be on Wednesday, March 25th. New
+to Emacs? Longtime elisp expert? Just want to know what this is all
+about? Come join us!
 
 
 ### Location
@@ -61,9 +61,18 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 26th 2020
 * Wednesday, March 25th 2020
 * Wednesday, April 29th 2020
+* Wednesday, May 27th 2020
+<!--
+* Wednesday, June 24th 2020
+* Wednesday, July 29th 2020
+* Wednesday, August 26th 2020
+* Wednesday, September 30th 2020
+* Wednesday, October 28th 2020
+* Wednesday, November 25th 2020
+* Wednesday, December 30th 2020 (tbd)
+-->
 
 (if you see a past date here, pls check the [mailing list][mla])
 
