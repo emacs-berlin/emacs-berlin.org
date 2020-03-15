@@ -13,11 +13,15 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  March 25th, 2020 Meetup
+#  March 25th, 2020 (remote) Meetup
 
-The next regular meetup is going to be on Wednesday, March 25th. New
-to Emacs? Longtime elisp expert? Just want to know what this is all
-about? Come join us!
+Our next meetup is going to be on Wednesday, March 25th. Due to the
+Coronavirus situation, it'll take place online, via the video
+conferencing tool zoom (connection details tba) and in IRC chat
+([connection instructions][erc]).
+
+New to Emacs? Longtime elisp expert? Just want to know what this is
+all about? Come join us!
 
 
 ### Location
@@ -45,7 +49,7 @@ The best way to stay posted is through our mailing list.
 Feel free to send an email introducing yourself after subscribing!
 
 You can also chat with us on irc:
-[#emacs-berlin](irc://chat.freenode.net/emacs-berlin)
+[#emacs-berlin](irc://chat.freenode.net/emacs-berlin) ([connection instructions][erc])
 
 Or on Twitter:
 [@emacsberlin](https://twitter.com/emacsberlin)
@@ -61,9 +65,10 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 25th 2020
-* Wednesday, April 29th 2020
-* Wednesday, May 27th 2020
+* Wednesday, March 25th 2020 (remote)
+* Wednesday, April 29th 2020 (probably remote as well)
+* Wednesday, May 27th 2020 (who knows)
+
 <!--
 * Wednesday, June 24th 2020
 * Wednesday, July 29th 2020
@@ -141,3 +146,4 @@ document, and to behave accordingly.
 [mlag]: news://news.gmane.org/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
+[erc]: https://mailb.org/pipermail/emacs-berlin/2020/000583.html
