@@ -143,7 +143,7 @@ document, and to behave accordingly.
 
 [ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
 [mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
-[mlag]: news://news.gmane.org/gmane.org.user-groups.emacs.berlin
+[mlag]: news://news.gmane.io/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
 [erc]: https://mailb.org/pipermail/emacs-berlin/2020/000583.html
