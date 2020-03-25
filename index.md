@@ -13,10 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  March 25th, 2020 (remote) Meetup
+#  April 29th, 2020 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, March 25th. Due to the
-Coronavirus situation, it'll take place online, via the video
+Our next meetup is going to be on Wednesday, April 29th. Due to the
+Coronavirus situation, it'll take place online again, via the video
 conferencing tool zoom (connection details tba) and in IRC chat
 ([connection instructions][erc]).
 
@@ -65,12 +65,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 25th 2020 (remote)
-* Wednesday, April 29th 2020 (probably remote as well)
-* Wednesday, May 27th 2020 (who knows)
+* Wednesday, April 29th 2020 (remote)
+* Wednesday, May 27th 2020 (remote? who knows)
+* Wednesday, June 24th 2020
 
 <!--
-* Wednesday, June 24th 2020
 * Wednesday, July 29th 2020
 * Wednesday, August 26th 2020
 * Wednesday, September 30th 2020
