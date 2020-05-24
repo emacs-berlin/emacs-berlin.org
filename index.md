@@ -13,12 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  April 29th, 2020 (remote) Meetup
+#  May 27th, 2020 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, April 29th. Due to the
-Coronavirus situation, it'll take place online again, via the video
-conferencing tool zoom (connection details tba) and in IRC chat
-([connection instructions][erc]).
+Our next meetup is going to be on Wednesday, May 27th. It'll take
+place online again like last time on Jitsi video chat.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
 all about? Come join us!
@@ -26,15 +24,16 @@ all about? Come join us!
 
 ### Location
 
-[Contentful](https://contentful.com/)
-[Ritterstr. 12-14, 10969 Berlin](https://www.openstreetmap.org/?mlat=52.501438558101654&mlon=13.410902917385101#map=19/52.50144/13.41090&layers=N)
+[Jitsi Room](https://raum.graum.xyz/emacs-berlin),
+Chrome/Chromium browser required.
 
-In the first courtyard, enter the door on the right, up to 1st floor,
-there will be signs.
+Last time Jitsi worked well, but if it should fail for whatever
+reason, there is a fallback [Zoom
+Room](https://contentful.zoom.us/j/97756244000) prepared. Check the
+[mailing list][ml] and [irc][erc] when in doubt.
 
-Doors open 18:30, talks start around 19:00, Contentful provides
-*drinks* and *pizza* (drinks have non-alcoholic and alcoholic options,
-pizza has vegan, vegetarian and non-veg options).
+Room open from 18:30 CEST, if there are talks they'll start at 19:00
+CEST.
 
 
 ### About Emacs Berlin
@@ -65,12 +64,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, April 29th 2020 (remote)
-* Wednesday, May 27th 2020 (remote? who knows)
-* Wednesday, June 24th 2020
+* Wednesday, May 27th 2020 (remote)
+* Wednesday, June 24th 2020 (remote)
+* Wednesday, July 29th 2020 (remote)
 
 <!--
-* Wednesday, July 29th 2020
 * Wednesday, August 26th 2020
 * Wednesday, September 30th 2020
 * Wednesday, October 28th 2020
