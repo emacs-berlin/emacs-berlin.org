@@ -13,10 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  May 27th, 2020 (remote) Meetup
+#  June 24th, 2020 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, May 27th. It'll take
-place online again like last time on Jitsi video chat.
+Our next meetup is going to be on Wednesday, June 24th. It'll take
+place online again like last time on video chat.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
 all about? Come join us!
@@ -24,16 +24,8 @@ all about? Come join us!
 
 ### Location
 
-[Jitsi Room](https://raum.graum.xyz/emacs-berlin),
-Chrome/Chromium browser required.
-
-Last time Jitsi worked well, but if it should fail for whatever
-reason, there is a fallback [Zoom
-Room](https://contentful.zoom.us/j/97756244000) prepared. Check the
-[mailing list][ml] and [irc][erc] when in doubt.
-
 Room open from 18:30 CEST, if there are talks they'll start at 19:00
-CEST.
+CEST. Details will be announced on the mailing list.
 
 
 ### About Emacs Berlin
@@ -64,12 +56,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 27th 2020 (remote)
 * Wednesday, June 24th 2020 (remote)
 * Wednesday, July 29th 2020 (remote)
+* Wednesday, August 26th 2020 (remote)
 
 <!--
-* Wednesday, August 26th 2020
 * Wednesday, September 30th 2020
 * Wednesday, October 28th 2020
 * Wednesday, November 25th 2020
