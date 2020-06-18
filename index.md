@@ -25,7 +25,8 @@ all about? Come join us!
 ### Location
 
 Room open from 18:30 CEST, if there are talks they'll start at 19:00
-CEST. Details will be announced on the mailing list.
+CEST. The video link will be posted on the day of the meetup to the
+mailing list. Check the [archive][mla] if you are not subscribed.
 
 
 ### About Emacs Berlin
