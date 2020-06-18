@@ -26,7 +26,7 @@ all about? Come join us!
 
 Room open from 18:30 CEST, if there are talks they'll start at 19:00
 CEST. The video link will be posted on the day of the meetup to the
-mailing list. Check the [archive][mla] if you are not subscribed.
+mailing list. Check the [archive][mla2020] if you are not subscribed.
 
 
 ### About Emacs Berlin
@@ -132,6 +132,7 @@ document, and to behave accordingly.
 
 [ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
 [mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
+[mla2020]: https://mailb.org/pipermail/emacs-berlin/2020/thread.html "Mailing List Archive 2020 by Thread"
 [mlag]: news://news.gmane.io/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
