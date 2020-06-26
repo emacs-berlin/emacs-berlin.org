@@ -13,14 +13,16 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-#  June 24th, 2020 (remote) Meetup
+#  July 29th, 2020 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, June 24th. It'll take
+Our next meetup is going to be on Wednesday, July 29th. It'll take
 place online again like last time on video chat.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
 all about? Come join us!
 
+We'll have talks and impromptu presentations, for sure about org-mode,
+most likely about on other topics as well.
 
 ### Location
 
@@ -57,12 +59,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, June 24th 2020 (remote)
 * Wednesday, July 29th 2020 (remote)
 * Wednesday, August 26th 2020 (remote)
+* Wednesday, September 30th 2020 (?)
 
 <!--
-* Wednesday, September 30th 2020
 * Wednesday, October 28th 2020
 * Wednesday, November 25th 2020
 * Wednesday, December 30th 2020 (tbd)
