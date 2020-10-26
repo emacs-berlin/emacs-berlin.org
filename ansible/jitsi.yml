@@ -20,3 +20,37 @@
       path: /usr/share/jitsi-meet/interface_config.js
       regexp: "UNSUPPORTED_BROWSERS:"
       line: "    UNSUPPORTED_BROWSERS: ['firefox', 'safari'],"
+
+  - name: disable audio level
+    lineinfile:
+      path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
+      regexp: "disableAudioLevels:"
+      line: "    disableAudioLevels: true,"
+
+  - name: configure video constraints
+    blockinfile:
+      path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
+      insertafter: "w3c spec-compliant video constraints"
+      marker: "// {mark} ANSIBLE MANAGED BLOCK"
+      block: |
+        resolution: 480,
+        maxFps: 15,
+        constraints: {
+          video: {
+            aspectRatio: 16 / 9,
+            height: {
+              ideal: 480,
+              max: 480,
+              min: 240,
+            },
+            frameRate: {
+              max: 15,
+            },
+          },
+        },
+
+  - name: require display name
+    lineinfile:
+      path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
+      regexp: "requireDisplayName:"
+      line: "    requireDisplayName: true,"
