@@ -54,3 +54,31 @@
       path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
       regexp: "requireDisplayName:"
       line: "    requireDisplayName: true,"
+
+  - name: configure prosody auth
+    replace:
+      path: /etc/prosody/conf.avail/jitsi.emacs-berlin.org.cfg.lua
+      after: 'VirtualHost "jitsi.emacs-berlin.org"'
+      before: 'Component'
+      regexp: 'authentication = "(.+)"'
+      replace: 'authentication = "internal_hashed"'
+
+  - name: configure prosody guest auth
+    blockinfile:
+      path: /etc/prosody/conf.avail/jitsi.emacs-berlin.org.cfg.lua
+      marker: "-- {mark} ANSIBLE MANAGED BLOCK"
+      block: |
+        VirtualHost "guest.jitsi-meet.example.com"
+            authentication = "anonymous"
+            c2s_require_encryption = false
+
+  - name: configure anonymousdomain
+    lineinfile:
+      path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
+      regexp: "anonymousdomain:"
+      line: "    anonymousdomain: \"guest.jitsi-meet.example.com\","
+
+  - name: configure jicofo main domain
+    lineinfile:
+      path: /etc/jitsi/jicofo/sip-communicator.properties
+      line: "org.jitsi.jicofo.auth.URL=XMPP:jitsi.emacs-berlin.org"
