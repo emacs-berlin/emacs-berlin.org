@@ -8,3 +8,15 @@
       path: /usr/share/jitsi-meet/interface_config.js
       regexp: "DEFAULT_BACKGROUND:"
       line: "    DEFAULT_BACKGROUND: '#dee28f',"
+
+  - name: configure optimal browsers
+    lineinfile:
+      path: /usr/share/jitsi-meet/interface_config.js
+      regexp: "OPTIMAL_BROWSERS:"
+      line: "    OPTIMAL_BROWSERS: ['chrome', 'chromium'],"
+
+  - name: configure unsupported browsers
+    lineinfile:
+      path: /usr/share/jitsi-meet/interface_config.js
+      regexp: "UNSUPPORTED_BROWSERS:"
+      line: "    UNSUPPORTED_BROWSERS: ['firefox', 'safari'],"
