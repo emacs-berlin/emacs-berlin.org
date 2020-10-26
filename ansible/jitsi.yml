@@ -82,3 +82,24 @@
     lineinfile:
       path: /etc/jitsi/jicofo/sip-communicator.properties
       line: "org.jitsi.jicofo.auth.URL=XMPP:jitsi.emacs-berlin.org"
+
+  - name: configure system.conf LimitNPROC
+    lineinfile:
+      path: /etc/systemd/system.conf
+      line: "DefaultLimitNPROC=65000"
+    notify:
+      - restart videobridge
+
+  - name: configure system.conf TasksMax
+    lineinfile:
+      path: /etc/systemd/system.conf
+      line: "DefaultTasksMax=65000"
+    notify:
+      - restart videobridge
+
+  handlers:
+  - name: restart videobridge
+    systemd:
+      name: jitsi-videobridge2
+      state: restarted
+      daemon_reload: true
