@@ -1,0 +1,10 @@
+---
+- name: configure jitsi
+  hosts: all
+
+  tasks:
+  - name: set background color
+    lineinfile:
+      path: /usr/share/jitsi-meet/interface_config.js
+      regexp: "DEFAULT_BACKGROUND:"
+      line: "    DEFAULT_BACKGROUND: '#dee28f',"

@@ -1,0 +1,2 @@
+[jitsi]
+jitsi.emacs-berlin.org ansible_become=yes
