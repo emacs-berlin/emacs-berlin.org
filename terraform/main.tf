@@ -32,6 +32,10 @@ resource "aws_instance" "jitsi" {
   tags = {
     Name = "jitsi"
   }
+
+  lifecycle {
+    ignore_changes = [ami, instance_type]
+  }
 }
 
 resource "aws_eip" "jitsi" {
@@ -72,7 +76,7 @@ resource "aws_security_group" "jitsi" {
 
   ingress {
     from_port   = 10000
-    to_port     = 10000
+    to_port     = 20000
     protocol    = "udp"
     cidr_blocks = ["0.0.0.0/0"]
   }
