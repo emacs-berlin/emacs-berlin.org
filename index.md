@@ -58,9 +58,9 @@ Non-public contact via email: [organizers email][contact]
 
 * Wednesday, November 25th 2020
 
-<!--
-* Wednesday, December 30th 2020 (tbd)
--->
+* Wednesday, December 30th 2020 (yeah why not)
+
+* Wednesday, January 27th 2021
 
 (if you see a past date here, pls check the [mailing list][mla])
 
