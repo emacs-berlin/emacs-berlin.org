@@ -13,13 +13,15 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# November 25th, 2020 (remote) Meetup
+# December 30th, 2020 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, November 25th. It'll take
-place online again like last time on video chat.
+Our next meetup is going to be on Wednesday, December 30th, different
+to previous years where the December meetup was usually cancelled due
+to holidays. It'll take place online again like last time on video
+chat.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
-all about? Come join us in our [jitsi room](https://jitsi.emacs-berlin.org/november-2020).
+all about? Come join us!
 
 ### Location
 
@@ -55,8 +57,6 @@ Non-public contact via email: [organizers email][contact]
 </div>
 <div class="medium-4 columns">
 ### Upcoming
-
-* Wednesday, November 25th 2020
 
 * Wednesday, December 30th 2020 (yeah why not)
 
