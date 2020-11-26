@@ -42,17 +42,13 @@
       marker: "// {mark} ANSIBLE MANAGED BLOCK"
       block: |
         resolution: 720,
-        maxFps: 15,
         constraints: {
           video: {
             aspectRatio: 16 / 9,
             height: {
-              ideal: 480,
+              ideal: 720,
               max: 720,
               min: 240,
-            },
-            frameRate: {
-              max: 15,
             },
           },
         },
