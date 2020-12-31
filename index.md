@@ -13,21 +13,22 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# December 30th, 2020 (remote) Meetup
+# January 27th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, December 30th, different
-to previous years where the December meetup was usually cancelled due
-to holidays. It'll take place online again like last time on video
-chat.
+Our next meetup is going to be on Wednesday, January 27th 2021. It'll
+take place online on our Jitsi video chat server.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
-all about? Come join us!
+all about? Come join us! Can you give a presentation? Awesome, let us
+know. At the last time there were some promising potential future
+topics mentioned: organice, gaming on emacs, we'll see.
 
 ### Location
 
 Room open from 18:30 CET, if there are talks they'll start at 19:00
 CET. The video link will be posted on the day of the meetup to the
-mailing list. Check the [archive][mla2020] if you are not subscribed.
+mailing list. Check the archives ([2020][mla2020], [2021][mla2021]) if
+you are not subscribed.
 
 
 ### About Emacs Berlin
@@ -58,11 +59,23 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, December 30th 2020 (yeah why not)
-
 * Wednesday, January 27th 2021
+* Wednesday, February 24th 2021
+* Wednesday, March 31st 2021
 
-(if you see a past date here, pls check the [mailing list][mla])
+<!--
+* Wednesday, April 28th 2021
+* Wednesday, May 26th 2021
+* Wednesday, June 30th 2021
+* Wednesday, July 28th 2021
+* Wednesday, August 25th 2021
+* Wednesday, September 29th 2021
+* Wednesday, October 27th 2021
+* Wednesday, November 24th 2021
+* Wednesday, December 29th 2021
+-->
+
+(if you see a past date here, see [mailing list][mla])
 
 ### Archive
 
@@ -127,6 +140,7 @@ document, and to behave accordingly.
 [ml]: https://mailb.org/mailman/listinfo/emacs-berlin "Mailing List"
 [mla]: https://mailb.org/pipermail/emacs-berlin/ "Mailing List Archive"
 [mla2020]: https://mailb.org/pipermail/emacs-berlin/2020/thread.html "Mailing List Archive 2020 by Thread"
+[mla2021]: https://mailb.org/pipermail/emacs-berlin/2021/thread.html "Mailing List Archive 2021 by Thread"
 [mlag]: news://news.gmane.io/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
