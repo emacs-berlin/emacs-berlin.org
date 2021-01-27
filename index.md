@@ -13,15 +13,14 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# January 27th, 2021 (remote) Meetup
+# February 24th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, January 27th 2021. It'll
+Our next meetup is going to be on Wednesday, February 24th 2021. It'll
 take place online on our Jitsi video chat server.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
 all about? Come join us! Can you give a presentation? Awesome, let us
-know. At the last time there were some promising potential future
-topics mentioned: organice, gaming on emacs, we'll see.
+know.
 
 ### Location
 
@@ -56,12 +55,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, January 27th 2021
 * Wednesday, February 24th 2021
 * Wednesday, March 31st 2021
+* Wednesday, April 28th 2021
 
 <!--
-* Wednesday, April 28th 2021
 * Wednesday, May 26th 2021
 * Wednesday, June 30th 2021
 * Wednesday, July 28th 2021
