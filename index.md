@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# February 24th, 2021 (remote) Meetup
+# April 28th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, February 24th 2021. It'll
+Our next meetup is going to be on Wednesday, April 28th 2021. It'll
 take place online on our Jitsi video chat server.
 
 New to Emacs? Longtime elisp expert? Just want to know what this is
@@ -24,10 +24,9 @@ know.
 
 ### Location
 
-Room open from 18:30 CET, if there are talks they'll start at 19:00
-CET. The video link will be posted on the day of the meetup to the
-mailing list. Check the archives ([2020][mla2020], [2021][mla2021]) if
-you are not subscribed.
+Room open from 18:30 CEST, if there are talks they'll start at 19:00
+CEST. The video link will be posted on to the mailing list. Check the
+archives ([2020][mla2020], [2021][mla2021]) if you are not subscribed.
 
 
 ### About Emacs Berlin
@@ -55,13 +54,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 24th 2021
-* Wednesday, March 31st 2021
 * Wednesday, April 28th 2021
-
-<!--
 * Wednesday, May 26th 2021
 * Wednesday, June 30th 2021
+
+<!--
 * Wednesday, July 28th 2021
 * Wednesday, August 25th 2021
 * Wednesday, September 29th 2021
