@@ -40,8 +40,9 @@ The best way to stay posted is through our mailing list.
 
 Feel free to send an email introducing yourself after subscribing!
 
-You can also chat with us on irc:
-[#emacs-berlin](irc://chat.freenode.net/emacs-berlin) ([connection instructions][erc])
+~~You can also chat with us on irc~~ ... 2021-05-20: we used to have a
+channel on freenode, but after the unfriendly takeover of freenode we
+will move
 
 Or on Twitter:
 [@emacsberlin](https://twitter.com/emacsberlin)
@@ -135,4 +136,3 @@ document, and to behave accordingly.
 [mlag]: news://news.gmane.io/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
-[erc]: https://mailb.org/pipermail/emacs-berlin/2020/000583.html
