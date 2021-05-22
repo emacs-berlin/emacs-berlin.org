@@ -18,15 +18,21 @@ layout: default
 Our next meetup is going to be on Wednesday, May 26th 2021. It'll take
 place online on our Jitsi video chat server.
 
-New to Emacs? Longtime elisp expert? Just want to know what this is
-all about? Come join us! Can you give a presentation? Awesome, let us
-know.
+Guiding topic: **Basic Text Editing with Emacs**
+
+Cursor movement, marking text, copying and pasting, searching,
+auto-filling, completion etc. etc. With its long history, Emacs
+certainly has some special quirks, but also many unique perks related to
+the presumably simple task of basic text editing. Anything you find
+particularly unique and worthy showing? Any special tricks? Maybe
+someone could demo how they use evil-mode? What do you think newcomers
+struggle with most?
 
 ### Location
 
-Room open from 18:30 CEST, if there are talks they'll start at 19:00
-CEST. The video link will be posted on to the mailing list. Check the
-archives ([2020][mla2020], [2021][mla2021]) if you are not subscribed.
+Room open from 18:30 CEST, "official" start at 19:00 CEST. The video
+link will be posted on to the mailing list. Check the archives
+([2020][mla2020], [2021][mla2021]) if you are not subscribed.
 
 
 ### About Emacs Berlin
