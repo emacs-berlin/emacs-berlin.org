@@ -46,9 +46,8 @@ The best way to stay posted is through our mailing list.
 
 Feel free to send an email introducing yourself after subscribing!
 
-~~You can also chat with us on irc~~ ... 2021-05-20: we used to have a
-channel on freenode, but after the unfriendly takeover of freenode we
-will move
+You can also chat with us on IRC:
+[#emacs-berlin](irc://chat.libera.chat/emacs-berlin) (on Libera.Chat)
 
 Or on Twitter:
 [@emacsberlin](https://twitter.com/emacsberlin)
