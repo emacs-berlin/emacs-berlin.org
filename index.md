@@ -13,26 +13,19 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# May 26th, 2021 (remote) Meetup
+# June 30th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, May 26th 2021. It'll take
+Our next meetup is going to be on Wednesday, June 30th 2021. It'll take
 place online on our Jitsi video chat server.
 
-Guiding topic: **Basic Text Editing with Emacs**
+Guiding topic (tbc, but probably): **Package management in Emacs**
 
-Cursor movement, marking text, copying and pasting, searching,
-auto-filling, completion etc. etc. With its long history, Emacs
-certainly has some special quirks, but also many unique perks related to
-the presumably simple task of basic text editing. Anything you find
-particularly unique and worthy showing? Any special tricks? Maybe
-someone could demo how they use evil-mode? What do you think newcomers
-struggle with most?
 
 ### Location
 
 Room open from 18:30 CEST, "official" start at 19:00 CEST. The video
 link will be posted on to the mailing list. Check the archives
-([2020][mla2020], [2021][mla2021]) if you are not subscribed.
+([2021][mla2021]) if you are not subscribed.
 
 
 ### About Emacs Berlin
@@ -60,12 +53,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 26th 2021
 * Wednesday, June 30th 2021
 * Wednesday, July 28th 2021
+* Wednesday, August 25th 2021
 
 <!--
-* Wednesday, August 25th 2021
 * Wednesday, September 29th 2021
 * Wednesday, October 27th 2021
 * Wednesday, November 24th 2021
