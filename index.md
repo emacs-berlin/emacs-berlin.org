@@ -18,7 +18,10 @@ layout: default
 Our next meetup is going to be on Wednesday, June 30th 2021. It'll take
 place online on our Jitsi video chat server.
 
-Guiding topic (tbc, but probably): **Package management in Emacs**
+Talks: Spacemacs intro, configuration and usage by Julia, package
+management from a maintainer's view by Michael
+
+Guiding topic: **Package management in Emacs**
 
 
 ### Location
