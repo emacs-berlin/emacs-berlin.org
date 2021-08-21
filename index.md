@@ -13,12 +13,12 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# July 28th, 2021 (remote) Meetup
+# August 25th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, July 28th 2021. It'll take
+Our next meetup is going to be on Wednesday, August 25th 2021. It'll take
 place online on our Jitsi video chat server.
 
-Talks and guiding topic: none yet
+No talks yet, guiding topic continue with "show your work".
 
 
 ### Location
@@ -53,12 +53,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, July 28th 2021
 * Wednesday, August 25th 2021
 * Wednesday, September 29th 2021
+* Wednesday, October 27th 2021
 
 <!--
-* Wednesday, October 27th 2021
 * Wednesday, November 24th 2021
 * Wednesday, December 29th 2021
 -->
