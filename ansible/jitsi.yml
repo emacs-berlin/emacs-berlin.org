@@ -84,6 +84,12 @@
       regexp: "anonymousdomain:"
       line: "    anonymousdomain: \"guest.jitsi-meet.example.com\","
 
+  - name: enable prejoin page
+    lineinfile:
+      path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
+      regexp: "prejoinPageEnabled:"
+      line: "    prejoinPageEnabled: true,"
+
   - name: configure jicofo main domain
     lineinfile:
       path: /etc/jitsi/jicofo/sip-communicator.properties
