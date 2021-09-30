@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# September 27th, 2021 (remote) Meetup
+# October 27th, 2021 (remote) Meetup
 
 Our next meetup is going to be on Wednesday, October 27th 2021.
 It'll take place online on our Jitsi video chat server.
