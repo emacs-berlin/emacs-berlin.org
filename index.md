@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# November 27th, 2021 (remote) Meetup
+# November 24th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, November 27th 2021. It'll
+Our next meetup is going to be on Wednesday, November 24th 2021. It'll
 take place online on our Jitsi video chat server.
 
 No talks yet, have something you want to present?
