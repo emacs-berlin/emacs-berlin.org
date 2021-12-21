@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# November 24th, 2021 (remote) Meetup
+# December 29th, 2021 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, November 24th 2021. It'll
+Our next meetup is going to be on Wednesday, December 29th 2021. It'll
 take place online on our Jitsi video chat server.
 
 No talks yet, have something you want to present?
@@ -23,9 +23,8 @@ No talks yet, have something you want to present?
 
 ### Location
 
-Room open from 18:30 CEST, "official" start at 19:00 CEST. The video
-link is going to be https://jitsi.emacs-berlin.org/november-2021.
-
+Room open from 18:30 CEST, "official" start at 19:00 CEST ([Jitsi
+Room](https://jitsi.emacs-berlin.org/december-2021)).
 
 ### About Emacs Berlin
 
@@ -52,10 +51,21 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, November 24th 2021
+* Wednesday, December 29th 2021
+* Wednesday, January 26th 2022
+* Wednesday, February 23rd 2022
 
 <!--
-* Wednesday, December 29th 2021
+* Wednesday, March 30th 2022
+* Wednesday, April 27th 2022
+* Wednesday, May 25th 2022
+* Wednesday, June 29th 2022
+* Wednesday, July 27th 2022
+* Wednesday, August 31st 2022
+* Wednesday, September 28th 2022
+* Wednesday, October 26th 2022
+* Wednesday, November 30th 2022
+* Wednesday, December 28th 2022
 -->
 
 (if you see a past date here, see [mailing list][mla])
