@@ -33,7 +33,7 @@
     lineinfile:
       path: /etc/jitsi/meet/jitsi.emacs-berlin.org-config.js
       regexp: "disableAudioLevels:"
-      line: "    disableAudioLevels: true,"
+      line: "    disableAudioLevels: false,"
 
   - name: configure video constraints
     blockinfile:
