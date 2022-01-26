@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# January 26th, 2022 (remote) Meetup
+# February 23rd, 2022 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, January 26th 2022. It'll
+Our next meetup is going to be on Wednesday, February 23d 2022. It'll
 take place online on our Jitsi video chat server.
 
 No talks yet, have something you want to present?
@@ -24,7 +24,7 @@ No talks yet, have something you want to present?
 ### Location
 
 Room open from 18:30 CET, "official" start at 19:00 CET ([Jitsi
-Room](https://jitsi.emacs-berlin.org/january-2022)).
+Room](https://jitsi.emacs-berlin.org/february-2022)).
 
 ### About Emacs Berlin
 
@@ -51,12 +51,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, January 26th 2022
 * Wednesday, February 23rd 2022
 * Wednesday, March 30th 2022
+* Wednesday, April 27th 2022
 
 <!--
-* Wednesday, April 27th 2022
 * Wednesday, May 25th 2022
 * Wednesday, June 29th 2022
 * Wednesday, July 27th 2022
