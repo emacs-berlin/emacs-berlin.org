@@ -18,7 +18,10 @@ layout: default
 Our next meetup is going to be on Wednesday, June 29th 2022. It'll
 take place online on our Jitsi video chat server.
 
-No talks yet, have something you want to present?
+No specific talks yet, but we want to chat about and look at various
+different LSP setups with Emacs (Language Server Protocol - an editor
+independent framework for programming language specific support such
+as code completion, linting, inline documentation).
 
 
 ### Location
