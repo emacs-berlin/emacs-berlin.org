@@ -13,21 +13,19 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# June 29th, 2022 (remote) Meetup
+# July 27th, 2022 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, June 29th 2022. It'll
+Our next meetup is going to be on Wednesday, July 27th 2022. It'll
 take place online on our Jitsi video chat server.
 
-No specific talks yet, but we want to chat about and look at various
-different LSP setups with Emacs (Language Server Protocol - an editor
-independent framework for programming language specific support such
-as code completion, linting, inline documentation).
+No specific talks yet, if you want to present, ask something, or
+simply suggest a topic, you're welcome.
 
 
 ### Location
 
 Room open from 18:30 CEST, "official" start at 19:00 CEST ([Jitsi
-Room](https://jitsi.emacs-berlin.org/june-2022)).
+Room](https://jitsi.emacs-berlin.org/july-2022)).
 
 ### About Emacs Berlin
 
@@ -54,12 +52,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, June 29th 2022
 * Wednesday, July 27th 2022
 * Wednesday, August 31st 2022
+* Wednesday, September 28th 2022
 
 <!--
-* Wednesday, September 28th 2022
 * Wednesday, October 26th 2022
 * Wednesday, November 30th 2022
 * Wednesday, December 28th 2022
