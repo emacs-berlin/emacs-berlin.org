@@ -18,9 +18,9 @@ layout: default
 Our next meetup is going to be on Wednesday, August 31st 2022. It'll
 take place online on our Jitsi video chat server.
 
-No specific talks yet, if you want to present, ask something, or
-simply suggest a topic, you're welcome.
-
+Blaine Mooers, biochemist and Emacs user, will present how he uses
+LaTeX in Emacs to prepare letters, manuscripts, books (complete with
+lists and indices), slideshows, and posters.
 
 ### Location
 
