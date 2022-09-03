@@ -13,19 +13,20 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# August 31st, 2022 (remote) Meetup
+# September 28th, 2022 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, August 31st 2022. It'll
+Our next meetup is going to be on Wednesday, September 28th 2022. It'll
 take place online on our Jitsi video chat server.
 
-Blaine Mooers, biochemist and Emacs user, will present how he uses
-LaTeX in Emacs to prepare letters, manuscripts, books (complete with
-lists and indices), slideshows, and posters.
+Probably the topic will be:
+[ef-themes](https://protesilaos.com/emacs/ef-themes) and other ways to
+make your work environment look good. No dedicated talk yet, but an
+invitation to participate in an open discussion.
 
 ### Location
 
 Room open from 18:30 CEST, "official" start at 19:00 CEST ([Jitsi
-Room](https://jitsi.emacs-berlin.org/august-2022)).
+Room](https://jitsi.emacs-berlin.org/september-2022)).
 
 ### About Emacs Berlin
 
@@ -52,12 +53,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, August 31st 2022
 * Wednesday, September 28th 2022
 * Wednesday, October 26th 2022
+* Wednesday, November 30th 2022
 
 <!--
-* Wednesday, November 30th 2022
 * Wednesday, December 28th 2022
 -->
 
