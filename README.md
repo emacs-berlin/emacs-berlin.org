@@ -3,13 +3,11 @@ emacs-berlin.org
 
 emacs-berlin.org website
 
-Running this page:
+To run this page locally:
 
 ```ruby
 bundle install
-
 bundle exec jekyll serve --watch
 ```
-
-Any changes pushed to the `gh-pages` branch will be published
+Any changes pushed to the `main` branch will be published
 automatically.
