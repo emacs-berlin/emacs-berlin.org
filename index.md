@@ -13,20 +13,17 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# September 28th, 2022 (remote) Meetup
+# October 26th, 2022 (remote) Meetup
 
-Our next meetup is going to be on Wednesday, September 28th 2022. It'll
+Our next meetup is going to be on Wednesday, October 26th 2022. It'll
 take place online on our Jitsi video chat server.
 
-Probably the topic will be:
-[ef-themes](https://protesilaos.com/emacs/ef-themes) and other ways to
-make your work environment look good. No dedicated talk yet, but an
-invitation to participate in an open discussion.
+Want to do a presentation? Great, please do!
 
 ### Location
 
 Room open from 18:30 CEST, "official" start at 19:00 CEST ([Jitsi
-Room](https://jitsi.emacs-berlin.org/september-2022)).
+Room](https://jitsi.emacs-berlin.org/october-2022)).
 
 ### About Emacs Berlin
 
@@ -53,12 +50,23 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, September 28th 2022
 * Wednesday, October 26th 2022
 * Wednesday, November 30th 2022
+* Wednesday, December 28th 2022
 
 <!--
-* Wednesday, December 28th 2022
+Wednesday, January 25th 2023
+Wednesday, February 22nd 2023
+Wednesday, March 2022, 29th 2023
+Wednesday, April 26th 2023
+Wednesday, May 31st 2023
+Wednesday, June 28th 2023
+Wednesday, July 26th 2023
+Wednesday, August 30th 2023
+Wednesday, September 27th 2023
+Wednesday, October 25th 2023
+Wednesday, November 29th 2023
+Wednesday, December 27th 2023
 -->
 
 (if you see a past date here, see [mailing list][mla])
