@@ -15,7 +15,7 @@ layout: default
 
 # November 30th, 2022 Meetup
 
-Our next meetup is going to be on Wednesday, October 30th 2022.
+Our next meetup is going to be on Wednesday, November 30th 2022.
 
 Want to do a presentation? Great, please do!
 
