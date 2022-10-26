@@ -13,17 +13,16 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# October 26th, 2022 (remote) Meetup
+# November 30th, 2022 Meetup
 
-Our next meetup is going to be on Wednesday, October 26th 2022. It'll
-take place online on our Jitsi video chat server.
+Our next meetup is going to be on Wednesday, October 30th 2022.
 
 Want to do a presentation? Great, please do!
 
 ### Location
 
-Room open from 18:30 CEST, "official" start at 19:00 CEST ([Jitsi
-Room](https://jitsi.emacs-berlin.org/october-2022)).
+Room open from 18:30 CET, "official" start at 19:00 CET ([Jitsi
+Room](https://jitsi.emacs-berlin.org/november-2022)).
 
 ### About Emacs Berlin
 
@@ -50,12 +49,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 26th 2022
 * Wednesday, November 30th 2022
 * Wednesday, December 28th 2022
+* Wednesday, January 25th 2023
 
 <!--
-Wednesday, January 25th 2023
 Wednesday, February 22nd 2023
 Wednesday, March 2022, 29th 2023
 Wednesday, April 26th 2023
