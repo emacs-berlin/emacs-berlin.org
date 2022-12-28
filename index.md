@@ -21,8 +21,9 @@ Want to do a presentation? Great, please do!
 
 ### Location
 
-Room open from 18:30 CET, "official" start at 19:00 CET ([Jitsi
-Room](https://jitsi.emacs-berlin.org/january-2023)).
+Room open from 18:30 CET, "official" start at 19:00 CET. In another
+timezone? M-x world-clock!
+[Jitsi Room](https://jitsi.emacs-berlin.org/january-2023).
 
 ### About Emacs Berlin
 
