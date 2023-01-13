@@ -36,13 +36,17 @@ The best way to stay posted is through our mailing list.
 
 Feel free to send an email introducing yourself after subscribing!
 
+We're on mastodon: [@emacs@toot.berlin](https://toot.berlin/@emacs)
+
 You can also chat with us on IRC:
 [#emacs-berlin](irc://chat.libera.chat/emacs-berlin) (on Libera.Chat)
 
 Or on Twitter:
 [@emacsberlin](https://twitter.com/emacsberlin)
 
-And there's a [YouTube Channel](https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw) <span class='text-cursor'>&nbsp;</span>
+Videos on PeerTube [Diode Zone](https://diode.zone/c/emacs_berlin_talks/videos) and
+on [YouTube](https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw)
+<span class='text-cursor'>&nbsp;</span>
 
 Non-public contact via email: [organizers email][contact]
 
