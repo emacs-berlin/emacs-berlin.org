@@ -17,7 +17,11 @@ layout: default
 
 Our next meetup is going to be on Wednesday, January 25th 2023.
 
-Want to do a presentation? Great, please do!
+There will be a talk on the [Emacs Lisp track on
+Exercism](https://exercism.org/tracks/emacs-lisp) by Fabian.
+
+Want to do a presentation or an impromptu show-and-tell? Great, please
+do!
 
 ### Location
 
