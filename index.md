@@ -31,9 +31,10 @@ timezone? M-x world-clock!
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
 the month (`<%%(diary-float t 3 -1)>` in org-mode).
 
-The best way to stay posted is through our mailing list.
-[Sign up][ml] and meet your fellow Emacsers, or have a look at the
-[mailing list archives][mla] ([gmane][mlag]).
+The best way to stay posted is through our mailing list. [Sign up][ml]
+and meet your fellow Emacsers, or have a look at the [mailing list
+archives][mla] ([gmane][mlag]). The main language on the list is
+English.
 
 Feel free to send an email introducing yourself after subscribing!
 
