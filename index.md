@@ -22,7 +22,7 @@ do!
 
 ### Location
 
-Room open from 18:30 CET, "official" start at 19:00 CET. In another
+Room open from 18:30 CEST, "official" start at 19:00 CEST. In another
 timezone? M-x world-clock!
 [Jitsi Room](https://jitsi.emacs-berlin.org/march-2023).
 
