@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# March 29th, 2023 Meetup
+# April 26th, 2023 Meetup
 
-Our next meetup is going to be on Wednesday, March 29th 2023.
+Our next meetup is going to be on Wednesday, April 26th 2023.
 
 Want to do a presentation or an impromptu show-and-tell? Great, please
 do!
@@ -24,7 +24,7 @@ do!
 
 Room open from 18:30 CEST, "official" start at 19:00 CEST. In another
 timezone? M-x world-clock!
-[Jitsi Room](https://jitsi.emacs-berlin.org/march-2023).
+[Jitsi Room](https://jitsi.emacs-berlin.org/april-2023).
 
 ### About Emacs Berlin
 
@@ -56,12 +56,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 2022, 29th 2023
 * Wednesday, April 26th 2023
 * Wednesday, May 31st 2023
+* Wednesday, June 28th 2023
 
 <!--
-* Wednesday, June 28th 2023
 * Wednesday, July 26th 2023
 * Wednesday, August 30th 2023
 * Wednesday, September 27th 2023
