@@ -17,8 +17,12 @@ layout: default
 
 Our next meetup is going to be on Wednesday, May 31st 2023.
 
-Want to do a presentation or an impromptu show-and-tell? Great, please
-do!
+There will be two presentations: On switching from Doom Emacs by
+Chris, and on shadow files by Michael.
+
+Hybrid, remote and in-person at the Contentful office in Berlin
+Wedding. See the [mailing list][mla] on instructions how to register
+for the in-person part.
 
 ### Location
 
