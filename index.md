@@ -20,9 +20,8 @@ Our next meetup is going to be on Wednesday, May 31st 2023.
 There will be two presentations: On switching from Doom Emacs by
 Chris, and on shadow files by Michael.
 
-Hybrid, remote and in-person at the Contentful office in Berlin
-Wedding. See the [mailing list][mla] on instructions how to register
-for the in-person part.
+Remote only via Jitsi video call (initially we thought it could be
+hybrid, but the in-person part had to be cancelled).
 
 ### Location
 
