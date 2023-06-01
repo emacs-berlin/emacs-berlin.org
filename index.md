@@ -13,21 +13,19 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# May 31st, 2023 Meetup
+# June 28th, 2023 Meetup
 
-Our next meetup is going to be on Wednesday, May 31st 2023.
+Our next meetup is going to be on Wednesday, June 28th 2023.
 
-There will be two presentations: On switching from Doom Emacs by
-Chris, and on shadow files by Michael.
+Want to do a presentation or an impromptu show-and-tell? Both are
+welcome. If you want to do a longer presentation, please let us know
+on the mailing list beforehand.
 
-Remote only via Jitsi video call (initially we thought it could be
-hybrid, but the in-person part had to be cancelled).
 
 ### Location
 
-Room open from 18:30 CEST, "official" start at 19:00 CEST. In another
-timezone? M-x world-clock!
-[Jitsi Room](https://jitsi.emacs-berlin.org/may-2023).
+Room open from 18:30 CEST, "official" start at 19:00 CEST.
+[Jitsi Room](https://jitsi.emacs-berlin.org/june-2023).
 
 ### About Emacs Berlin
 
@@ -59,12 +57,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, May 31st 2023
 * Wednesday, June 28th 2023
 * Wednesday, July 26th 2023
+* Wednesday, August 30th 2023
 
 <!--
-* Wednesday, August 30th 2023
 * Wednesday, September 27th 2023
 * Wednesday, October 25th 2023
 * Wednesday, November 29th 2023
