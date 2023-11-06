@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# October 25th, 2023 Meetup
+# November 29th, 2023 Meetup
 
-Our next meetup is going to be on Wednesday, October 25th 2023.
+Our next meetup is going to be on Wednesday, November 29th 2023.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
@@ -24,8 +24,8 @@ on the mailing list beforehand.
 
 ### Location
 
-Room open from 18:30 CEST, "official" start at 19:00 CEST.
-[Jitsi Room](https://jitsi.emacs-berlin.org/october-2023).
+Room open from 18:30 CET, "official" start at 19:00 CET.
+[Jitsi Room](https://jitsi.emacs-berlin.org/november-2023).
 
 ### About Emacs Berlin
 
@@ -54,7 +54,6 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 25th 2023
 * Wednesday, November 29th 2023
 * Wednesday, December 27th 2023
 
