@@ -13,10 +13,10 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# December 27th, 2023 Meetup
+# January 31st, 2023 Meetup
 
-Our next meetup is going to be on Wednesday, December 27th 2023. Yes,
-no holiday break. Still only remote unfortunately.
+Our next meetup is going to be on Wednesday, January 31st. Remote
+only.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
@@ -26,7 +26,7 @@ on the mailing list beforehand.
 ### Location
 
 Room open from 18:30 CET, "official" start at 19:00 CET.
-[Jitsi Room](https://jitsi.emacs-berlin.org/december-2023).
+[Jitsi Room](https://jitsi.emacs-berlin.org/january-2024).
 
 ### About Emacs Berlin
 
@@ -55,10 +55,26 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, December 27th 2023
+* Wednesday, January 31st 2024
+* Wednesday, February 28th 2024
+* Wednesday, March 27th 2024
 
 <!--
-TODO add 2024 here
+* Wednesday, April 24th 2024
+* Wednesday, May 29th 2024
+* Wednesday, June 26th 2024
+* Wednesday, July 31st 2024
+* Wednesday, August 28th 2024
+* Wednesday, September 25th 2024
+* Wednesday, October 30th 2024
+* Wednesday, November 27th 2024
+* Wednesday, December 25th 2024
+
+To generate in Ruby, needs ActiveSupport:
+puts (Date.new(2024)..Date.new(2024).end_of_year)
+  .select {|d| d.wednesday?}
+  .group_by(&:month).values.map(&:last)
+  .map {|d| d.strftime("%A, %B #{d.day.ordinalize} %Y")}.join("\n")
 -->
 
 (if you see a past date here, see [mailing list][mla])
