@@ -13,7 +13,7 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# January 31st, 2023 Meetup
+# January 31st, 2024 Meetup
 
 Our next meetup is going to be on Wednesday, January 31st. Remote
 only.
