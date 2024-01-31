@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# January 31st, 2024 Meetup
+# February 28th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, January 31st. Remote
+Our next meetup is going to be on Wednesday, February 28th. Remote
 only.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
@@ -26,7 +26,7 @@ on the mailing list beforehand.
 ### Location
 
 Room open from 18:30 CET, "official" start at 19:00 CET.
-[Jitsi Room](https://jitsi.emacs-berlin.org/january-2024).
+[Jitsi Room](https://jitsi.emacs-berlin.org/february-2024).
 
 ### About Emacs Berlin
 
@@ -55,12 +55,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, January 31st 2024
 * Wednesday, February 28th 2024
 * Wednesday, March 27th 2024
+* Wednesday, April 24th 2024
 
 <!--
-* Wednesday, April 24th 2024
 * Wednesday, May 29th 2024
 * Wednesday, June 26th 2024
 * Wednesday, July 31st 2024
