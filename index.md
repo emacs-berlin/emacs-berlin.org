@@ -13,9 +13,9 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# March 27th, 2024 Meetup
+# April 24th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, March 27th. Hybrid:
+Our next meetup is going to be on Wednesday, April 24th. Hybrid:
 remote on Jitsi, and in-person in c-base in Berlin.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
@@ -29,8 +29,8 @@ In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskammer, starts at 19:00 CET. Hosted by Berber.
 
-Video: [Jitsi Room](https://jitsi.emacs-berlin.org/march-2024), starts
-at 19:00 CET (maybe room is open a bit earlier).
+Video: [Jitsi Room](https://jitsi.emacs-berlin.org/april-2024), starts
+at 19:00 CEST (maybe room is open a bit earlier).
 
 ### About Emacs Berlin
 
@@ -59,12 +59,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, March 27th 2024
 * Wednesday, April 24th 2024
 * Wednesday, May 29th 2024
+* Wednesday, June 26th 2024
 
 <!--
-* Wednesday, June 26th 2024
 * Wednesday, July 31st 2024
 * Wednesday, August 28th 2024
 * Wednesday, September 25th 2024
