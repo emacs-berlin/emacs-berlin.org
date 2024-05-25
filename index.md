@@ -13,14 +13,18 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# April 24th, 2024 Meetup
+# May 29th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, April 24th. Hybrid:
+Our next meetup is going to be on Wednesday, May 29th. Hybrid:
 remote on Jitsi, and in-person in c-base in Berlin.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
 on the mailing list beforehand.
+
+During the first hour, in-person and remote will be connected,
+afterwards we'll split, also to give the in-person people a chance to
+mingle and have conversations in smaller groups.
 
 
 ### Location
@@ -59,12 +63,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, April 24th 2024
 * Wednesday, May 29th 2024
 * Wednesday, June 26th 2024
+* Wednesday, July 31st 2024
 
 <!--
-* Wednesday, July 31st 2024
 * Wednesday, August 28th 2024
 * Wednesday, September 25th 2024
 * Wednesday, October 30th 2024
