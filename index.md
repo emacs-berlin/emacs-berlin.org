@@ -33,7 +33,7 @@ In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskammer, starts at 19:00 CET. Hosted by Berber.
 
-Video: [Jitsi Room](https://jitsi.emacs-berlin.org/april-2024), starts
+Video: [Jitsi Room](https://jitsi.emacs-berlin.org/may-2024), starts
 at 19:00 CEST (maybe room is open a bit earlier).
 
 ### About Emacs Berlin
