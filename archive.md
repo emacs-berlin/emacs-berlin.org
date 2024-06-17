@@ -18,6 +18,7 @@ Not every meeting gets an archive page, only when someone creates it
 ([PRs welcome](https://github.com/emacs-berlin/emacs-berlin.org/)).
 
 ## Previous meetings
+* June 11th 2024: an additional, offline only meetup at c-base
 * [February 2020](20200226-notes.html)
 * November 2019: Intro to elisp with a quick link-to-GitHub tool by Daniel, then watched [Emacs: The Editor for the Next Forty Years](https://media.emacsconf.org/2019/26.html) suggested by Ilia
 * November 2018: [Emacs, India and Geminis](https://worldgeek.org/gemini-in-action-india-2018/gemini-in-action.html) by [Gary](https://worldgeek.org/)

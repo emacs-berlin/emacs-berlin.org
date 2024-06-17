@@ -13,16 +13,6 @@ layout: default
 
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
-# June 11, 2024 Meetup (Offline-only meetup)
-
-In addition to our scheduled monthly meetup, we are organizing an additional
-offline-only meetup on June 11th, 2024.
-
-### Location
-
-[c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
-[OSM link](https://www.openstreetmap.org/node/260050809)) in the
-Seminarraum/Haeutungskabine, starts at 19:00 CEST. Hosted by Berber.
 
 # June 26th, 2024 Meetup
 
