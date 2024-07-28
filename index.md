@@ -16,8 +16,8 @@ layout: default
 
 # July 31st, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, July 31st. Most likely
-hybrid again.
+Our next meetup is going to be on Wednesday, July 31st. Hybrid, both
+at c-base and remote.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
