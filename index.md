@@ -17,7 +17,7 @@ layout: default
 # August 28th, 2024 Meetup
 
 Our next meetup is going to be on Wednesday, August 28th. This time
-only remote.
+remote – maybe also in person at c-base, see mailing list.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
