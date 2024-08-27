@@ -16,8 +16,8 @@ layout: default
 
 # August 28th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, August 28th. Most likely
-hybrid, both at c-base and remote.
+Our next meetup is going to be on Wednesday, August 28th. This time
+only remote.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
@@ -26,9 +26,11 @@ on the mailing list beforehand.
 
 ### Location
 
+<!--
 In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
+-->
 
 Video: [Jitsi Room](https://jitsi.emacs-berlin.org/august-2024), starts
 at 19:00 CEST (maybe room is open a bit earlier).
