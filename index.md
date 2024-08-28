@@ -14,10 +14,10 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# August 28th, 2024 Meetup
+# September 25th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, August 28th. This time
-remote – maybe also in person at c-base, see mailing list.
+Our next meetup is going to be on Wednesday, September 25th. Remote
+and most likely also in person at c-base.
 
 Want to do a presentation or an impromptu show-and-tell? Both are
 welcome. If you want to do a longer presentation, please let us know
@@ -26,13 +26,11 @@ on the mailing list beforehand.
 
 ### Location
 
-<!--
 In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
--->
 
-Video: [Jitsi Room](https://jitsi.emacs-berlin.org/august-2024), starts
+Video: [Jitsi Room](https://jitsi.emacs-berlin.org/september-2024), starts
 at 19:00 CEST (maybe room is open a bit earlier).
 
 ### About Emacs Berlin
@@ -62,12 +60,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, August 28th 2024
 * Wednesday, September 25th 2024
 * Wednesday, October 30th 2024
+* Wednesday, November 27th 2024
 
 <!--
-* Wednesday, November 27th 2024
 * Wednesday, December 25th 2024
 
 To generate in Ruby, needs ActiveSupport:
