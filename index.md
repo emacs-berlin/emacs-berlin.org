@@ -16,12 +16,11 @@ layout: default
 
 # September 25th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, September 25th. Remote
-and most likely also in person at c-base.
+Our next meetup is going to be on Wednesday, September 25th. In-person
+at c-base and remote on Jitsi.
 
-Want to do a presentation or an impromptu show-and-tell? Both are
-welcome. If you want to do a longer presentation, please let us know
-on the mailing list beforehand.
+We'll try some collaborative elisp hacking this time, see the mailing
+list for details.
 
 
 ### Location
