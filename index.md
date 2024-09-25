@@ -14,13 +14,10 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# September 25th, 2024 Meetup
+# October 30th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, September 25th. In-person
+Our next meetup is going to be on Wednesday, October 30th. In-person
 at c-base and remote on Jitsi.
-
-We'll try some collaborative elisp hacking this time, see the mailing
-list for details.
 
 
 ### Location
@@ -29,8 +26,8 @@ In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
 
-Video: [Jitsi Room](https://jitsi.emacs-berlin.org/september-2024), starts
-at 19:00 CEST (maybe room is open a bit earlier).
+Video: [Jitsi Room](https://jitsi.emacs-berlin.org/october-2024), starts
+at 19:00 CET (maybe room is open a bit earlier).
 
 ### About Emacs Berlin
 
@@ -59,12 +56,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, September 25th 2024
 * Wednesday, October 30th 2024
 * Wednesday, November 27th 2024
+* Wednesday, December 25th 2024 (tbc)
 
 <!--
-* Wednesday, December 25th 2024
 
 To generate in Ruby, needs ActiveSupport:
 puts (Date.new(2024)..Date.new(2024).end_of_year)
