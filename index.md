@@ -17,7 +17,7 @@ layout: default
 # October 30th, 2024 Meetup
 
 Our next meetup is going to be on Wednesday, October 30th. In-person
-at c-base and remote on Jitsi.
+at c-base and remote on Galène.
 
 
 ### Location
@@ -26,8 +26,9 @@ In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
 
-Video: [Jitsi Room](https://jitsi.emacs-berlin.org/october-2024), starts
-at 19:00 CET (maybe room is open a bit earlier).
+Video: [Galene Video Server](https://galene.emacs-berlin.org/), starts
+at 19:00 CET, room is open from 18:30 CET. Note that the server is not
+up permanently, it will go up before the meetup.
 
 ### About Emacs Berlin
 
