@@ -14,10 +14,13 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# October 30th, 2024 Meetup
+# November 27th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, October 30th. In-person
+Our next meetup is going to be on Wednesday, November 27th 2024. In-person
 at c-base and remote on Galène.
+
+Julien will talk about, and ask for your feedback on, writing and
+testing a bunch of elisp for better org-mode links integration.
 
 
 ### Location
@@ -57,13 +60,24 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, October 30th 2024
 * Wednesday, November 27th 2024
-* Wednesday, December 25th 2024 (tbc)
+* No meetup on Wednesday, December 25th 2024 (unless you want to host it)
+* Wednesday, January 29th 2025
 
 <!--
+* Wednesday, February 26th 2025
+* Wednesday, March 26th 2025
+* Wednesday, April 30th 2025
+* Wednesday, May 28th 2025
+* Wednesday, June 25th 2025
+* Wednesday, July 30th 2025
+* Wednesday, August 27th 2025
+* Wednesday, September 24th 2025
+* Wednesday, October 29th 2025
+* Wednesday, November 26th 2025
+* Wednesday, December 31st 2025
 
-To generate in Ruby, needs ActiveSupport:
+To generate those dates in Ruby (needs ActiveSupport):
 puts (Date.new(2024)..Date.new(2024).end_of_year)
   .select {|d| d.wednesday?}
   .group_by(&:month).values.map(&:last)
