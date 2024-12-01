@@ -14,13 +14,12 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# November 27th, 2024 Meetup
+# December 25th, 2024 Meetup
 
-Our next meetup is going to be on Wednesday, November 27th 2024. In-person
-at c-base and remote on Galène.
-
-Julien will talk about, and ask for your feedback on, writing and
-testing a bunch of elisp for better org-mode links integration.
+December's date for our meetup would be the 25th, so the regular
+meetup won't happen due to the holiday. Maybe there will be a small
+gathering at c-base, and if you want to host a remote meetup, let us
+know.
 
 
 ### Location
@@ -60,12 +59,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, November 27th 2024
-* No meetup on Wednesday, December 25th 2024 (unless you want to host it)
+* Wednesday, December 25th 2024 - no regular meetup, TBD
 * Wednesday, January 29th 2025
+* Wednesday, February 26th 2025
 
 <!--
-* Wednesday, February 26th 2025
 * Wednesday, March 26th 2025
 * Wednesday, April 30th 2025
 * Wednesday, May 28th 2025
