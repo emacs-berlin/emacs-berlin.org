@@ -14,12 +14,11 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# December 25th, 2024 Meetup
+# January 29th, 2025 Meetup
 
-December's date for our meetup would be the 25th, so the regular
-meetup won't happen due to the holiday. Maybe there will be a small
-gathering at c-base, and if you want to host a remote meetup, let us
-know.
+The next meetup is on Wednesday, January 29th 2025. Most likely both
+in-person at c-base and remote. No talks yet – if you want to give a
+talk you're very welcome.
 
 
 ### Location
@@ -59,12 +58,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, December 25th 2024 - no regular meetup, TBD
 * Wednesday, January 29th 2025
 * Wednesday, February 26th 2025
+* Wednesday, March 26th 2025
 
 <!--
-* Wednesday, March 26th 2025
 * Wednesday, April 30th 2025
 * Wednesday, May 28th 2025
 * Wednesday, June 25th 2025
