@@ -16,7 +16,7 @@ layout: default
 
 # February 26th, 2025 Meetup
 
-The next meetup is on Wednesday, February 26th 2025. Most likely both
+The next meetup is on Wednesday, February 26th 2025. Hybrid: both
 in-person at c-base and remote. No talks yet – if you want to give a
 talk you're very welcome.
 
@@ -27,9 +27,10 @@ In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
 
-Video: [Galene Video Server](https://galene.emacs-berlin.org/), starts
-at 19:00 CET, room is open from 18:30 CET. Note that the server is not
-up permanently, it will go up before the meetup.
+Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
+starts at 19:00 CET, room is open from 18:30 CET. Note that the server
+might be offline before that time.
+
 
 ### About Emacs Berlin
 
