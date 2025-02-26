@@ -14,23 +14,23 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# February 26th, 2025 Meetup
+# March 11th, 2025 Meetup
 
-The next meetup is on Wednesday, February 26th 2025. Hybrid: both
-in-person at c-base and remote. No talks yet – if you want to give a
-talk you're very welcome.
+The next meetup is on Tuesday, March 11th 2025, in person at c-base.  This is going to be the first in person only meetup that will not be hybrid in a while.  Please bring your laptop along and let's have a great time hacking and socializing!
+
+<!-- Hybrid: both -->
+<!-- in-person at c-base and remote. No talks yet – if you want to give a -->
+<!-- talk you're very welcome. -->
 
 
 ### Location
 
-In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
+* In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
-Seminarraum/Haeutungskabine, starts at 19:00 CET. Hosted by Berber.
-
-Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
+Seminarraum/Häutungskabine, starts at 19:00 CET. Hosted by Berber.
+* Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
 starts at 19:00 CET, room is open from 18:30 CET. Note that the server
 might be offline before that time.
-
 
 ### About Emacs Berlin
 
@@ -59,9 +59,11 @@ Non-public contact via email: [organizers email][contact]
 <div class="medium-4 columns">
 ### Upcoming
 
-* Wednesday, February 26th 2025
+[Calendar subscription link](https://emacs-berlin.org/calendar.ics)
+
+* Tuesday, March 11th 2025
 * Wednesday, March 26th 2025
-* Wednesday, April 30th 2025
+* Tuesday, April 13th 2025
 
 <!--
 * Wednesday, May 28th 2025
