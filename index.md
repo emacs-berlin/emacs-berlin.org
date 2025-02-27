@@ -61,11 +61,12 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, March 11th 2025
-* Wednesday, March 26th 2025
-* Tuesday, April 13th 2025
+* Tuesday, March 11th 2025 (in-person only)
+* Wednesday, March 26th 2025 (hybrid)
+* Tuesday, April 13th 2025 (in-person only)
 
 <!--
+* Wednesday, April 30th 2025
 * Wednesday, May 28th 2025
 * Wednesday, June 25th 2025
 * Wednesday, July 30th 2025
