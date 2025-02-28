@@ -63,7 +63,7 @@ Non-public contact via email: [organizers email][contact]
 
 * Tuesday, March 11th 2025 (in-person only)
 * Wednesday, March 26th 2025 (hybrid)
-* Tuesday, April 13th 2025 (in-person only)
+* Tuesday, April 15th 2025 (in-person only)
 
 <!--
 * Wednesday, April 30th 2025
