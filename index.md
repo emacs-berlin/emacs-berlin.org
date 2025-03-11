@@ -16,7 +16,7 @@ layout: default
 
 # March 26th, 2025 Meetup
 
-The next meetup is on Tuesday, March 26th 2025, in person at c-base
+The next meetup is on Wednesday, March 26th 2025, in person at c-base
 and remote. No talks yet – if you want to give a talk you're very
 welcome.
 
