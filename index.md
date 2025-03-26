@@ -14,23 +14,24 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# March 26th, 2025 Meetup
+# April 2025 in-person Meetup
 
-The next meetup is on Wednesday, March 26th 2025, in person at c-base
-and remote. No talks yet – if you want to give a talk you're very
-welcome.
+The date for the next in-person meetup in April is yet to be
+determined. The next hybrid meetup will be on Wednesday, April
+30th 2025. No talks yet for either one – if you want to give a talk
+you're very welcome.
 
-<!--  Please bring your laptop along and let's have a great time
-hacking and socializing! -->
+Instructions for in-person visitors: please bring your laptop along
+and let's have a great time hacking and socializing!
 
 
 ### Location
 
 * In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
-Seminarraum/Häutungskabine, starts at 19:00 CET. Hosted by Berber.
+Seminarraum/Häutungskabine, starts at 19:00 CEST. Hosted by Berber.
 * Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
-starts at 19:00 CET, room is open from 18:30 CET. Note that the server
+starts at 19:00 CEST, room is open from 18:30 CEST. Note that the server
 might be offline before that time.
 
 ### About Emacs Berlin
@@ -62,12 +63,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, March 26th 2025 (hybrid)
-* Tuesday, April 15th 2025 (tbc, in-person only)
+* Tuesday, April 22th 2025 (tbc?, in-person only)
 * Wednesday, April 30th 2025 (hybrid)
+* Wednesday, May 28th 2025
 
 <!--
-* Wednesday, May 28th 2025
 * Wednesday, June 25th 2025
 * Wednesday, July 30th 2025
 * Wednesday, August 27th 2025
