@@ -14,12 +14,11 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# April 2025 in-person Meetup
+# April 2025 Meetup
 
-The date for the next in-person meetup in April is yet to be
-determined. The next hybrid meetup will be on Wednesday, April
-30th 2025. No talks yet for either one – if you want to give a talk
-you're very welcome.
+The next meetup will be on Wednesday, April 30th 2025. Hybrid, at
+c-base and remote. No talks yet – if you want to give a talk you're
+very welcome.
 
 Instructions for in-person visitors: please bring your laptop along
 and let's have a great time hacking and socializing!
@@ -63,12 +62,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, April 22th 2025 (tbc?, in-person only)
 * Wednesday, April 30th 2025 (hybrid)
 * Wednesday, May 28th 2025
+* Wednesday, June 25th 2025
 
 <!--
-* Wednesday, June 25th 2025
 * Wednesday, July 30th 2025
 * Wednesday, August 27th 2025
 * Wednesday, September 24th 2025
