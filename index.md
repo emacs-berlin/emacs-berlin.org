@@ -16,9 +16,9 @@ layout: default
 
 # May 2025 Meetup
 
-The next meetup will be on Wednesday, May 28th 2025. (Most likely)
-hybrid, at c-base and remote. No talks yet – if you want to give a
-talk you're very welcome.
+The next meetup will be on Wednesday, May 28th 2025. Hybrid: at c-base
+and remote. No talks yet – if you want to give a talk you're very
+welcome.
 
 Instructions for in-person visitors: please bring your laptop along
 and let's have a great time hacking and socializing!
