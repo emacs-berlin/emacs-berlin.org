@@ -14,11 +14,11 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# May 2025 Meetup
+# June 2025 Meetup
 
-The next meetup will be on Wednesday, May 28th 2025. Hybrid: at c-base
-and remote. No talks yet – if you want to give a talk you're very
-welcome.
+The next meetup will be on Wednesday, June 25th 2025. Hybrid: at
+c-base and remote. No talks yet – if you want to give a talk you're
+very welcome.
 
 Instructions for in-person visitors: please bring your laptop along
 and let's have a great time hacking and socializing!
@@ -62,12 +62,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, May 28th 2025
 * Wednesday, June 25th 2025
 * Wednesday, July 30th 2025
+* Wednesday, August 27th 2025
 
 <!--
-* Wednesday, August 27th 2025
 * Wednesday, September 24th 2025
 * Wednesday, October 29th 2025
 * Wednesday, November 26th 2025
