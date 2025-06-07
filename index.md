@@ -14,11 +14,12 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# June 2025 Meetup
+# June 2025 Meetups
 
-The next meetup will be on Wednesday, June 25th 2025. Hybrid: at
-c-base and remote. No talks yet – if you want to give a talk you're
-very welcome.
+The next in-person-only meetup will be on Tuesday, June 10th at
+c-base. The next full meetup will be on Wednesday, June 25th 2025.
+Hybrid: at c-base and remote. No talks yet – if you want to give a
+talk you're very welcome.
 
 Instructions for in-person visitors: please bring your laptop along
 and let's have a great time hacking and socializing!
