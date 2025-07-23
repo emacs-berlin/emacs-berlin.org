@@ -16,10 +16,8 @@ layout: default
 
 # July 2025 Meetups
 
-The next in-person meetup at c-base will be on Tuesday July 8th,
-starting 19:00 CEST. The next official hybrid one on July 30th at
-c-base and remote. No talks yet – if you want to give a talk you're
-very welcome.
+The next official hybrid meetup will be on July 30th at c-base and
+remote. No talks yet – if you want to give a talk you're very welcome.
 
 Instructions for in-person visitors: please bring your laptop along
 and let's have a great time hacking and socializing!
@@ -63,7 +61,6 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, July 8th 2025 – in-person only
 * Wednesday, July 30th 2025
 * Wednesday, August 27th 2025
 * Wednesday, September 24th 2025
