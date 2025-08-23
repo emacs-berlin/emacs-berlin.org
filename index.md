@@ -14,13 +14,10 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# July 2025 Meetups
+# August 2025 Meetup
 
-The next official hybrid meetup will be on July 30th at c-base and
+The next official hybrid meetup will be on August 27th at c-base and
 remote. No talks yet – if you want to give a talk you're very welcome.
-
-Instructions for in-person visitors: please bring your laptop along
-and let's have a great time hacking and socializing!
 
 
 ### Location
@@ -61,12 +58,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, July 30th 2025
 * Wednesday, August 27th 2025
 * Wednesday, September 24th 2025
+* Wednesday, October 29th 2025
 
 <!--
-* Wednesday, October 29th 2025
 * Wednesday, November 26th 2025
 * Wednesday, December 31st 2025
 
