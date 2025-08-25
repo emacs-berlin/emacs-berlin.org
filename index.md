@@ -16,15 +16,17 @@ layout: default
 
 # August 2025 Meetup
 
-The next official hybrid meetup will be on August 27th at c-base and
-remote. No talks yet – if you want to give a talk you're very welcome.
+The next meetup will be on August 27th. ATTN: this time remote only!
+No talks yet – if you want to give a talk you're very welcome.
 
 
 ### Location
 
+<!--
 * In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
 Seminarraum/Häutungskabine, starts at 19:00 CEST. Hosted by Berber.
+-->
 * Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
 starts at 19:00 CEST, room is open from 18:30 CEST. Note that the server
 might be offline before that time.
