@@ -34,7 +34,7 @@ might be offline before that time.
 ### About Emacs Berlin
 
 We are Emacs enthusiasts in Berlin, meeting every last Wednesday of
-the month (`<%%(diary-float t 3 -1)>` in org-mode).
+the month (`<%%(diary-float t 3 -1) 19:00-21:00>` in org-mode).
 
 The best way to stay posted is through our mailing list. [Sign up][ml]
 and meet your fellow Emacsers, or have a look at the [mailing list
