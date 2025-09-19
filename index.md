@@ -14,7 +14,7 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# August 2025 Meetup
+# September 2025 Meetup
 
 The next meetup will be on September 24th at c-base and remote. No
 talks yet – if you want to give a talk you're very welcome.
