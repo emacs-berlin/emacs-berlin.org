@@ -14,9 +14,9 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# October 2025 Meetup
+# November 2025 Meetup
 
-The next meetup will be on October 29th at c-base and remote. No
+The next meetup will be on November 26th at c-base and remote. No
 talks yet – if you want to give a talk you're very welcome.
 
 
@@ -59,12 +59,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, October 29th 2025
 * Wednesday, November 26th 2025
 * Wednesday, January 28th 2026
+* Wednesday, February 25th 2026
 
 <!--
-* Wednesday, February 25th 2026
 * Wednesday, March 25th 2026
 * Wednesday, April 29th 2026
 * Wednesday, May 27th 2026
