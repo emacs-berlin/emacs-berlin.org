@@ -35,7 +35,7 @@ STATUS:CONFIRMED
 SUMMARY:In-Person-Only Emacs-Berlin Stammtisch
 LOCATION:c-base\, Rungestraße 20\, 10179 Berlin\, https://www.openstreetma
  p.org/node/260050809
-RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TU;BYSETPOS=2
+RRULE:FREQ=MONTHLY;BYDAY=TU;BYSETPOS=2
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20250226T211017Z
@@ -50,6 +50,6 @@ SUMMARY:Emacs-Berlin Hybrid Meetup
 LOCATION:https://bbb.emacsverse.org/rooms/emacs-berlin/join/
 DESCRIPTION:c-base\, Rungestraße 20\, 10179 Berlin\, https://www.openstree
  tmap.org/node/260050809
-RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=WE;BYSETPOS=-1
+RRULE:FREQ=MONTHLY;BYDAY=WE;BYSETPOS=-1
 END:VEVENT
 END:VCALENDAR
