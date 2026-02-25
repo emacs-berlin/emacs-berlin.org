@@ -14,12 +14,12 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# February 2026 Meetup
+# March 2026 Meetup
 
-The next official Meetup will be on February 25th at c-base and
-remote. No talks yet – if you want to give a talk you're very welcome.
-There might be an in-person-only meetup before, if so, it will be
-announced on the mailing list.
+The next official Meetup will be on March 25th at c-base and remote.
+Probably there will be lightning talks, a few minutes each.
+
+Next in-person-only meetup is on Tuesday, March 10th.
 
 
 ### Location
@@ -61,12 +61,14 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, February 25th 2026
+* Tuesday, March 10th 2026 (in-person-only)
 * Wednesday, March 25th 2026
+* Tuesday, April 14th 2026 (in-person-only)
 * Wednesday, April 29th 2026
+* Tuesday, May 12th 2026 (in-person-only)
+* Wednesday, May 27th 2026
 
 <!--
-* Wednesday, May 27th 2026
 * Wednesday, June 24th 2026
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
