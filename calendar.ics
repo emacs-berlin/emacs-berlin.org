@@ -32,7 +32,7 @@ UID:23bca7cb-23e3-4e28-8005-38dd1915c3a9
 DTSTART;TZID=Europe/Berlin:20250311T190000
 DTEND;TZID=Europe/Berlin:20250311T220000
 STATUS:CONFIRMED
-SUMMARY:Emacs-Berlin Stammtisch
+SUMMARY:In-Person-Only Emacs-Berlin Stammtisch
 LOCATION:c-base\, Rungestraße 20\, 10179 Berlin\, https://www.openstreetma
  p.org/node/260050809
 RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TU;BYSETPOS=2
