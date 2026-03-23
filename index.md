@@ -61,7 +61,6 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, March 10th 2026 (in-person-only)
 * Wednesday, March 25th 2026
 * Tuesday, April 14th 2026 (in-person-only)
 * Wednesday, April 29th 2026
