@@ -14,12 +14,12 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# April 2026 Meetup
+# May 2026 Meetup
 
-The next official Meetup will be on April 29th at c-base and remote.
-Probably there will be lightning talks, a few minutes each.
+The next official Meetup will be on Wednesday May 27th at c-base and
+remote. Maybe there will be lightning talks, a few minutes each.
 
-Next in-person-only meetup might be on Tuesday, April 14th, watch the
+Next in-person-only meetup will be on Tuesday, May 12th, watch the
 mailing list for updates.
 
 
@@ -32,6 +32,7 @@ Seminarraum/Häutungskabine, starts at 19:00 CEST. Hosted by Berber.
 * Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
 starts at 19:00 CEST, room is open from 18:30 CEST. Note that the server
 might be offline before that time.
+
 
 ### About Emacs Berlin
 
@@ -62,13 +63,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, April 14th 2026 (in-person-only TBD)
-* Wednesday, April 29th 2026
 * Tuesday, May 12th 2026 (in-person-only)
 * Wednesday, May 27th 2026
+* Wednesday, June 24th 2026
 
 <!--
-* Wednesday, June 24th 2026
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
 * Wednesday, September 30th 2026
