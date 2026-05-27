@@ -14,13 +14,13 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# May 2026 Meetup
+# June 2026 Meetup
 
-The next official Meetup will be on Wednesday May 27th at c-base and
+The next official Meetup will be on Wednesday June 24th at c-base and
 remote. Maybe there will be lightning talks, a few minutes each.
 
-Next in-person-only meetup will be on Tuesday, May 12th, watch the
-mailing list for updates.
+Next in-person-only meetup will be approximately two weeks before,
+watch the mailing list for updates.
 
 
 ### Location
@@ -63,13 +63,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, May 12th 2026 (in-person-only)
-* Wednesday, May 27th 2026
 * Wednesday, June 24th 2026
-
-<!--
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
+
+<!--
 * Wednesday, September 30th 2026
 * Wednesday, October 28th 2026
 * Wednesday, November 25th 2026
