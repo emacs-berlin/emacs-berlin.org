@@ -14,13 +14,15 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# June 2026 Meetup
+# June 2026 Meetups
+
+June's in-person-only meetup will be on Tuesday, June 9th, at c-base.
+Watch the mailing list for updates.
 
 The next official Meetup will be on Wednesday June 24th at c-base and
-remote. Maybe there will be lightning talks, a few minutes each.
-
-Next in-person-only meetup will be approximately two weeks before,
-watch the mailing list for updates.
+remote. There will be at least one talk, by Felix about
+[stickies.el](https://github.com/fjl/stickies.el). Feel free to add
+yours, lightning or full talk.
 
 
 ### Location
