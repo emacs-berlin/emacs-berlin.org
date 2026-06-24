@@ -14,15 +14,13 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# June 2026 Meetups
+# July 2026 Meetups
 
-June's in-person-only meetup will be on Tuesday, June 9th, at c-base.
-Watch the mailing list for updates.
+July's in-person-only meetup will be on a Tuesday, maybe on July 7th
+(TBD!), at c-base. Watch the mailing list for updates.
 
-The next official Meetup will be on Wednesday June 24th at c-base and
-remote. There will be at least one talk, by Felix about
-[stickies.el](https://github.com/fjl/stickies.el). Feel free to add
-yours, lightning or full talk.
+The next official Meetup will be on Wednesday July 29th at c-base and
+remote.
 
 
 ### Location
@@ -65,12 +63,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, June 24th 2026
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
+* Wednesday, September 30th 2026
 
 <!--
-* Wednesday, September 30th 2026
 * Wednesday, October 28th 2026
 * Wednesday, November 25th 2026
 * Wednesday, December 30th 2026
