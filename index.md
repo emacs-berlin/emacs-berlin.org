@@ -16,8 +16,8 @@ layout: default
 
 # July 2026 Meetups
 
-July's in-person-only meetup will be on a Tuesday, maybe on July 7th
-(TBD!), at c-base. Watch the mailing list for updates.
+July's in-person-only meetup will be on Tuesday, July 14th, at c-base.
+Watch the mailing list for updates.
 
 The next official Meetup will be on Wednesday July 29th at c-base and
 remote.
@@ -63,6 +63,7 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
+* Tuesday, July 14th 2026 (in-person-only)
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
 * Wednesday, September 30th 2026
