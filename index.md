@@ -14,13 +14,11 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# July 2026 Meetups
-
-July's in-person-only meetup will be on Tuesday, July 14th, at c-base.
-Watch the mailing list for updates.
+# July 2026 Meetup
 
 The next official Meetup will be on Wednesday July 29th at c-base and
-remote.
+remote. The current ox-latex and ox-beamer maintainer, Pedro, will
+give an update over the latest developments in the org LaTeX exporter.
 
 
 ### Location
@@ -63,7 +61,6 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Tuesday, July 14th 2026 (in-person-only)
 * Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
 * Wednesday, September 30th 2026
