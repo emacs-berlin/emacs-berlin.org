@@ -14,11 +14,14 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# July 2026 Meetup
+# August 2026 Meetup
 
-The next official Meetup will be on Wednesday July 29th at c-base and
-remote. The current ox-latex and ox-beamer maintainer, Pedro, will
-give an update over the latest developments in the org LaTeX exporter.
+The next official Meetup will be on Wednesday August 26th at c-base
+and remote. Consider giving a lightning talk on a topic that interests
+you, doesn't need to be well prepared.
+
+If there is interest in an in-person-only meetup, let us know on the
+list.
 
 
 ### Location
@@ -61,12 +64,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, July 29th 2026
 * Wednesday, August 26th 2026
 * Wednesday, September 30th 2026
+* Wednesday, October 28th 2026
 
 <!--
-* Wednesday, October 28th 2026
 * Wednesday, November 25th 2026
 * Wednesday, December 30th 2026
 
