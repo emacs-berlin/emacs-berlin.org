@@ -14,9 +14,9 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# August 2026 Meetup
+# September 2026 Meetup
 
-The next official Meetup will be on Wednesday August 26th at c-base
+The next official Meetup will be on Wednesday September 30th at c-base
 and remote. Consider giving a lightning talk on a topic that interests
 you, doesn't need to be well prepared.
 
@@ -64,12 +64,11 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, August 26th 2026
 * Wednesday, September 30th 2026
 * Wednesday, October 28th 2026
+* Wednesday, November 25th 2026
 
 <!--
-* Wednesday, November 25th 2026
 * Wednesday, December 30th 2026
 
 To generate those dates in Ruby (needs ActiveSupport):
