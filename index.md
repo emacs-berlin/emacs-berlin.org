@@ -14,9 +14,9 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# September 2026 Meetup
+# October 2026 Meetup
 
-The next official Meetup will be on Wednesday September 30th at c-base
+The next official Meetup will be on Wednesday October 28th at c-base
 and remote. Consider giving a lightning talk on a topic that interests
 you, doesn't need to be well prepared.
 
@@ -28,10 +28,10 @@ list.
 
 * In person: [c-base](https://c-base.org/impressum) (Rungestraße 20, 10179 Berlin,
 [OSM link](https://www.openstreetmap.org/node/260050809)) in the
-Seminarraum/Häutungskabine, starts at 19:00 CEST. Hosted by Berber.
+Seminarraum/Häutungskabine, starts at 19:00 CET. Hosted by Berber.
 
 * Video: [BigBlueButton](https://bbb.emacsverse.org/rooms/emacs-berlin/join/),
-starts at 19:00 CEST, room is open from 18:30 CEST. Note that the server
+starts at 19:00 CET, room is open from 18:30 CET. Note that the server
 might be offline before that time.
 
 
@@ -64,12 +64,10 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, September 30th 2026
 * Wednesday, October 28th 2026
 * Wednesday, November 25th 2026
-
-<!--
 * Wednesday, December 30th 2026
+<!--
 
 To generate those dates in Ruby (needs ActiveSupport):
 
