@@ -17,11 +17,8 @@ layout: default
 # October 2026 Meetup
 
 The next official Meetup will be on Wednesday October 28th at c-base
-and remote. Consider giving a lightning talk on a topic that interests
-you, doesn't need to be well prepared.
-
-If there is interest in an in-person-only meetup, let us know on the
-list.
+and remote. There will be one talk: "Writing My Very First Test with
+ert (Emacs Regression Testing)" by Alex Fenton.
 
 
 ### Location
