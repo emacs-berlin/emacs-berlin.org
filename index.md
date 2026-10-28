@@ -14,11 +14,14 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# October 2026 Meetup
+# November 2026 Meetup
 
-The next official Meetup will be on Wednesday October 28th at c-base
-and remote. There will be one talk: "Writing My Very First Test with
-ert (Emacs Regression Testing)" by Alex Fenton.
+The next official Meetup will be on Wednesday October 25th at c-base
+and remote. Consider giving a lightning talk on a topic that
+interests, doesn't need to be well prepared.
+
+If there is interest in an in-person-only meetup, let us know on the
+list.
 
 
 ### Location
@@ -61,10 +64,23 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, October 28th 2026
 * Wednesday, November 25th 2026
-* Wednesday, December 30th 2026
+* Wednesday, December 30th 2026 (TBD)
+* Wednesday, January 27th 2027
+
 <!--
+* Wednesday, February 24th 2027
+* Wednesday, March 31st 2027
+* Wednesday, April 28th 2027
+* Wednesday, May 26th 2027
+* Wednesday, June 30th 2027
+* Wednesday, July 28th 2027
+* Wednesday, August 25th 2027
+* Wednesday, September 29th 2027
+* Wednesday, October 27th 2027
+* Wednesday, November 24th 2027
+* Wednesday, December 29th 2027
+
 
 To generate those dates in Ruby (needs ActiveSupport):
 
