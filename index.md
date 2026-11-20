@@ -65,11 +65,11 @@ Non-public contact via email: [organizers email][contact]
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
 * Wednesday, November 25th 2026
-* Wednesday, December 30th 2026 (TBD)
+* No December meetup on the 30th
 * Wednesday, January 27th 2027
+* Wednesday, February 24th 2027
 
 <!--
-* Wednesday, February 24th 2027
 * Wednesday, March 31st 2027
 * Wednesday, April 28th 2027
 * Wednesday, May 26th 2027
