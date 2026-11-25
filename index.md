@@ -14,14 +14,11 @@ layout: default
 <section id="below-fold"><div class="row"><div class="medium-8 columns">
 
 
-# November 2026 Meetup
+# The remains of 2026
 
-The next official Meetup will be on Wednesday October 25th at c-base
-and remote. Consider giving a lightning talk on a topic that
-interests, doesn't need to be well prepared.
-
-If there is interest in an in-person-only meetup, let us know on the
-list.
+There **might** be an in-person-only meetup at c-base on Tuesday
+December 8th. There **will be** an Emacs assembly at the [40c3]. There
+will be **no** official meetup on Wednesday December 30th.
 
 
 ### Location
@@ -64,7 +61,7 @@ Non-public contact via email: [organizers email][contact]
 
 [Calendar subscription link](https://emacs-berlin.org/calendar.ics)
 
-* Wednesday, November 25th 2026
+* Tuesday, December 8th 2026 (in-person-only, maybe)
 * No December meetup on the 30th
 * Wednesday, January 27th 2027
 * Wednesday, February 24th 2027
@@ -161,3 +158,4 @@ document, and to behave accordingly.
 [mlag]: news://news.gmane.io/gmane.org.user-groups.emacs.berlin
 [contact]: mailto:emacs-berlin-owner@emacs-berlin.org "Send an email to organizers"
 [ghi]: https://github.com/emacs-berlin/emacs-berlin.org/issues "emacs-berlin GitHub Issues"
+[40c3]: https://events.ccc.de/congress/2026/infos/startpage.html "40c3"
